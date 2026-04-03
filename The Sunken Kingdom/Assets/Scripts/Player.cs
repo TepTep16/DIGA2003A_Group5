@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -55,7 +55,15 @@ public class Player : MonoBehaviour
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
         if(Input.GetKeyDown(KeyCode.J) && distToEnemy < 3)
         {
-            
+            Enemy enemyScript = enemy.GetComponent<Enemy>();
+
+            if (enemyScript != null)
+            {
+                // Direction from player → enemy
+                Vector2 direction = (enemy.position - transform.position).normalized;
+
+                enemyScript.damageTaken(10, direction, 5f);
+            }
         }
     }
 

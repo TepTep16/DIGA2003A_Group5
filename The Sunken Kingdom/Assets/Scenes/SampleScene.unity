@@ -463,8 +463,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe0554c0ae52fc9429303c17a86ae799, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Enemy
+  health: 100
+  enemy: {fileID: 1131590939}
   player: {fileID: 1409360081}
-  moveForce: 4
+  moveForce: 0
   agroRange: 3
 --- !u!50 &1131590941
 Rigidbody2D:

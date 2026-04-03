@@ -4,6 +4,11 @@ public class Enemy : MonoBehaviour
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
+    public int health = 100;
+
+    //This will be used to enable/disable the game object
+    public GameObject enemy;
+
     [SerializeField]
     //Used to track where the player is relative to the enemy
     private Transform player;
@@ -36,7 +41,7 @@ public class Enemy : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    public void chasePlayer()
+    private void chasePlayer()
     {
         //When enemy is to the left of the player and moves towards the right
         if (transform.position.x < player.position.x)
@@ -59,5 +64,18 @@ public class Enemy : MonoBehaviour
         {
             myBody.linearVelocity = new Vector2(0f, -moveForce);
         }
+    }
+
+    public void damageTaken(int damage, Vector2 knockback, float force)
+    {
+        health = health - damage;
+
+        myBody.linearVelocity = Vector2.zero; // reset current velocity
+        myBody.AddForce(knockback * force, ForceMode2D.Impulse);
+        if(health == 0)
+        {
+            enemy.SetActive(false);
+        }
+        Debug.Log("Enemy health: " + health);
     }
 }
