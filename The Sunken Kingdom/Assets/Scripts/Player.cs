@@ -4,12 +4,17 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
+    private Animator anim;
 
     //These variables are used to control the player's movement on the x-axis and y-axis
     private float movementX;
     private float moveForceX = 8f;
     private float movementY;
     private float moveForceY = 8f;
+
+    private string attack_animation = "attack";
+
+    Enemy crab = new Enemy();
 
     //Used to check where the enemy is relative to the player
     [SerializeField]
@@ -24,6 +29,8 @@ public class Player : MonoBehaviour
     void Update()
     {
         playerMovement();
+        playerCombat();
+        playerAnimations();
     }
 
     private void Awake()
@@ -31,6 +38,7 @@ public class Player : MonoBehaviour
         //Used to call the components of the object
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void playerMovement()
@@ -44,6 +52,18 @@ public class Player : MonoBehaviour
 
     void playerCombat()
     {
+        float distToEnemy = Vector2.Distance(transform.position, enemy.position);
+        if(Input.GetKeyDown(KeyCode.J) && distToEnemy < 3)
+        {
+            
+        }
+    }
 
+    void playerAnimations()
+    {
+        if (Input.GetKeyDown(KeyCode.J))
+        {
+            anim.SetBool(attack_animation, true);
+        }
     }
 }

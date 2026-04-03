@@ -36,7 +36,7 @@ public class Enemy : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
     }
 
-    void chasePlayer()
+    public void chasePlayer()
     {
         //When enemy is to the left of the player and moves towards the right
         if (transform.position.x < player.position.x)
