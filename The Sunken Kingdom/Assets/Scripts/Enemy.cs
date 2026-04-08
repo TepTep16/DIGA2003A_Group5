@@ -70,10 +70,12 @@ public class Enemy : MonoBehaviour
     {
         health = health - damage;
 
-        myBody.linearVelocity = Vector2.zero; // reset current velocity
+        // reset current velocity
+        myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
         if(health == 0)
         {
+            //Turns off the Game Object when the health decreases to zero
             enemy.SetActive(false);
         }
         Debug.Log("Enemy health: " + health);
