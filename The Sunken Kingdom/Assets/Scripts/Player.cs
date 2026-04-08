@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
                 // Direction from player → enemy
                 Vector2 direction = (enemy.position - transform.position).normalized;
 
-                enemyScript.damageTaken(10, direction, 5f);
+                enemyScript.damageTaken(10, direction, 50f);
             }
         }
     }
