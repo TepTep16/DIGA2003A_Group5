@@ -119,6 +119,9 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+
+
+
 --- !u!1 &39444851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3353,35 +3356,8 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180.363}
+
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
-  m_Roots:
-  - {fileID: 519420032}
-  - {fileID: 619394802}
-  - {fileID: 1409360081}
-  - {fileID: 1131590944}
-  - {fileID: 1128974950}
-  - {fileID: 1165106856}
-  - {fileID: 237659932}
-  - {fileID: 816507328}
-  - {fileID: 791800907}
-  - {fileID: 1845309236}
-  - {fileID: 853361593}
-  - {fileID: 1597639325}
-  - {fileID: 240563584}
-  - {fileID: 1336626141}
-  - {fileID: 39444853}
-  - {fileID: 1309541910}
-  - {fileID: 979676183}
-  - {fileID: 1054590004}
-  - {fileID: 1030195329}
-  - {fileID: 2055328752}
-  - {fileID: 1419379770}
-  - {fileID: 2111818759}
-  - {fileID: 562877878}
-  - {fileID: 171216959}
-  - {fileID: 854710469}
-  - {fileID: 66409279}
-  - {fileID: 77271684}
-  - {fileID: 1471125402}
+  m_Roots: []
