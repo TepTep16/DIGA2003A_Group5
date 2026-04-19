@@ -1972,7 +1972,7 @@ GameObject:
   - component: {fileID: 1131590940}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1994,6 +1994,8 @@ MonoBehaviour:
   player: {fileID: 1409360081}
   moveForce: 0
   agroRange: 3
+  attackRange: 2
+  attackCooldown: 1
 --- !u!50 &1131590941
 Rigidbody2D:
   serializedVersion: 5
@@ -2135,7 +2137,7 @@ Transform:
   m_GameObject: {fileID: 1131590939}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 0, z: 0}
+  m_LocalPosition: {x: 11.86, y: 0.11, z: 0}
   m_LocalScale: {x: 1.2271771, y: 1.153267, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2660,6 +2662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1d83482858ca7419c29ee5c2dd6f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  health: 100
   enemy: {fileID: 1131590944}
 --- !u!50 &1409360083
 Rigidbody2D:
