@@ -8,7 +8,7 @@ public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI NPCNameText;
     [SerializeField] private TextMeshProUGUI NPCDialogueText;
-    [SerializeField] private float typeSpeed = 10;
+    [SerializeField] private float typeSpeed = 20;
 
     private Queue<string> paragraphs = new Queue<string>();
 
@@ -86,7 +86,7 @@ public class DialogueController : MonoBehaviour
         paragraphs.Clear();
 
         //return bool to false
-        conversationEndend = false;
+        conversationEnded = false;
 
         //deactivate gameObject
         if (gameObject.activeSelf)
