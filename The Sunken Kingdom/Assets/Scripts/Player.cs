@@ -6,11 +6,16 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
+    public int health = 100;
     //These variables are used to control the player's movement on the x-axis and y-axis
     private float movementX;
     private float moveForceX = 8f;
     private float movementY;
     private float moveForceY = 8f;
+
+    private bool isKnockedBack = false;
+    private float knockbackTimer = 0f;
+    private float knockbackDuration = 0.2f;
 
     private string attack_animation = "attack";
 
@@ -22,12 +27,23 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.deltaTime;
+
+            if (knockbackTimer <= 0f)
+            {
+                isKnockedBack = false;
+            }
+
+            return;
+        }
         playerMovement();
         playerCombat();
         playerAnimations();
@@ -46,14 +62,14 @@ public class Player : MonoBehaviour
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
 
-        transform.position += new Vector3(movementX, 0f, 0f) * Time.deltaTime * moveForceX;
-        transform.position += new Vector3(0f, movementY, 0f) * Time.deltaTime * moveForceY;
+        Vector2 movement = new Vector2(movementX, movementY).normalized;
+        myBody.linearVelocity = movement * moveForceX;
     }
 
     void playerCombat()
     {
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if(Input.GetKeyDown(KeyCode.J) && distToEnemy < 3)
+        if (Input.GetMouseButtonDown(0) && distToEnemy < 3)
         {
             Enemy enemyScript = enemy.GetComponent<Enemy>();
 
@@ -62,9 +78,20 @@ public class Player : MonoBehaviour
                 // Direction from player → enemy
                 Vector2 direction = (enemy.position - transform.position).normalized;
 
-                enemyScript.damageTaken(10, direction, 50f);
+                enemyScript.damageTakenEnemy(10, direction, 20f);
             }
         }
+    }
+
+    public void TakeDamage(int damage, Vector2 knockback, float force)
+    {
+        health = health - damage;
+        Debug.Log("Player Health: " + health);
+        isKnockedBack = true;
+        knockbackTimer = knockbackDuration;
+
+        myBody.linearVelocity = Vector2.zero;
+        myBody.AddForce(knockback * force, ForceMode2D.Impulse);
     }
 
     void playerAnimations()
