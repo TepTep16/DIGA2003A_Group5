@@ -5514,6 +5514,8 @@ MonoBehaviour:
   player: {fileID: 1409360081}
   moveForce: 0
   agroRange: 3
+  attackRange: 2
+  attackCooldown: 1
 --- !u!50 &1131590941
 Rigidbody2D:
   serializedVersion: 5
@@ -6633,6 +6635,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1d83482858ca7419c29ee5c2dd6f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  health: 100
   enemy: {fileID: 1131590944}
 --- !u!50 &1409360083
 Rigidbody2D:
