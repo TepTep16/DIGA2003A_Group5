@@ -39,7 +39,7 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -70,7 +70,7 @@ public class Enemy : MonoBehaviour
         }
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
-        if(distToPlayer <= attackRange && attackCooldownTimer <= 0f)
+        if (distToPlayer <= attackRange && attackCooldownTimer <= 0f)
         {
             AttackPlayer();
         }
@@ -99,7 +99,7 @@ public class Enemy : MonoBehaviour
     public void damageTakenEnemy(int damage, Vector2 knockback, float force)
     {
         health = health - damage;
-        Debug.Log("Enemy Health: " +  health);
+        Debug.Log("Enemy Health: " + health);
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
@@ -113,24 +113,24 @@ public class Enemy : MonoBehaviour
     }
 
     void AttackPlayer()
-{
-    // Stop moving while attacking
-    myBody.linearVelocity = Vector2.zero;
+    {
+        // Stop moving while attacking
+        myBody.linearVelocity = Vector2.zero;
 
-    attackFreezeTimer = attackFreezeDuration;     //Used so the enemy stops for one second after attacking the player
-    attackCooldownTimer = attackCooldownDuration;   //This makes sure there is a 3 second delay before the enemy attacks the player again
+        attackFreezeTimer = attackFreezeDuration;     //Used so the enemy stops for one second after attacking the player
+        attackCooldownTimer = attackCooldownDuration;   //This makes sure there is a 3 second delay before the enemy attacks the player again
 
         // Get player script
         Player playerScript = player.GetComponent<Player>();
 
-    if (playerScript != null)
-    {
-        // Direction from enemy → player
-        if(playerScript != null)
+        if (playerScript != null)
+        {
+            // Direction from enemy → player
+            if (playerScript != null)
             {
                 Vector2 direction = (player.position - transform.position).normalized;
                 playerScript.TakeDamage(10, direction, 10f);
             }
+        }
     }
-}
 }

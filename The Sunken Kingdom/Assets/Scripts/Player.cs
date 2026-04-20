@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -7,13 +6,7 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
-    public int maxHealth = 100;
-  
-
-    public int currentHealth;
-    public HealthBar healthBar;
-
-
+    public int health = 100;
     //These variables are used to control the player's movement on the x-axis and y-axis
     private float movementX;
     private float moveForceX = 8f;
@@ -35,15 +28,11 @@ public class Player : MonoBehaviour
     void Start()
     {
 
-        currentHealth = maxHealth;
-        healthBar.SetMaxHealth(maxHealth);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-
         if (isKnockedBack)
         {
             knockbackTimer -= Time.deltaTime;
@@ -80,7 +69,7 @@ public class Player : MonoBehaviour
     void playerCombat()
     {
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if(Input.GetMouseButtonDown(0) && distToEnemy < 3)
+        if (Input.GetMouseButtonDown(0) && distToEnemy < 3)
         {
             Enemy enemyScript = enemy.GetComponent<Enemy>();
 
@@ -96,14 +85,11 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 knockback, float force)
     {
-        currentHealth = currentHealth - damage;
-        Debug.Log("Player Health: " + currentHealth);
-
-        healthBar.SetHealth(currentHealth);
-
+        health = health - damage;
+        Debug.Log("Player Health: " + health);
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
-        
+
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
     }
