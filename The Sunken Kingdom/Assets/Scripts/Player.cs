@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -69,7 +69,7 @@ public class Player : MonoBehaviour
     void playerCombat()
     {
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if(Input.GetMouseButtonDown(0) && distToEnemy < 3)
+        if (Input.GetMouseButtonDown(0) && distToEnemy < 3)
         {
             Enemy enemyScript = enemy.GetComponent<Enemy>();
 
