@@ -6,7 +6,9 @@ public class Player : MonoBehaviour
     private SpriteRenderer sr;
     private Animator anim;
 
-    public int health = 100;
+    public int maxHealth = 100;
+    public int currentHealth;
+    public HealthBar healthBar;
     //These variables are used to control the player's movement on the x-axis and y-axis
     private float movementX;
     private float moveForceX = 8f;
@@ -27,7 +29,8 @@ public class Player : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        currentHealth = maxHealth;
+        healthBar.SetMaxHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -85,8 +88,10 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(int damage, Vector2 knockback, float force)
     {
-        health = health - damage;
-        Debug.Log("Player Health: " + health);
+        currentHealth -= damage;
+        healthBar.SetHealth(currentHealth);
+
+        Debug.Log("Player Health: " + currentHealth);
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
