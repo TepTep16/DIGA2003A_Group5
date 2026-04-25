@@ -3506,6 +3506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 612198261}
   - component: {fileID: 612198262}
+  - component: {fileID: 612198263}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -3547,7 +3548,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe418e12abf6beb49bd17c63cdf34faa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  _healthBarFill: {fileID: 1873117657}
+  slider: {fileID: 612198263}
+--- !u!114 &612198263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 612198260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
+  m_Navigation:
+    m_Mode: 0
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 0
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1873117656}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 100
+  m_WholeNumbers: 0
+  m_Value: 100
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,7 +7258,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d1d83482858ca7419c29ee5c2dd6f79, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  health: 100
+  maxHealth: 100
+  currentHealth: 0
+  healthBar: {fileID: 612198262}
   enemy: {fileID: 1131590944}
 --- !u!50 &1409360083
 Rigidbody2D:
@@ -9190,10 +9244,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 612198261}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 50, y: -50}
-  m_SizeDelta: {x: 400, y: 50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.18109894, y: -0.18119812}
+  m_SizeDelta: {x: 300.3622, y: -49.6378}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1873117657
 MonoBehaviour:
@@ -9220,7 +9274,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.79
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
