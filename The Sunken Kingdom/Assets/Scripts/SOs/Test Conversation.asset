@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Test Conversation
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   speakerName: Beckett
+  speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
   paragraphs:
   - Hey Cyrus! It's me, Beckett. Your big brother!!
   - This is a test conversation to make sure the devs did a good job with the dialogue

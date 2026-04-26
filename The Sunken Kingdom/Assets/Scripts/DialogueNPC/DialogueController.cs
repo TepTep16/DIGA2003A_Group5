@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using static UnityEditor.Rendering.MaterialUpgrader;
 
 public class DialogueController : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI NPCNameText;
     [SerializeField] private TextMeshProUGUI NPCDialogueText;
     [SerializeField] private float typeSpeed = 20;
+    [SerializeField] private Image portraitImage;
 
     private Queue<string> paragraphs = new Queue<string>();
 
@@ -72,11 +75,21 @@ public class DialogueController : MonoBehaviour
         //update the speaker name
         NPCNameText.text = dialogueText.speakerName;
 
-        //add dialogue text to the queue
-        for (int i = 0; i < dialogueText.paragraphs.Length; i++)
+        if (dialogueText.speakerPortrait != null)
         {
-            paragraphs.Enqueue(dialogueText.paragraphs[i]);
+            portraitImage.sprite = dialogueText.speakerPortrait;
+            portraitImage.gameObject.SetActive(true);
         }
+        else
+        {
+            portraitImage.gameObject.SetActive(false);
+        }
+
+            //add dialogue text to the queue
+            for (int i = 0; i < dialogueText.paragraphs.Length; i++)
+            {
+                paragraphs.Enqueue(dialogueText.paragraphs[i]);
+            }
     }
 
     private void EndConversation()
