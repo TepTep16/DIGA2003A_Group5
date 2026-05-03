@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5429bc165bef07d449530c7a07048dbd, type: 3}
-  m_Name: Test Conversation
+  m_Name: Beckett Conversation
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
   speakerName: Beckett
   speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
   paragraphs:
-  - Hey Cyrus! It's me, Beckett. Your big brother!!
-  - This is a test conversation to make sure the devs did a good job with the dialogue
-    system...
-  - Otherwise, how else would I be able to speak to you?
+  - Hey Cyrus. Looks like your big brother got himself into some trouble..heh...
+  - I'm going to need your help.
+  - I've given you a list, its got all the things you need to help me get better.
+  - I know I can count on you Cyrus.
+  - Goodluck lil' brother.
