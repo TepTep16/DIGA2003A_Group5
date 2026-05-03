@@ -4,19 +4,16 @@
 TagManager:
   serializedVersion: 3
   tags:
-
   - Enemy
-
   - Item
-
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background
   - Water
   - UI
-  - 
+  - Sprites
   - 
   - 
   - 
@@ -46,10 +43,13 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-
-  - name: Player
-    uniqueID: 3175148969
+  - name: Background
+    uniqueID: 1185339257
     locked: 0
-
+  - name: Sprites
+    uniqueID: 3286340797
+    locked: 0
   m_RenderingLayers:
   - Default
+  - Sprites
+  - Background
