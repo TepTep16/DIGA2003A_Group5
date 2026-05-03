@@ -1,0 +1,1588 @@
+fileFormatVersion: 2
+guid: f64367b1cfdfa2049a39ae9d4aebff0b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7215286962816404769
+    second: UndeadAllSpriteSheet_0
+  - first:
+      213: -3659310866710665154
+    second: UndeadAllSpriteSheet_1
+  - first:
+      213: 3046194620012218913
+    second: UndeadAllSpriteSheet_2
+  - first:
+      213: 7265708567539506298
+    second: UndeadAllSpriteSheet_3
+  - first:
+      213: 6914949000441693355
+    second: UndeadAllSpriteSheet_4
+  - first:
+      213: -3379898692613234795
+    second: UndeadAllSpriteSheet_5
+  - first:
+      213: -656641167004283295
+    second: UndeadAllSpriteSheet_6
+  - first:
+      213: -5463428791599052451
+    second: UndeadAllSpriteSheet_7
+  - first:
+      213: 7407612657518055224
+    second: UndeadAllSpriteSheet_8
+  - first:
+      213: -2856910135209907759
+    second: UndeadAllSpriteSheet_9
+  - first:
+      213: 3876950323251078614
+    second: UndeadAllSpriteSheet_10
+  - first:
+      213: -2862431328577409316
+    second: UndeadAllSpriteSheet_11
+  - first:
+      213: -7460088654861451017
+    second: UndeadAllSpriteSheet_12
+  - first:
+      213: 7131097372580167595
+    second: UndeadAllSpriteSheet_13
+  - first:
+      213: 4843578895987159916
+    second: UndeadAllSpriteSheet_14
+  - first:
+      213: -1987213711336818295
+    second: UndeadAllSpriteSheet_15
+  - first:
+      213: -6377628150333684932
+    second: UndeadAllSpriteSheet_16
+  - first:
+      213: -6641402964416907546
+    second: UndeadAllSpriteSheet_17
+  - first:
+      213: 4435423956117830884
+    second: UndeadAllSpriteSheet_18
+  - first:
+      213: 6025316490185875961
+    second: UndeadAllSpriteSheet_19
+  - first:
+      213: 4251032498064542750
+    second: UndeadAllSpriteSheet_20
+  - first:
+      213: -3543094155158211005
+    second: UndeadAllSpriteSheet_21
+  - first:
+      213: -4532396015863078385
+    second: UndeadAllSpriteSheet_22
+  - first:
+      213: 5873369010085166842
+    second: UndeadAllSpriteSheet_23
+  - first:
+      213: 6393862494875327477
+    second: UndeadAllSpriteSheet_24
+  - first:
+      213: -9040280318356692195
+    second: UndeadAllSpriteSheet_25
+  - first:
+      213: -878798272695409952
+    second: UndeadAllSpriteSheet_26
+  - first:
+      213: 3042794537924084124
+    second: UndeadAllSpriteSheet_27
+  - first:
+      213: -4029695786024798409
+    second: UndeadAllSpriteSheet_28
+  - first:
+      213: 8016410345682863123
+    second: UndeadAllSpriteSheet_29
+  - first:
+      213: 1818883149420483328
+    second: UndeadAllSpriteSheet_30
+  - first:
+      213: 1524077391766514371
+    second: UndeadAllSpriteSheet_31
+  - first:
+      213: 2301056433859138471
+    second: UndeadAllSpriteSheet_32
+  - first:
+      213: -586363405498994544
+    second: UndeadAllSpriteSheet_33
+  - first:
+      213: -5845987464082975724
+    second: UndeadAllSpriteSheet_34
+  - first:
+      213: -1126478466880687945
+    second: UndeadAllSpriteSheet_35
+  - first:
+      213: -7916772181549270049
+    second: UndeadAllSpriteSheet_36
+  - first:
+      213: 7747384398021879003
+    second: UndeadAllSpriteSheet_37
+  - first:
+      213: -1455542112903994132
+    second: UndeadAllSpriteSheet_38
+  - first:
+      213: -8125458386027741718
+    second: UndeadAllSpriteSheet_39
+  - first:
+      213: 2568722744999476117
+    second: UndeadAllSpriteSheet_40
+  - first:
+      213: -7878281102946740588
+    second: UndeadAllSpriteSheet_41
+  - first:
+      213: -4888725479929267640
+    second: UndeadAllSpriteSheet_42
+  - first:
+      213: -6644455555938611830
+    second: UndeadAllSpriteSheet_43
+  - first:
+      213: -7145072893780060254
+    second: UndeadAllSpriteSheet_44
+  - first:
+      213: -3082864170548869368
+    second: UndeadAllSpriteSheet_45
+  - first:
+      213: -79358253809824368
+    second: UndeadAllSpriteSheet_46
+  - first:
+      213: 7313107478813664497
+    second: UndeadAllSpriteSheet_47
+  - first:
+      213: -5934689620624116024
+    second: UndeadAllSpriteSheet_48
+  - first:
+      213: 7391805456606012658
+    second: UndeadAllSpriteSheet_49
+  - first:
+      213: -8594144398141947487
+    second: UndeadAllSpriteSheet_50
+  - first:
+      213: -4060113601383282236
+    second: UndeadAllSpriteSheet_51
+  - first:
+      213: -2770259593854423357
+    second: UndeadAllSpriteSheet_52
+  - first:
+      213: 2653731959871732037
+    second: UndeadAllSpriteSheet_53
+  - first:
+      213: 6304452005171420825
+    second: UndeadAllSpriteSheet_54
+  - first:
+      213: -1750194975901259939
+    second: UndeadAllSpriteSheet_55
+  - first:
+      213: 3948667140633821128
+    second: UndeadAllSpriteSheet_56
+  - first:
+      213: -1861657282139315705
+    second: UndeadAllSpriteSheet_57
+  - first:
+      213: 7119851018001198673
+    second: UndeadAllSpriteSheet_58
+  - first:
+      213: -5614569233284092106
+    second: UndeadAllSpriteSheet_59
+  - first:
+      213: 5620070429804913249
+    second: UndeadAllSpriteSheet_60
+  - first:
+      213: -7553345641128360550
+    second: UndeadAllSpriteSheet_61
+  - first:
+      213: -714769465602323478
+    second: UndeadAllSpriteSheet_62
+  - first:
+      213: 9057906344783560190
+    second: UndeadAllSpriteSheet_63
+  - first:
+      213: 816047912495183023
+    second: UndeadAllSpriteSheet_64
+  - first:
+      213: 8251536728673456340
+    second: UndeadAllSpriteSheet_65
+  - first:
+      213: -8317284020354748786
+    second: UndeadAllSpriteSheet_66
+  - first:
+      213: 7227430309233596198
+    second: UndeadAllSpriteSheet_67
+  - first:
+      213: -74553047473529055
+    second: UndeadAllSpriteSheet_68
+  - first:
+      213: -977417444728485293
+    second: UndeadAllSpriteSheet_69
+  - first:
+      213: -8566637529391639808
+    second: UndeadAllSpriteSheet_70
+  - first:
+      213: 7539178879764793315
+    second: UndeadAllSpriteSheet_71
+  - first:
+      213: -4882706918487794823
+    second: UndeadAllSpriteSheet_72
+  - first:
+      213: -3124974539885334754
+    second: UndeadAllSpriteSheet_73
+  - first:
+      213: -4520913283446344144
+    second: UndeadAllSpriteSheet_74
+  - first:
+      213: -5412827373923617570
+    second: UndeadAllSpriteSheet_75
+  - first:
+      213: -3351710026803686288
+    second: UndeadAllSpriteSheet_76
+  - first:
+      213: 1735674978309492079
+    second: UndeadAllSpriteSheet_77
+  - first:
+      213: 4213456138310468239
+    second: UndeadAllSpriteSheet_78
+  - first:
+      213: -5939474614839612707
+    second: UndeadAllSpriteSheet_79
+  - first:
+      213: -320603856352330699
+    second: UndeadAllSpriteSheet_80
+  - first:
+      213: -4083809524655790574
+    second: UndeadAllSpriteSheet_81
+  - first:
+      213: -4086346815917197834
+    second: UndeadAllSpriteSheet_82
+  - first:
+      213: -3310949616587838934
+    second: UndeadAllSpriteSheet_83
+  - first:
+      213: -1924941682412877338
+    second: UndeadAllSpriteSheet_84
+  - first:
+      213: 7434986729315963505
+    second: UndeadAllSpriteSheet_85
+  - first:
+      213: 9115788141905046581
+    second: UndeadAllSpriteSheet_86
+  - first:
+      213: 6349719464093502890
+    second: UndeadAllSpriteSheet_87
+  - first:
+      213: 4841849954232293205
+    second: UndeadAllSpriteSheet_88
+  - first:
+      213: -5547640563521385341
+    second: UndeadAllSpriteSheet_89
+  - first:
+      213: 7514734814076612173
+    second: UndeadAllSpriteSheet_90
+  - first:
+      213: -8168547274706377896
+    second: UndeadAllSpriteSheet_91
+  - first:
+      213: 6384178978547585077
+    second: UndeadAllSpriteSheet_92
+  - first:
+      213: 8391850800295749729
+    second: UndeadAllSpriteSheet_93
+  - first:
+      213: -1270611001055288042
+    second: UndeadAllSpriteSheet_94
+  - first:
+      213: 2512728048706180982
+    second: UndeadAllSpriteSheet_95
+  - first:
+      213: -30208517124790550
+    second: UndeadAllSpriteSheet_96
+  - first:
+      213: 3724424707347593481
+    second: UndeadAllSpriteSheet_97
+  - first:
+      213: 5751979902498676741
+    second: UndeadAllSpriteSheet_98
+  - first:
+      213: 7796378343802150894
+    second: UndeadAllSpriteSheet_99
+  - first:
+      213: 1537725011318997067
+    second: UndeadAllSpriteSheet_100
+  - first:
+      213: 3613772759694652271
+    second: UndeadAllSpriteSheet_101
+  - first:
+      213: -1371524378715763284
+    second: UndeadAllSpriteSheet_102
+  - first:
+      213: 1118775926576115671
+    second: UndeadAllSpriteSheet_103
+  - first:
+      213: 6549881281096058265
+    second: UndeadAllSpriteSheet_104
+  - first:
+      213: -4159299130635333222
+    second: UndeadAllSpriteSheet_105
+  - first:
+      213: -1065668922419910777
+    second: UndeadAllSpriteSheet_106
+  - first:
+      213: 4820395270039040337
+    second: UndeadAllSpriteSheet_107
+  - first:
+      213: 3081182529699376011
+    second: UndeadAllSpriteSheet_108
+  - first:
+      213: 4455530580612446155
+    second: UndeadAllSpriteSheet_109
+  - first:
+      213: 8130624569571214848
+    second: UndeadAllSpriteSheet_110
+  - first:
+      213: 2083658742458130750
+    second: UndeadAllSpriteSheet_111
+  - first:
+      213: -6925533935208428370
+    second: UndeadAllSpriteSheet_112
+  - first:
+      213: -3803577664680263099
+    second: UndeadAllSpriteSheet_113
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12dcd23b349d12460800000000000000
+      internalID: 7215286962816404769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e38ebf29724873dc0800000000000000
+      internalID: -3659310866710665154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ac8821ed1464a20800000000000000
+      internalID: 3046194620012218913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7c54b1627bf4d460800000000000000
+      internalID: 7265708567539506298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4054b9a75d6ff50800000000000000
+      internalID: 6914949000441693355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59f1bf9eb003811d0800000000000000
+      internalID: -3379898692613234795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 4320
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ecfcf665423e6f0800000000000000
+      internalID: -656641167004283295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d59c815e5700e24b0800000000000000
+      internalID: -5463428791599052451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83f0d0df6702dc660800000000000000
+      internalID: 7407612657518055224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9a99b5e573a58d0800000000000000
+      internalID: -2856910135209907759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d5673d27c1bdc530800000000000000
+      internalID: 3876950323251078614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdea13a5fd99648d0800000000000000
+      internalID: -2862431328577409316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0cf06c4e0787890800000000000000
+      internalID: -7460088654861451017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 3600
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bafbc57374fb6f260800000000000000
+      internalID: 7131097372580167595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c63b4e0f759d73340800000000000000
+      internalID: 4843578895987159916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989bbf288affb64e0800000000000000
+      internalID: -1987213711336818295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3344d5ccfc1e77a0800000000000000
+      internalID: -6377628150333684932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e634b7013ff4d3a0800000000000000
+      internalID: -6641402964416907546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ec39a4969acd8d30800000000000000
+      internalID: 4435423956117830884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f125d0ac693e9350800000000000000
+      internalID: 6025316490185875961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2880
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c47c7b883befa30800000000000000
+      internalID: 4251032498064542750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346380453a664dec0800000000000000
+      internalID: -3543094155158211005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f02e51556d1b911c0800000000000000
+      internalID: -4532396015863078385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afef9e80ff5628150800000000000000
+      internalID: 5873369010085166842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb9cbd10109bb850800000000000000
+      internalID: 6393862494875327477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13e46aa2f87a8280800000000000000
+      internalID: -9040280318356692195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e263c680a1edc3f0800000000000000
+      internalID: -878798272695409952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 2160
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c91c675c28d2a3a20800000000000000
+      internalID: 3042794537924084124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7377a196805a318c0800000000000000
+      internalID: -4029695786024798409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31481349cb2004f60800000000000000
+      internalID: 8016410345682863123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003d6296698fd3910800000000000000
+      internalID: 1818883149420483328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca627a105c962510800000000000000
+      internalID: 1524077391766514371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a31d4492aefeef10800000000000000
+      internalID: 2301056433859138471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 090b1f1e691dcd7f0800000000000000
+      internalID: -586363405498994544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 1440
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41492f1ff51eedea0800000000000000
+      internalID: -5845987464082975724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b0337e7dc1fd50f0800000000000000
+      internalID: -1126478466880687945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdbbf0f45a9f12290800000000000000
+      internalID: -7916772181549270049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd46f76001d348b60800000000000000
+      internalID: 7747384398021879003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce46cbcf820eccbe0800000000000000
+      internalID: -1455542112903994132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aedf89ff5a29c3f80800000000000000
+      internalID: -8125458386027741718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bf8261abfe5a320800000000000000
+      internalID: 2568722744999476117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 720
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 496df2ae319baa290800000000000000
+      internalID: -7878281102946740588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a3a6cd312c72cb0800000000000000
+      internalID: -4888725479929267640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8d886e20e62ac3a0800000000000000
+      internalID: -6644455555938611830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a797ff2f0a97dc90800000000000000
+      internalID: -7145072893780060254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 807c7afde577735d0800000000000000
+      internalID: -3082864170548869368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d8bafa61016eef0800000000000000
+      internalID: -79358253809824368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f4e0f661806d7560800000000000000
+      internalID: 7313107478813664497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UndeadAllSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6708ebb3fb3ada0800000000000000
+      internalID: -5934689620624116024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 23eed2249c9a2ff428a0d9a211c4118e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":7.0,"y":7.0},"gridSpriteSize":{"x":600.0,"y":720.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      UndeadAllSpriteSheet_0: 7215286962816404769
+      UndeadAllSpriteSheet_1: -3659310866710665154
+      UndeadAllSpriteSheet_10: 3876950323251078614
+      UndeadAllSpriteSheet_11: -2862431328577409316
+      UndeadAllSpriteSheet_12: -7460088654861451017
+      UndeadAllSpriteSheet_13: 7131097372580167595
+      UndeadAllSpriteSheet_14: 4843578895987159916
+      UndeadAllSpriteSheet_15: -1987213711336818295
+      UndeadAllSpriteSheet_16: -6377628150333684932
+      UndeadAllSpriteSheet_17: -6641402964416907546
+      UndeadAllSpriteSheet_18: 4435423956117830884
+      UndeadAllSpriteSheet_19: 6025316490185875961
+      UndeadAllSpriteSheet_2: 3046194620012218913
+      UndeadAllSpriteSheet_20: 4251032498064542750
+      UndeadAllSpriteSheet_21: -3543094155158211005
+      UndeadAllSpriteSheet_22: -4532396015863078385
+      UndeadAllSpriteSheet_23: 5873369010085166842
+      UndeadAllSpriteSheet_24: 6393862494875327477
+      UndeadAllSpriteSheet_25: -9040280318356692195
+      UndeadAllSpriteSheet_26: -878798272695409952
+      UndeadAllSpriteSheet_27: 3042794537924084124
+      UndeadAllSpriteSheet_28: -4029695786024798409
+      UndeadAllSpriteSheet_29: 8016410345682863123
+      UndeadAllSpriteSheet_3: 7265708567539506298
+      UndeadAllSpriteSheet_30: 1818883149420483328
+      UndeadAllSpriteSheet_31: 1524077391766514371
+      UndeadAllSpriteSheet_32: 2301056433859138471
+      UndeadAllSpriteSheet_33: -586363405498994544
+      UndeadAllSpriteSheet_34: -5845987464082975724
+      UndeadAllSpriteSheet_35: -1126478466880687945
+      UndeadAllSpriteSheet_36: -7916772181549270049
+      UndeadAllSpriteSheet_37: 7747384398021879003
+      UndeadAllSpriteSheet_38: -1455542112903994132
+      UndeadAllSpriteSheet_39: -8125458386027741718
+      UndeadAllSpriteSheet_4: 6914949000441693355
+      UndeadAllSpriteSheet_40: 2568722744999476117
+      UndeadAllSpriteSheet_41: -7878281102946740588
+      UndeadAllSpriteSheet_42: -4888725479929267640
+      UndeadAllSpriteSheet_43: -6644455555938611830
+      UndeadAllSpriteSheet_44: -7145072893780060254
+      UndeadAllSpriteSheet_45: -3082864170548869368
+      UndeadAllSpriteSheet_46: -79358253809824368
+      UndeadAllSpriteSheet_47: 7313107478813664497
+      UndeadAllSpriteSheet_48: -5934689620624116024
+      UndeadAllSpriteSheet_5: -3379898692613234795
+      UndeadAllSpriteSheet_6: -656641167004283295
+      UndeadAllSpriteSheet_7: -5463428791599052451
+      UndeadAllSpriteSheet_8: 7407612657518055224
+      UndeadAllSpriteSheet_9: -2856910135209907759
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
