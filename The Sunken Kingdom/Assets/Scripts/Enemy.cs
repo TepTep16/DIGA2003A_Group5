@@ -1,11 +1,16 @@
 ﻿using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
     public int health = 100;
+
+    [SerializeField]
+    private Slider healthSlider;
+    private int maxHealth; 
 
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
@@ -43,7 +48,12 @@ public class Enemy : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        maxHealth = health;
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = health;
+        }
     }
 
     // Update is called once per frame
@@ -114,6 +124,11 @@ public class Enemy : MonoBehaviour
     {
         health = health - damage;
         Debug.Log("Enemy Health: " + health);
+
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+        }
 
         anim.SetTrigger("Hit"); //will play the damage taking animation
 

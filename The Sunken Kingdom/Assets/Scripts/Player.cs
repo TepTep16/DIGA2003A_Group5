@@ -12,6 +12,8 @@ public class Player : MonoBehaviour
 
     public HealthBar healthBar;
 
+    [SerializeField] private ScreenDamageController damageEffect;
+
     //These variables are used to control the player's movement on the x-axis and y-axis
     private float movementX;
     private float moveForceX = 8f;
@@ -100,6 +102,11 @@ public class Player : MonoBehaviour
 
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
+
+        if (damageEffect != null)
+        {
+            damageEffect.TriggerDamageEffect();
+        }
     }
 
     void playerAnimations()
