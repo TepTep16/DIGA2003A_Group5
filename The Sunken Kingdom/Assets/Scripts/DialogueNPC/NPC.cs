@@ -49,4 +49,9 @@ public abstract class NPC : MonoBehaviour, IInteractable
             return false;
         }
     }
+
+    public bool CanInteract()
+    {
+        throw new System.NotImplementedException();
+    }
 }
