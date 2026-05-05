@@ -1,0 +1,671 @@
+fileFormatVersion: 2
+guid: 55b864ab09371d44786417e3e2955c48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4566516725203728898
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_0
+  - first:
+      213: 5395753245016685753
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_1
+  - first:
+      213: -21099271622266572
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_2
+  - first:
+      213: 8940712153810718075
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_3
+  - first:
+      213: -2289264948456987590
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_4
+  - first:
+      213: 919461806788469894
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_5
+  - first:
+      213: 6799251783356838937
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_6
+  - first:
+      213: -7767684763463253549
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_7
+  - first:
+      213: 5749893270237128203
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_8
+  - first:
+      213: 219112185772813499
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_9
+  - first:
+      213: 7280636417891667496
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_10
+  - first:
+      213: 5564076616451375776
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_11
+  - first:
+      213: 526069786599270390
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_12
+  - first:
+      213: 7985376427808864021
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_13
+  - first:
+      213: 8445707514146731780
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_14
+  - first:
+      213: 5470205287741777210
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_15
+  - first:
+      213: -3664669023532578893
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_16
+  - first:
+      213: 3025914957190903
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_17
+  - first:
+      213: 1610088473512722980
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_18
+  - first:
+      213: -8431656087995424262
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_19
+  - first:
+      213: 6981671821636897690
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_20
+  - first:
+      213: -8120736316144149574
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_21
+  - first:
+      213: 4329675162545112482
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_22
+  - first:
+      213: 2940991586696566994
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_23
+  - first:
+      213: 4275771326590831969
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_24
+  - first:
+      213: -405672844779923123
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_25
+  - first:
+      213: 6998299489672621390
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_26
+  - first:
+      213: 5519172642363615451
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_27
+  - first:
+      213: 3682099108848453605
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_28
+  - first:
+      213: 8994257377139298444
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_29
+  - first:
+      213: 6500700771666727543
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_30
+  - first:
+      213: -1626626998670628746
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_31
+  - first:
+      213: -5268086889457364313
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_32
+  - first:
+      213: 4080589985555710562
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_33
+  - first:
+      213: -5389982710052990668
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_34
+  - first:
+      213: 8814170576960829308
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_35
+  - first:
+      213: 8241635135564894995
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_36
+  - first:
+      213: 3319363369066637193
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_37
+  - first:
+      213: 2873206585175309737
+    second: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 1828
+        width: 298
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef50a5d9b3970a0c0800000000000000
+      internalID: -4566516725203728898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_1
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 1828
+        width: 297
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bc71e80df091ea40800000000000000
+      internalID: 5395753245016685753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_2
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1828
+        width: 297
+        height: 646
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4317fe1035a05bff0800000000000000
+      internalID: -21099271622266572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_3
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 1828
+        width: 288
+        height: 645
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dc7ee755ac31c70800000000000000
+      internalID: 8940712153810718075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_4
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 2218
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a34e77e88a5ea30e0800000000000000
+      internalID: -2289264948456987590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_5
+      rect:
+        serializedVersion: 2
+        x: 1838
+        y: 1786
+        width: 248
+        height: 726
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6846a2a44a592cc00800000000000000
+      internalID: 919461806788469894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_6
+      rect:
+        serializedVersion: 2
+        x: 2238
+        y: 1763
+        width: 299
+        height: 737
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 914fc65197bcb5e50800000000000000
+      internalID: 6799251783356838937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_7
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 1786
+        width: 244
+        height: 726
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d10f82dcd3a33490800000000000000
+      internalID: -7767684763463253549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_8
+      rect:
+        serializedVersion: 2
+        x: 3068
+        y: 1763
+        width: 300
+        height: 737
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06a4ec0779bbcf40800000000000000
+      internalID: 5749893270237128203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_9
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 968
+        width: 284
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbca2fe3f517a0300800000000000000
+      internalID: 219112185772813499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_10
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 979
+        width: 284
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e84336f340a0560800000000000000
+      internalID: 7280636417891667496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_11
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 968
+        width: 284
+        height: 705
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a244a2f332973d40800000000000000
+      internalID: 5564076616451375776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_12
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 979
+        width: 284
+        height: 683
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7a0550fa9fc4700800000000000000
+      internalID: 526069786599270390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_13
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 68
+        width: 283
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51733518d81c1de60800000000000000
+      internalID: 7985376427808864021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_15
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 78
+        width: 349
+        height: 689
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a35ef401ab21aeb40800000000000000
+      internalID: 5470205287741777210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_18
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 68
+        width: 361
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4224da0afee285610800000000000000
+      internalID: 1610088473512722980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_21
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 58
+        width: 390
+        height: 689
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abb1d9198595d4f80800000000000000
+      internalID: -8120736316144149574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_24
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 68
+        width: 396
+        height: 688
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16d4f361e57965b30800000000000000
+      internalID: 4275771326590831969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c9e02c96cf9a0694a8483391d716f246
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_0: -4566516725203728898
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_1: 5395753245016685753
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_10: 7280636417891667496
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_11: 5564076616451375776
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_12: 526069786599270390
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_13: 7985376427808864021
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_14: 8445707514146731780
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_15: 5470205287741777210
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_16: -3664669023532578893
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_17: 3025914957190903
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_18: 1610088473512722980
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_19: -8431656087995424262
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_2: -21099271622266572
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_20: 6981671821636897690
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_21: -8120736316144149574
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_22: 4329675162545112482
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_23: 2940991586696566994
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_24: 4275771326590831969
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_25: -405672844779923123
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_26: 6998299489672621390
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_27: 5519172642363615451
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_28: 3682099108848453605
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_29: 8994257377139298444
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_3: 8940712153810718075
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_30: 6500700771666727543
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_31: -1626626998670628746
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_32: -5268086889457364313
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_33: 4080589985555710562
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_34: -5389982710052990668
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_35: 8814170576960829308
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_36: 8241635135564894995
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_37: 3319363369066637193
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_38: 2873206585175309737
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_4: -2289264948456987590
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_5: 919461806788469894
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_6: 6799251783356838937
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_7: -7767684763463253549
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_8: 5749893270237128203
+      Sprite_Sheet_Cyrus_All_Directions__Damage_Animation_9: 219112185772813499
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

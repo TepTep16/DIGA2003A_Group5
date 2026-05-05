@@ -21,7 +21,7 @@ public class DialogueController : MonoBehaviour
 
     private Coroutine typeDialogueCoroutine;
 
-    private const string HTML_APLHA = "<color=white>";
+    private const string HTML_APLHA = "<color=grey>";
     private const float MAX_TYPE_TIME = 0.1f;
 
     public void DisplayNextParagraph(DialogueText dialogueText)

@@ -28,6 +28,9 @@ public class Player : MonoBehaviour
 
     Enemy crab = new Enemy();
 
+    private Animator animator;
+    private Vector2 lastMove; 
+
     //Used to check where the enemy is relative to the player
     [SerializeField]
     private Transform enemy;
@@ -54,7 +57,7 @@ public class Player : MonoBehaviour
         }
         playerMovement();
         playerCombat();
-        playerAnimations();
+        UpdateAnimation();
     }
 
     private void Awake()
@@ -72,6 +75,11 @@ public class Player : MonoBehaviour
 
         Vector2 movement = new Vector2(movementX, movementY).normalized;
         myBody.linearVelocity = movement * moveForceX;
+
+        if (movement != Vector2.zero)
+        {
+            lastMove = movement;
+        }
     }
 
     void playerCombat()
@@ -103,17 +111,30 @@ public class Player : MonoBehaviour
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
 
+        anim.SetTrigger("Hit"); 
+
         if (damageEffect != null)
         {
             damageEffect.TriggerDamageEffect();
         }
     }
 
-    void playerAnimations()
+    void UpdateAnimation()
     {
-        if (Input.GetKeyDown(KeyCode.J))
+        Vector2 velocity = myBody.linearVelocity;
+
+        bool isMoving = velocity.magnitude > 8f;
+        anim.SetBool("IsMoving", isMoving);
+
+        if (isMoving)
         {
-            anim.SetBool(attack_animation, true);
+            anim.SetFloat("MoveX", velocity.x);
+            anim.SetFloat("MoveY", velocity.y);
+        }
+        else
+        {
+            anim.SetFloat("MoveX", lastMove.x);
+            anim.SetFloat("MoveY", lastMove.y);
         }
     }
 }
