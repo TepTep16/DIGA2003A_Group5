@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
@@ -120,7 +120,7 @@ public class Enemy : MonoBehaviour
         }
     }
 
-    public void damageTakenEnemy(int damage, Vector2 knockback, float force)
+    public void damageTaken(int damage, Vector2 knockback, float force)
     {
         health = health - damage;
         Debug.Log("Enemy Health: " + health);
@@ -185,5 +185,10 @@ public class Enemy : MonoBehaviour
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
         }
+    }
+
+    public void TakeDamage(int damage, Vector2 knockback, float force)
+    {
+        throw new System.NotImplementedException();
     }
 }

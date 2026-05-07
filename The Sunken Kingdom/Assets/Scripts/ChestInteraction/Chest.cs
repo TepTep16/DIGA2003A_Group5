@@ -7,12 +7,16 @@ public class Chest : MonoBehaviour, IInteractable
     public GameObject itemPrefab; //for item that chest will drop 
     public Sprite openedSprite;
 
+    public GameObject interactionSymbol;
+
     private Animator animator;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         ChestID ??= GlobalHelper.GenerateUniqueID(gameObject);
-        animator = GetComponent<Animator>(); 
+        animator = GetComponent<Animator>();
+
+        interactionSymbol.SetActive(false);
     }
 
     public bool CanInteract()
@@ -32,6 +36,8 @@ public class Chest : MonoBehaviour, IInteractable
         IsOpened = true;
         animator.SetTrigger("Open");
         // will add dropping item later on
+
+        interactionSymbol.SetActive(false);
     }
 
     public void CloseChest()
@@ -40,6 +46,13 @@ public class Chest : MonoBehaviour, IInteractable
 
         IsOpened = false;
         animator.SetTrigger("Close");
+    }
+
+    public void ShowSymbol(bool show)
+    {
+        if (IsOpened) return;
+
+        interactionSymbol.SetActive(show);
     }
 
 }

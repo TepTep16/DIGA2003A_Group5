@@ -18,6 +18,11 @@ public class InterationDetector : MonoBehaviour
         if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {
             interactableInRange = interactable;
+
+            if (interactable is Chest chest)
+            {
+                chest.ShowSymbol(true);
+            }
         }
     }
 
@@ -28,6 +33,7 @@ public class InterationDetector : MonoBehaviour
             if (interactable is Chest chest)
             {
                 chest.CloseChest();
+                chest.ShowSymbol(false);
             }
 
             interactableInRange = null;

@@ -87,14 +87,15 @@ public class Player : MonoBehaviour
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
         if (Input.GetMouseButtonDown(0) && distToEnemy < 3)
         {
-            Enemy enemyScript = enemy.GetComponent<Enemy>();
+            
+            IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
 
             if (enemyScript != null)
             {
                 // Direction from player → enemy
                 Vector2 direction = (enemy.position - transform.position).normalized;
 
-                enemyScript.damageTakenEnemy(10, direction, 20f);
+                enemyScript.damageTaken(10, direction, 20f);
             }
         }
     }
@@ -123,7 +124,7 @@ public class Player : MonoBehaviour
     {
         Vector2 velocity = myBody.linearVelocity;
 
-        bool isMoving = velocity.magnitude > 8f;
+        bool isMoving = velocity.magnitude > 0.1f;
         anim.SetBool("IsMoving", isMoving);
 
         if (isMoving)

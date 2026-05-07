@@ -2,11 +2,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Basilisk : MonoBehaviour
+public class Basilisk : MonoBehaviour, IDamageable
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
-    public int health = 100;
+    public int health = 200;
 
     [SerializeField]
     private Slider healthSlider;
@@ -120,7 +120,7 @@ public class Basilisk : MonoBehaviour
         }
     }
 
-    public void damageTakenEnemy(int damage, Vector2 knockback, float force)
+    public void damageTaken(int damage, Vector2 knockback, float force)
     {
         health = health - damage;
         Debug.Log("Enemy Health: " + health);
@@ -185,5 +185,10 @@ public class Basilisk : MonoBehaviour
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
         }
+    }
+
+    public void TakeDamage(int damage, Vector2 knockback, float force)
+    {
+        throw new System.NotImplementedException();
     }
 }
