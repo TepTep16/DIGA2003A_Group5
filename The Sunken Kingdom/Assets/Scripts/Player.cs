@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
 
     private string attack_animation = "attack";
 
+    private InventoryManager inventoryManager;
     Enemy crab = new Enemy();
 
     //Used to check where the enemy is relative to the player
@@ -47,6 +48,7 @@ public class Player : MonoBehaviour
         playerMovement();
         playerCombat();
         playerAnimations();
+        inventorySelection();
     }
 
     private void Awake()
@@ -55,6 +57,7 @@ public class Player : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
     void playerMovement()
@@ -101,4 +104,33 @@ public class Player : MonoBehaviour
             anim.SetBool(attack_animation, true);
         }
     }
+
+    void inventorySelection()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            inventoryManager.UseItem(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            inventoryManager.UseItem(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            inventoryManager.UseItem(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            inventoryManager.UseItem(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            inventoryManager.UseItem(4);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            inventoryManager.UseItem(5);
+        }
+    }
+ 
 }
