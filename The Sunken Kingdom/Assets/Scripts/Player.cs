@@ -85,7 +85,7 @@ public class Player : MonoBehaviour
     void playerCombat()
     {
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if (Input.GetMouseButtonDown(0) && distToEnemy < 3)
+        if (Input.GetMouseButtonDown(0) && distToEnemy < 6)
         {
             
             IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
