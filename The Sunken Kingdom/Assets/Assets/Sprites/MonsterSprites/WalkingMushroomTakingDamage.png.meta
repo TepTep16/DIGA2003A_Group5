@@ -1,0 +1,793 @@
+fileFormatVersion: 2
+guid: be710127411d6d74a85f2a518812f28f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2837509822052189262
+    second: WalkingMushroomTakingDamage_0
+  - first:
+      213: -7479194545594826820
+    second: WalkingMushroomTakingDamage_1
+  - first:
+      213: 3948433545466407875
+    second: WalkingMushroomTakingDamage_2
+  - first:
+      213: 758723405547012108
+    second: WalkingMushroomTakingDamage_3
+  - first:
+      213: -7059169600113133916
+    second: WalkingMushroomTakingDamage_4
+  - first:
+      213: -9041016485052732066
+    second: WalkingMushroomTakingDamage_5
+  - first:
+      213: 2366917366933945373
+    second: WalkingMushroomTakingDamage_6
+  - first:
+      213: 4739939333268168196
+    second: WalkingMushroomTakingDamage_7
+  - first:
+      213: -8592682613797687760
+    second: WalkingMushroomTakingDamage_8
+  - first:
+      213: -6901221755204329890
+    second: WalkingMushroomTakingDamage_9
+  - first:
+      213: 505371595601714946
+    second: WalkingMushroomTakingDamage_10
+  - first:
+      213: -1284948696150382973
+    second: WalkingMushroomTakingDamage_11
+  - first:
+      213: 6364915121461897549
+    second: WalkingMushroomTakingDamage_12
+  - first:
+      213: -2952221100126434956
+    second: WalkingMushroomTakingDamage_13
+  - first:
+      213: 536306605316365130
+    second: WalkingMushroomTakingDamage_14
+  - first:
+      213: -8539248093206760419
+    second: WalkingMushroomTakingDamage_15
+  - first:
+      213: -5540625273283610742
+    second: WalkingMushroomTakingDamage_16
+  - first:
+      213: -1014216574142530470
+    second: WalkingMushroomTakingDamage_17
+  - first:
+      213: -3551515082356091632
+    second: WalkingMushroomTakingDamage_18
+  - first:
+      213: 5528320130124144644
+    second: WalkingMushroomTakingDamage_19
+  - first:
+      213: 2893434160844390442
+    second: WalkingMushroomTakingDamage_20
+  - first:
+      213: -7133987853887080615
+    second: WalkingMushroomTakingDamage_21
+  - first:
+      213: 6785883195359694666
+    second: WalkingMushroomTakingDamage_22
+  - first:
+      213: -4746053680805257720
+    second: WalkingMushroomTakingDamage_23
+  - first:
+      213: -3169996663769688968
+    second: WalkingMushroomTakingDamage_24
+  - first:
+      213: 5162520542680657055
+    second: WalkingMushroomTakingDamage_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 79
+        width: 402
+        height: 562
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bbb5e1c9d32f98d0800000000000000
+      internalID: -2837509822052189262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_1
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 579
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbff7cfef20943890800000000000000
+      internalID: -7479194545594826820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_2
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 79
+        width: 442
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbe2c0d367abc630800000000000000
+      internalID: 3948433545466407875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_3
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 579
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00876edae6878a00800000000000000
+      internalID: 758723405547012108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_4
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 569
+        width: 82
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a6350856aac80e90800000000000000
+      internalID: -7059169600113133916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_5
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 79
+        width: 472
+        height: 502
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d2bff786bd78280800000000000000
+      internalID: -9041016485052732066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_6
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 579
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1cfcc40ecaf8d020800000000000000
+      internalID: 2366917366933945373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_7
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 529
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40ed958d5b5a7c140800000000000000
+      internalID: 4739939333268168196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_8
+      rect:
+        serializedVersion: 2
+        x: 2069
+        y: 79
+        width: 442
+        height: 522
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03ee9e050b8a0c880800000000000000
+      internalID: -8592682613797687760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_9
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 489
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e19dcb06fe930a0800000000000000
+      internalID: -6901221755204329890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_10
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 509
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f9963e9c0730700800000000000000
+      internalID: 505371595601714946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_11
+      rect:
+        serializedVersion: 2
+        x: 1889
+        y: 499
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386ea5308f1fa2ee0800000000000000
+      internalID: -1284948696150382973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_12
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 539
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49af388498b45850800000000000000
+      internalID: 6364915121461897549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_13
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 479
+        width: 72
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4790d8c0d8a9707d0800000000000000
+      internalID: -2952221100126434956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_14
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 479
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bd39c1408517700800000000000000
+      internalID: 536306605316365130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_15
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 449
+        width: 62
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d14ba732a1f7e7980800000000000000
+      internalID: -8539248093206760419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_16
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 409
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a87f0606baebb13b0800000000000000
+      internalID: -5540625273283610742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_17
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 399
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5cbbec3667cce1f0800000000000000
+      internalID: -1014216574142530470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_18
+      rect:
+        serializedVersion: 2
+        x: 2529
+        y: 369
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01519bd69db76bec0800000000000000
+      internalID: -3551515082356091632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_19
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 289
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 400e0b83ed988bc40800000000000000
+      internalID: 5528320130124144644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_20
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 249
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a204c1a0a0b872820800000000000000
+      internalID: 2893434160844390442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_21
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 259
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 957fb1928dbfefc90800000000000000
+      internalID: -7133987853887080615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_22
+      rect:
+        serializedVersion: 2
+        x: 1869
+        y: 229
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4f05b220dc4c2e50800000000000000
+      internalID: 6785883195359694666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_23
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 199
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80edaaea251a22eb0800000000000000
+      internalID: -4746053680805257720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_24
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 229
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87495d464d8e104d0800000000000000
+      internalID: -3169996663769688968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomTakingDamage_25
+      rect:
+        serializedVersion: 2
+        x: 2539
+        y: 189
+        width: 52
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c2324d415f4a740800000000000000
+      internalID: 5162520542680657055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WalkingMushroomTakingDamage_0: -2837509822052189262
+      WalkingMushroomTakingDamage_1: -7479194545594826820
+      WalkingMushroomTakingDamage_10: 505371595601714946
+      WalkingMushroomTakingDamage_11: -1284948696150382973
+      WalkingMushroomTakingDamage_12: 6364915121461897549
+      WalkingMushroomTakingDamage_13: -2952221100126434956
+      WalkingMushroomTakingDamage_14: 536306605316365130
+      WalkingMushroomTakingDamage_15: -8539248093206760419
+      WalkingMushroomTakingDamage_16: -5540625273283610742
+      WalkingMushroomTakingDamage_17: -1014216574142530470
+      WalkingMushroomTakingDamage_18: -3551515082356091632
+      WalkingMushroomTakingDamage_19: 5528320130124144644
+      WalkingMushroomTakingDamage_2: 3948433545466407875
+      WalkingMushroomTakingDamage_20: 2893434160844390442
+      WalkingMushroomTakingDamage_21: -7133987853887080615
+      WalkingMushroomTakingDamage_22: 6785883195359694666
+      WalkingMushroomTakingDamage_23: -4746053680805257720
+      WalkingMushroomTakingDamage_24: -3169996663769688968
+      WalkingMushroomTakingDamage_25: 5162520542680657055
+      WalkingMushroomTakingDamage_3: 758723405547012108
+      WalkingMushroomTakingDamage_4: -7059169600113133916
+      WalkingMushroomTakingDamage_5: -9041016485052732066
+      WalkingMushroomTakingDamage_6: 2366917366933945373
+      WalkingMushroomTakingDamage_7: 4739939333268168196
+      WalkingMushroomTakingDamage_8: -8592682613797687760
+      WalkingMushroomTakingDamage_9: -6901221755204329890
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

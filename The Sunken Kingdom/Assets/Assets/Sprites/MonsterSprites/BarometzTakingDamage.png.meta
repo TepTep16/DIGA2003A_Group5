@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: cf5b6610a54281546906332a868a13b5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2886226993019882631
+    second: BarometzTakingDamage_0
+  - first:
+      213: -2826680507758468762
+    second: BarometzTakingDamage_1
+  - first:
+      213: -9112078726051438737
+    second: BarometzTakingDamage_2
+  - first:
+      213: 2982742904795785352
+    second: BarometzTakingDamage_3
+  - first:
+      213: 8525903362330088413
+    second: BarometzTakingDamage_4
+  - first:
+      213: -8669700087336911803
+    second: BarometzTakingDamage_5
+  - first:
+      213: -1426866917583829688
+    second: BarometzTakingDamage_6
+  - first:
+      213: -1602326933528178800
+    second: BarometzTakingDamage_7
+  - first:
+      213: 6394056578496060795
+    second: BarometzTakingDamage_8
+  - first:
+      213: -7055187139997725899
+    second: BarometzTakingDamage_9
+  - first:
+      213: -4272092155472289546
+    second: BarometzTakingDamage_10
+  - first:
+      213: 8311301344304039334
+    second: BarometzTakingDamage_11
+  - first:
+      213: -2894192701283073373
+    second: BarometzTakingDamage_12
+  - first:
+      213: -7248355322881715600
+    second: BarometzTakingDamage_13
+  - first:
+      213: -6788002636150646189
+    second: BarometzTakingDamage_14
+  - first:
+      213: -4832074386549073352
+    second: BarometzTakingDamage_15
+  - first:
+      213: -4198511917932192989
+    second: BarometzTakingDamage_16
+  - first:
+      213: 5700557448133847555
+    second: BarometzTakingDamage_17
+  - first:
+      213: 1355946062825698948
+    second: BarometzTakingDamage_18
+  - first:
+      213: -3572108154623301674
+    second: BarometzTakingDamage_19
+  - first:
+      213: -2214206600405851148
+    second: BarometzTakingDamage_20
+  - first:
+      213: 7270348934992431787
+    second: BarometzTakingDamage_21
+  - first:
+      213: 9208904366563300077
+    second: BarometzTakingDamage_22
+  - first:
+      213: -2884086712487521497
+    second: BarometzTakingDamage_23
+  - first:
+      213: 1920312613122317938
+    second: BarometzTakingDamage_24
+  - first:
+      213: 1398440876557677522
+    second: BarometzTakingDamage_25
+  - first:
+      213: 6728302916611484099
+    second: BarometzTakingDamage_26
+  - first:
+      213: -3743020055567457964
+    second: BarometzTakingDamage_27
+  - first:
+      213: 6865961673224759157
+    second: BarometzTakingDamage_28
+  - first:
+      213: 5687832364912702484
+    second: BarometzTakingDamage_29
+  - first:
+      213: -3592601748247443844
+    second: BarometzTakingDamage_30
+  - first:
+      213: 1282400137629907949
+    second: BarometzTakingDamage_31
+  - first:
+      213: -7628082599560286842
+    second: BarometzTakingDamage_32
+  - first:
+      213: 6900924628425241058
+    second: BarometzTakingDamage_33
+  - first:
+      213: -5198779125545640209
+    second: BarometzTakingDamage_34
+  - first:
+      213: 2881075372746294344
+    second: BarometzTakingDamage_35
+  - first:
+      213: -2725386836260398821
+    second: BarometzTakingDamage_36
+  - first:
+      213: -5376169191778508844
+    second: BarometzTakingDamage_37
+  - first:
+      213: -5229580982535260757
+    second: BarometzTakingDamage_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BarometzTakingDamage_0
+      rect:
+        serializedVersion: 2
+        x: 3719
+        y: 1569
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78c08148820fd0820800000000000000
+      internalID: 2886226993019882631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_1
+      rect:
+        serializedVersion: 2
+        x: 5319
+        y: 1559
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6612989fd0d95c8d0800000000000000
+      internalID: -2826680507758468762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 199
+        width: 1152
+        height: 1362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6f5f403da46b8180800000000000000
+      internalID: -9112078726051438737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_3
+      rect:
+        serializedVersion: 2
+        x: 1839
+        y: 199
+        width: 1192
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8886ba06ed4d46920800000000000000
+      internalID: 2982742904795785352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_4
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 1539
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd35ef49fe7125670800000000000000
+      internalID: 8525903362330088413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_5
+      rect:
+        serializedVersion: 2
+        x: 3439
+        y: 199
+        width: 1192
+        height: 1342
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54c3c1164b90fa780800000000000000
+      internalID: -8669700087336911803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_6
+      rect:
+        serializedVersion: 2
+        x: 3799
+        y: 1539
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 845c8ab2910c23ce0800000000000000
+      internalID: -1426866917583829688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_7
+      rect:
+        serializedVersion: 2
+        x: 5099
+        y: 199
+        width: 1152
+        height: 1362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09f0309b42463c9e0800000000000000
+      internalID: -1602326933528178800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_8
+      rect:
+        serializedVersion: 2
+        x: 6699
+        y: 199
+        width: 1152
+        height: 1362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7dd10bb4904cb850800000000000000
+      internalID: 6394056578496060795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_9
+      rect:
+        serializedVersion: 2
+        x: 3099
+        y: 929
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b08881da0f61e90800000000000000
+      internalID: -7055187139997725899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_10
+      rect:
+        serializedVersion: 2
+        x: 4729
+        y: 939
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f06751b1da76b4c0800000000000000
+      internalID: -4272092155472289546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_11
+      rect:
+        serializedVersion: 2
+        x: 6379
+        y: 959
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a50878998ca75370800000000000000
+      internalID: 8311301344304039334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_12
+      rect:
+        serializedVersion: 2
+        x: 3039
+        y: 889
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a28e708213c5d7d0800000000000000
+      internalID: -2894192701283073373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_13
+      rect:
+        serializedVersion: 2
+        x: 4659
+        y: 899
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072d2ddbc3ba86b90800000000000000
+      internalID: -7248355322881715600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_14
+      rect:
+        serializedVersion: 2
+        x: 6339
+        y: 889
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35a53d9119b2cc1a0800000000000000
+      internalID: -6788002636150646189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_15
+      rect:
+        serializedVersion: 2
+        x: 3119
+        y: 849
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a9a7562f501fcb0800000000000000
+      internalID: -4832074386549073352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_16
+      rect:
+        serializedVersion: 2
+        x: 4739
+        y: 839
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b5862c7a3ebb5c0800000000000000
+      internalID: -4198511917932192989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_17
+      rect:
+        serializedVersion: 2
+        x: 3079
+        y: 779
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30aa9b5dbc27c1f40800000000000000
+      internalID: 5700557448133847555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_18
+      rect:
+        serializedVersion: 2
+        x: 4719
+        y: 769
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 486b05192c941d210800000000000000
+      internalID: 1355946062825698948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_19
+      rect:
+        serializedVersion: 2
+        x: 6389
+        y: 719
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7e6682f825d6ec0800000000000000
+      internalID: -3572108154623301674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_20
+      rect:
+        serializedVersion: 2
+        x: 1799
+        y: 619
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3eb7b04de8541e0800000000000000
+      internalID: -2214206600405851148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_21
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 629
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: baa0d5f16d775e460800000000000000
+      internalID: 7270348934992431787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_22
+      rect:
+        serializedVersion: 2
+        x: 5009
+        y: 609
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de29c830bb99ccf70800000000000000
+      internalID: 9208904366563300077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_23
+      rect:
+        serializedVersion: 2
+        x: 1829
+        y: 579
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723d1c06a6aa9f7d0800000000000000
+      internalID: -2884086712487521497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_24
+      rect:
+        serializedVersion: 2
+        x: 4939
+        y: 599
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27e9bdab52256aa10800000000000000
+      internalID: 1920312613122317938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_25
+      rect:
+        serializedVersion: 2
+        x: 3409
+        y: 559
+        width: 32
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d33b966192486310800000000000000
+      internalID: 1398440876557677522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_26
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 459
+        width: 42
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c92ad5cadbbf5d50800000000000000
+      internalID: 6728302916611484099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_27
+      rect:
+        serializedVersion: 2
+        x: 4629
+        y: 449
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4512db0471f1e0cc0800000000000000
+      internalID: -3743020055567457964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_28
+      rect:
+        serializedVersion: 2
+        x: 1819
+        y: 419
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 577220ea3cbc84f50800000000000000
+      internalID: 6865961673224759157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_29
+      rect:
+        serializedVersion: 2
+        x: 3019
+        y: 399
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4147794866d3fee40800000000000000
+      internalID: 5687832364912702484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_30
+      rect:
+        serializedVersion: 2
+        x: 4669
+        y: 399
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7683409eb3842ec0800000000000000
+      internalID: -3592601748247443844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_31
+      rect:
+        serializedVersion: 2
+        x: 4919
+        y: 429
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: debb75771200cc110800000000000000
+      internalID: 1282400137629907949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_32
+      rect:
+        serializedVersion: 2
+        x: 1809
+        y: 379
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68deedf7a4b932690800000000000000
+      internalID: -7628082599560286842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_33
+      rect:
+        serializedVersion: 2
+        x: 3399
+        y: 389
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1f70b036205cf50800000000000000
+      internalID: 6900924628425241058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_34
+      rect:
+        serializedVersion: 2
+        x: 6309
+        y: 369
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feed22cfde93ad7b0800000000000000
+      internalID: -5198779125545640209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_35
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 329
+        width: 42
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8444ba379c2abf720800000000000000
+      internalID: 2881075372746294344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_36
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 319
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b195c25bc1b7d2ad0800000000000000
+      internalID: -2725386836260398821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_37
+      rect:
+        serializedVersion: 2
+        x: 5019
+        y: 339
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4df94afaa920465b0800000000000000
+      internalID: -5376169191778508844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BarometzTakingDamage_38
+      rect:
+        serializedVersion: 2
+        x: 4899
+        y: 279
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5f8dbcdcbcc67b0800000000000000
+      internalID: -5229580982535260757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BarometzTakingDamage_0: 2886226993019882631
+      BarometzTakingDamage_1: -2826680507758468762
+      BarometzTakingDamage_10: -4272092155472289546
+      BarometzTakingDamage_11: 8311301344304039334
+      BarometzTakingDamage_12: -2894192701283073373
+      BarometzTakingDamage_13: -7248355322881715600
+      BarometzTakingDamage_14: -6788002636150646189
+      BarometzTakingDamage_15: -4832074386549073352
+      BarometzTakingDamage_16: -4198511917932192989
+      BarometzTakingDamage_17: 5700557448133847555
+      BarometzTakingDamage_18: 1355946062825698948
+      BarometzTakingDamage_19: -3572108154623301674
+      BarometzTakingDamage_2: -9112078726051438737
+      BarometzTakingDamage_20: -2214206600405851148
+      BarometzTakingDamage_21: 7270348934992431787
+      BarometzTakingDamage_22: 9208904366563300077
+      BarometzTakingDamage_23: -2884086712487521497
+      BarometzTakingDamage_24: 1920312613122317938
+      BarometzTakingDamage_25: 1398440876557677522
+      BarometzTakingDamage_26: 6728302916611484099
+      BarometzTakingDamage_27: -3743020055567457964
+      BarometzTakingDamage_28: 6865961673224759157
+      BarometzTakingDamage_29: 5687832364912702484
+      BarometzTakingDamage_3: 2982742904795785352
+      BarometzTakingDamage_30: -3592601748247443844
+      BarometzTakingDamage_31: 1282400137629907949
+      BarometzTakingDamage_32: -7628082599560286842
+      BarometzTakingDamage_33: 6900924628425241058
+      BarometzTakingDamage_34: -5198779125545640209
+      BarometzTakingDamage_35: 2881075372746294344
+      BarometzTakingDamage_36: -2725386836260398821
+      BarometzTakingDamage_37: -5376169191778508844
+      BarometzTakingDamage_38: -5229580982535260757
+      BarometzTakingDamage_4: 8525903362330088413
+      BarometzTakingDamage_5: -8669700087336911803
+      BarometzTakingDamage_6: -1426866917583829688
+      BarometzTakingDamage_7: -1602326933528178800
+      BarometzTakingDamage_8: 6394056578496060795
+      BarometzTakingDamage_9: -7055187139997725899
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

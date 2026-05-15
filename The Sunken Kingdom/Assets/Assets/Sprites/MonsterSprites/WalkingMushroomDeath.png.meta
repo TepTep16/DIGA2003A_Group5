@@ -1,0 +1,1105 @@
+fileFormatVersion: 2
+guid: 022d16c20a821e8459c71b0cca48c1c4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4898381491428095096
+    second: WalkingMushroomDeath_0
+  - first:
+      213: -6743394400846941959
+    second: WalkingMushroomDeath_1
+  - first:
+      213: -2286371219704117575
+    second: WalkingMushroomDeath_2
+  - first:
+      213: 2691903713889854663
+    second: WalkingMushroomDeath_3
+  - first:
+      213: 1319086676287614334
+    second: WalkingMushroomDeath_4
+  - first:
+      213: -2174823574571609658
+    second: WalkingMushroomDeath_5
+  - first:
+      213: -4546685125417163236
+    second: WalkingMushroomDeath_6
+  - first:
+      213: 2468375728409441186
+    second: WalkingMushroomDeath_7
+  - first:
+      213: 4996523104706269565
+    second: WalkingMushroomDeath_8
+  - first:
+      213: -8704487042782372388
+    second: WalkingMushroomDeath_9
+  - first:
+      213: -3616016296937937618
+    second: WalkingMushroomDeath_10
+  - first:
+      213: -6592799360513904621
+    second: WalkingMushroomDeath_11
+  - first:
+      213: 3713861326777768621
+    second: WalkingMushroomDeath_12
+  - first:
+      213: 7424594380797744162
+    second: WalkingMushroomDeath_13
+  - first:
+      213: -6341929036367184495
+    second: WalkingMushroomDeath_14
+  - first:
+      213: -1402284779440967099
+    second: WalkingMushroomDeath_15
+  - first:
+      213: 3854659094910562859
+    second: WalkingMushroomDeath_16
+  - first:
+      213: -741767662959410730
+    second: WalkingMushroomDeath_17
+  - first:
+      213: -1193459909977207716
+    second: WalkingMushroomDeath_18
+  - first:
+      213: -2095105918622248446
+    second: WalkingMushroomDeath_19
+  - first:
+      213: 8559271619001824410
+    second: WalkingMushroomDeath_20
+  - first:
+      213: 2695593258073168719
+    second: WalkingMushroomDeath_21
+  - first:
+      213: -2367745668485562731
+    second: WalkingMushroomDeath_22
+  - first:
+      213: 4975368852232103112
+    second: WalkingMushroomDeath_23
+  - first:
+      213: -3413252599498175187
+    second: WalkingMushroomDeath_24
+  - first:
+      213: -3463276227053717930
+    second: WalkingMushroomDeath_25
+  - first:
+      213: -3175602139845227660
+    second: WalkingMushroomDeath_26
+  - first:
+      213: 8831414949854592758
+    second: WalkingMushroomDeath_27
+  - first:
+      213: -2771164476093648138
+    second: WalkingMushroomDeath_28
+  - first:
+      213: 2533988824618579557
+    second: WalkingMushroomDeath_29
+  - first:
+      213: -1011501269577302380
+    second: WalkingMushroomDeath_30
+  - first:
+      213: 1620329750214916206
+    second: WalkingMushroomDeath_31
+  - first:
+      213: 6814838803120338178
+    second: WalkingMushroomDeath_32
+  - first:
+      213: 3193178659164375335
+    second: WalkingMushroomDeath_33
+  - first:
+      213: -632516956257324650
+    second: WalkingMushroomDeath_34
+  - first:
+      213: -8548634255655932031
+    second: WalkingMushroomDeath_35
+  - first:
+      213: 7903840678066554889
+    second: WalkingMushroomDeath_36
+  - first:
+      213: -1076030680591066085
+    second: WalkingMushroomDeath_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_0
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 539
+        width: 122
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8747be2830c8af340800000000000000
+      internalID: 4898381491428095096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_1
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 559
+        width: 192
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0f82d3586aa62a0800000000000000
+      internalID: -6743394400846941959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_2
+      rect:
+        serializedVersion: 2
+        x: 2149
+        y: 619
+        width: 82
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b60cd84d7d2540e0800000000000000
+      internalID: -2286371219704117575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_3
+      rect:
+        serializedVersion: 2
+        x: 2319
+        y: 609
+        width: 102
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c4a5fb5a209b5520800000000000000
+      internalID: 2691903713889854663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_4
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 639
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7de210e7565e4210800000000000000
+      internalID: 1319086676287614334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_5
+      rect:
+        serializedVersion: 2
+        x: 3069
+        y: 609
+        width: 82
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1938c4b7971d1e0800000000000000
+      internalID: -2174823574571609658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_6
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 149
+        width: 402
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1625f1c7fde6e0c0800000000000000
+      internalID: -4546685125417163236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_7
+      rect:
+        serializedVersion: 2
+        x: 1499
+        y: 429
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a37a00a5ae614220800000000000000
+      internalID: 2468375728409441186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_8
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 479
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d719c008a47375540800000000000000
+      internalID: 4996523104706269565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_9
+      rect:
+        serializedVersion: 2
+        x: 1779
+        y: 449
+        width: 112
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd57f62723733780800000000000000
+      internalID: -8704487042782372388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_10
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 509
+        width: 122
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e25adfe165451ddc0800000000000000
+      internalID: -3616016296937937618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_11
+      rect:
+        serializedVersion: 2
+        x: 2109
+        y: 429
+        width: 102
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 310752969eba184a0800000000000000
+      internalID: -6592799360513904621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_12
+      rect:
+        serializedVersion: 2
+        x: 2349
+        y: 499
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daa56a723394a8330800000000000000
+      internalID: 3713861326777768621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_13
+      rect:
+        serializedVersion: 2
+        x: 2619
+        y: 479
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2249fcc8045790760800000000000000
+      internalID: 7424594380797744162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_14
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 459
+        width: 92
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19d39947421fcf7a0800000000000000
+      internalID: -6341929036367184495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_15
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 249
+        width: 402
+        height: 222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 542fb773c651a8ce0800000000000000
+      internalID: -1402284779440967099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_16
+      rect:
+        serializedVersion: 2
+        x: 1399
+        y: 389
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b227f5226008e7530800000000000000
+      internalID: 3854659094910562859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_17
+      rect:
+        serializedVersion: 2
+        x: 1509
+        y: 159
+        width: 302
+        height: 302
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d1ce679d36b4b5f0800000000000000
+      internalID: -741767662959410730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_18
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 369
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5c832cf88aff6fe0800000000000000
+      internalID: -1193459909977207716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_19
+      rect:
+        serializedVersion: 2
+        x: 2329
+        y: 289
+        width: 122
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202d3b17440bce2e0800000000000000
+      internalID: -2095105918622248446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_20
+      rect:
+        serializedVersion: 2
+        x: 2489
+        y: 419
+        width: 102
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94bfa24034a8c670800000000000000
+      internalID: 8559271619001824410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_21
+      rect:
+        serializedVersion: 2
+        x: 2729
+        y: 359
+        width: 72
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b936e49cba86520800000000000000
+      internalID: 2695593258073168719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_22
+      rect:
+        serializedVersion: 2
+        x: 3169
+        y: 369
+        width: 62
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59eb27ffbd3142fd0800000000000000
+      internalID: -2367745668485562731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_23
+      rect:
+        serializedVersion: 2
+        x: 1759
+        y: 279
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c466d74c9f0c0540800000000000000
+      internalID: 4975368852232103112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_24
+      rect:
+        serializedVersion: 2
+        x: 2119
+        y: 259
+        width: 152
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d8b3e48d0b1a0d0800000000000000
+      internalID: -3413252599498175187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_25
+      rect:
+        serializedVersion: 2
+        x: 2479
+        y: 259
+        width: 82
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6567867ee98ffefc0800000000000000
+      internalID: -3463276227053717930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_26
+      rect:
+        serializedVersion: 2
+        x: 2609
+        y: 329
+        width: 32
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47b0e8acdaefde3d0800000000000000
+      internalID: -3175602139845227660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_27
+      rect:
+        serializedVersion: 2
+        x: 2979
+        y: 259
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fe38262b1d7f8a70800000000000000
+      internalID: 8831414949854592758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_28
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 69
+        width: 142
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f2b14c5798da89d0800000000000000
+      internalID: -2771164476093648138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_29
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 89
+        width: 132
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 566333c09698a2320800000000000000
+      internalID: 2533988824618579557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_30
+      rect:
+        serializedVersion: 2
+        x: 1989
+        y: 79
+        width: 132
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49efcf854fc66f1f0800000000000000
+      internalID: -1011501269577302380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_31
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 139
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68be8ca2519c7610800000000000000
+      internalID: 1620329750214916206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_32
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 69
+        width: 132
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 205398de8cb239e50800000000000000
+      internalID: 6814838803120338178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_33
+      rect:
+        serializedVersion: 2
+        x: 2759
+        y: 219
+        width: 112
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729c9d38213705c20800000000000000
+      internalID: 3193178659164375335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_34
+      rect:
+        serializedVersion: 2
+        x: 3159
+        y: 219
+        width: 72
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 691fed3fd29d837f0800000000000000
+      internalID: -632516956257324650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_35
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 49
+        width: 142
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18f64e4ef662d5980800000000000000
+      internalID: -8548634255655932031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_36
+      rect:
+        serializedVersion: 2
+        x: 2879
+        y: 89
+        width: 102
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9088079683510bd60800000000000000
+      internalID: 7903840678066554889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkingMushroomDeath_37
+      rect:
+        serializedVersion: 2
+        x: 3029
+        y: 59
+        width: 132
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c92fb0ccb2111f0800000000000000
+      internalID: -1076030680591066085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      WalkingMushroomDeath_0: 4898381491428095096
+      WalkingMushroomDeath_1: -6743394400846941959
+      WalkingMushroomDeath_10: -3616016296937937618
+      WalkingMushroomDeath_11: -6592799360513904621
+      WalkingMushroomDeath_12: 3713861326777768621
+      WalkingMushroomDeath_13: 7424594380797744162
+      WalkingMushroomDeath_14: -6341929036367184495
+      WalkingMushroomDeath_15: -1402284779440967099
+      WalkingMushroomDeath_16: 3854659094910562859
+      WalkingMushroomDeath_17: -741767662959410730
+      WalkingMushroomDeath_18: -1193459909977207716
+      WalkingMushroomDeath_19: -2095105918622248446
+      WalkingMushroomDeath_2: -2286371219704117575
+      WalkingMushroomDeath_20: 8559271619001824410
+      WalkingMushroomDeath_21: 2695593258073168719
+      WalkingMushroomDeath_22: -2367745668485562731
+      WalkingMushroomDeath_23: 4975368852232103112
+      WalkingMushroomDeath_24: -3413252599498175187
+      WalkingMushroomDeath_25: -3463276227053717930
+      WalkingMushroomDeath_26: -3175602139845227660
+      WalkingMushroomDeath_27: 8831414949854592758
+      WalkingMushroomDeath_28: -2771164476093648138
+      WalkingMushroomDeath_29: 2533988824618579557
+      WalkingMushroomDeath_3: 2691903713889854663
+      WalkingMushroomDeath_30: -1011501269577302380
+      WalkingMushroomDeath_31: 1620329750214916206
+      WalkingMushroomDeath_32: 6814838803120338178
+      WalkingMushroomDeath_33: 3193178659164375335
+      WalkingMushroomDeath_34: -632516956257324650
+      WalkingMushroomDeath_35: -8548634255655932031
+      WalkingMushroomDeath_36: 7903840678066554889
+      WalkingMushroomDeath_37: -1076030680591066085
+      WalkingMushroomDeath_4: 1319086676287614334
+      WalkingMushroomDeath_5: -2174823574571609658
+      WalkingMushroomDeath_6: -4546685125417163236
+      WalkingMushroomDeath_7: 2468375728409441186
+      WalkingMushroomDeath_8: 4996523104706269565
+      WalkingMushroomDeath_9: -8704487042782372388
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
