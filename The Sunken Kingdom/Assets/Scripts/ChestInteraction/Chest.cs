@@ -36,6 +36,11 @@ public class Chest : MonoBehaviour, IInteractable
         IsOpened = true;
         animator.SetTrigger("Open");
         // will add dropping item later on
+        if (itemPrefab)
+        {
+            GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.down, Quaternion.identity);
+            //space to possibly add bounce effect on dropped item 
+        }
 
         interactionSymbol.SetActive(false);
     }
