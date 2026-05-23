@@ -1,10 +1,16 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
     public int health = 100;
+
+    [SerializeField]
+    private Slider healthSlider;
+    private int maxHealth; 
 
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
@@ -36,10 +42,18 @@ public class Enemy : MonoBehaviour
 
     private float attackTimer = 0f;
 
+    private Animator anim;
+    private Vector2 lastMove; // will keep the last direction moved for the attack/idle 
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        maxHealth = health;
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = health;
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +68,7 @@ public class Enemy : MonoBehaviour
                 isKnockedBack = false;
             }
 
+            UpdateAnimation(); 
             return; // stop chasing while knocked back
         }
 
@@ -82,24 +97,41 @@ public class Enemy : MonoBehaviour
         {
             myBody.linearVelocity = Vector2.zero;
         }
+
+        UpdateAnimation();
     }
 
     private void Awake()
     {
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+
+        anim = GetComponent<Animator>(); 
     }
 
     private void chasePlayer()
     {
         Vector2 direction = (player.position - transform.position).normalized;
         myBody.linearVelocity = direction * moveForce;
+
+        if (direction != Vector2.zero)
+        {
+            lastMove = direction;
+        }
     }
 
-    public void damageTakenEnemy(int damage, Vector2 knockback, float force)
+    public void damageTaken(int damage, Vector2 knockback, float force)
     {
         health = health - damage;
         Debug.Log("Enemy Health: " + health);
+
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+        }
+
+        anim.SetTrigger("Hit"); //will play the damage taking animation
+
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
@@ -114,6 +146,8 @@ public class Enemy : MonoBehaviour
 
     void AttackPlayer()
     {
+        anim.SetTrigger("Attack");
+
         // Stop moving while attacking
         myBody.linearVelocity = Vector2.zero;
 
@@ -132,5 +166,29 @@ public class Enemy : MonoBehaviour
                 playerScript.TakeDamage(10, direction, 10f);
             }
         }
+    }
+
+    void UpdateAnimation()
+    {
+        Vector2 velocity = myBody.linearVelocity;
+
+        bool isMoving = velocity.magnitude > 0.1f;
+        anim.SetBool("IsMoving", isMoving);
+
+        if (isMoving)
+        {
+            anim.SetFloat("MoveX", velocity.x);
+            anim.SetFloat("MoveY", velocity.y);
+        }
+        else
+        {
+            anim.SetFloat("MoveX", lastMove.x);
+            anim.SetFloat("MoveY", lastMove.y);
+        }
+    }
+
+    public void TakeDamage(int damage, Vector2 knockback, float force)
+    {
+        throw new System.NotImplementedException();
     }
 }

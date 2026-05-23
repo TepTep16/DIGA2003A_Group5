@@ -1,0 +1,587 @@
+fileFormatVersion: 2
+guid: 988ab88b6ef7f5c4d8a1d3913d8be0ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8616027232467402087
+    second: BasiliskAllSpriteSheet_0
+  - first:
+      213: -8623216682456683203
+    second: BasiliskAllSpriteSheet_1
+  - first:
+      213: 1344617253785220314
+    second: BasiliskAllSpriteSheet_2
+  - first:
+      213: -3768655079226748384
+    second: BasiliskAllSpriteSheet_3
+  - first:
+      213: -3141206261847060441
+    second: BasiliskAllSpriteSheet_4
+  - first:
+      213: -7196089157713804231
+    second: BasiliskAllSpriteSheet_5
+  - first:
+      213: 4438066690136184383
+    second: BasiliskAllSpriteSheet_6
+  - first:
+      213: -6349992519281123239
+    second: BasiliskAllSpriteSheet_7
+  - first:
+      213: 865970287860158415
+    second: BasiliskAllSpriteSheet_8
+  - first:
+      213: 6241871143433623945
+    second: BasiliskAllSpriteSheet_9
+  - first:
+      213: -2515666898714290495
+    second: BasiliskAllSpriteSheet_10
+  - first:
+      213: -1517591610548276057
+    second: BasiliskAllSpriteSheet_11
+  - first:
+      213: 5486009118902909142
+    second: BasiliskAllSpriteSheet_12
+  - first:
+      213: -7141987727879909751
+    second: BasiliskAllSpriteSheet_13
+  - first:
+      213: -4527768046534990761
+    second: BasiliskAllSpriteSheet_14
+  - first:
+      213: -4950555298094828333
+    second: BasiliskAllSpriteSheet_15
+  - first:
+      213: -8932696792632877312
+    second: BasiliskAllSpriteSheet_16
+  - first:
+      213: -5500021927246998749
+    second: BasiliskAllSpriteSheet_17
+  - first:
+      213: -8051167059406680496
+    second: BasiliskAllSpriteSheet_18
+  - first:
+      213: 2330778009441962830
+    second: BasiliskAllSpriteSheet_19
+  - first:
+      213: -6155209055293451095
+    second: BasiliskAllSpriteSheet_20
+  - first:
+      213: 8786880983613960570
+    second: BasiliskAllSpriteSheet_21
+  - first:
+      213: 8979431925928506066
+    second: BasiliskAllSpriteSheet_22
+  - first:
+      213: 2690716806695490257
+    second: BasiliskAllSpriteSheet_23
+  - first:
+      213: -4097270415289117411
+    second: BasiliskAllSpriteSheet_24
+  - first:
+      213: 1729702669175909547
+    second: BasiliskAllSpriteSheet_25
+  - first:
+      213: 3294817784168487344
+    second: BasiliskAllSpriteSheet_26
+  - first:
+      213: 7749277541108717718
+    second: BasiliskAllSpriteSheet_27
+  - first:
+      213: 6168362127350932113
+    second: BasiliskAllSpriteSheet_28
+  - first:
+      213: 2484412671841805399
+    second: BasiliskAllSpriteSheet_29
+  - first:
+      213: 6507321131579604676
+    second: BasiliskAllSpriteSheet_30
+  - first:
+      213: -8608621453061012275
+    second: BasiliskAllSpriteSheet_31
+  - first:
+      213: 69439885422764173
+    second: BasiliskAllSpriteSheet_32
+  - first:
+      213: 5219539679892834270
+    second: BasiliskAllSpriteSheet_33
+  - first:
+      213: 6244926903048992948
+    second: BasiliskAllSpriteSheet_34
+  - first:
+      213: 1271814751748828904
+    second: BasiliskAllSpriteSheet_35
+  - first:
+      213: -3494049855984199961
+    second: BasiliskAllSpriteSheet_36
+  - first:
+      213: -630844636160591871
+    second: BasiliskAllSpriteSheet_37
+  - first:
+      213: -3185624278547729298
+    second: BasiliskAllSpriteSheet_38
+  - first:
+      213: 7159709069199747911
+    second: BasiliskAllSpriteSheet_39
+  - first:
+      213: 4743505217152093673
+    second: BasiliskAllSpriteSheet_40
+  - first:
+      213: 8277618183871693161
+    second: BasiliskAllSpriteSheet_41
+  - first:
+      213: 1097295959348079385
+    second: BasiliskAllSpriteSheet_42
+  - first:
+      213: 6519924960424554259
+    second: BasiliskAllSpriteSheet_43
+  - first:
+      213: 8227807041945764043
+    second: BasiliskAllSpriteSheet_44
+  - first:
+      213: 6248096047577675636
+    second: BasiliskAllSpriteSheet_45
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 5019
+        width: 922
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99240b9b1e8bd6880800000000000000
+      internalID: -8616027232467402087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 5009
+        width: 932
+        height: 1202
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3d62f47d1e245880800000000000000
+      internalID: -8623216682456683203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 5009
+        width: 922
+        height: 1182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4babaa44a09a210800000000000000
+      internalID: 1344617253785220314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 5119
+        y: 5009
+        width: 932
+        height: 1192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 022d7b13c2c03bbc0800000000000000
+      internalID: -3768655079226748384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 3409
+        width: 922
+        height: 1182
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7209f543c813864d0800000000000000
+      internalID: -3141206261847060441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1969
+        y: 3409
+        width: 922
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 934cd6e990b522c90800000000000000
+      internalID: -7196089157713804231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 3579
+        y: 3409
+        width: 922
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f369f0b042e279d30800000000000000
+      internalID: 4438066690136184383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 5149
+        y: 3419
+        width: 982
+        height: 1172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9506cd9827b40e7a0800000000000000
+      internalID: -6349992519281123239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 1809
+        width: 962
+        height: 1152
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d8f2ce3a38322c40800000000000000
+      internalID: 5486009118902909142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 1769
+        y: 1809
+        width: 1092
+        height: 1112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98ec489500092ec90800000000000000
+      internalID: -7141987727879909751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 1819
+        width: 1283
+        height: 1198
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 754eae863f22a21c0800000000000000
+      internalID: -4527768046534990761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 4833
+        y: 1809
+        width: 1510
+        height: 1372
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00f98d4389fa80480800000000000000
+      internalID: -8932696792632877312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BasiliskAllSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 219
+        width: 1559
+        height: 1361
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e69e821b24a28fc0800000000000000
+      internalID: -3494049855984199961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c1761ece181f69f4aa26b0270cc087b2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BasiliskAllSpriteSheet_0: -8616027232467402087
+      BasiliskAllSpriteSheet_1: -8623216682456683203
+      BasiliskAllSpriteSheet_10: -2515666898714290495
+      BasiliskAllSpriteSheet_11: -1517591610548276057
+      BasiliskAllSpriteSheet_12: 5486009118902909142
+      BasiliskAllSpriteSheet_13: -7141987727879909751
+      BasiliskAllSpriteSheet_14: -4527768046534990761
+      BasiliskAllSpriteSheet_15: -4950555298094828333
+      BasiliskAllSpriteSheet_16: -8932696792632877312
+      BasiliskAllSpriteSheet_17: -5500021927246998749
+      BasiliskAllSpriteSheet_18: -8051167059406680496
+      BasiliskAllSpriteSheet_19: 2330778009441962830
+      BasiliskAllSpriteSheet_2: 1344617253785220314
+      BasiliskAllSpriteSheet_20: -6155209055293451095
+      BasiliskAllSpriteSheet_21: 8786880983613960570
+      BasiliskAllSpriteSheet_22: 8979431925928506066
+      BasiliskAllSpriteSheet_23: 2690716806695490257
+      BasiliskAllSpriteSheet_24: -4097270415289117411
+      BasiliskAllSpriteSheet_25: 1729702669175909547
+      BasiliskAllSpriteSheet_26: 3294817784168487344
+      BasiliskAllSpriteSheet_27: 7749277541108717718
+      BasiliskAllSpriteSheet_28: 6168362127350932113
+      BasiliskAllSpriteSheet_29: 2484412671841805399
+      BasiliskAllSpriteSheet_3: -3768655079226748384
+      BasiliskAllSpriteSheet_30: 6507321131579604676
+      BasiliskAllSpriteSheet_31: -8608621453061012275
+      BasiliskAllSpriteSheet_32: 69439885422764173
+      BasiliskAllSpriteSheet_33: 5219539679892834270
+      BasiliskAllSpriteSheet_34: 6244926903048992948
+      BasiliskAllSpriteSheet_35: 1271814751748828904
+      BasiliskAllSpriteSheet_36: -3494049855984199961
+      BasiliskAllSpriteSheet_37: -630844636160591871
+      BasiliskAllSpriteSheet_38: -3185624278547729298
+      BasiliskAllSpriteSheet_39: 7159709069199747911
+      BasiliskAllSpriteSheet_4: -3141206261847060441
+      BasiliskAllSpriteSheet_40: 4743505217152093673
+      BasiliskAllSpriteSheet_41: 8277618183871693161
+      BasiliskAllSpriteSheet_42: 1097295959348079385
+      BasiliskAllSpriteSheet_43: 6519924960424554259
+      BasiliskAllSpriteSheet_44: 8227807041945764043
+      BasiliskAllSpriteSheet_45: 6248096047577675636
+      BasiliskAllSpriteSheet_5: -7196089157713804231
+      BasiliskAllSpriteSheet_6: 4438066690136184383
+      BasiliskAllSpriteSheet_7: -6349992519281123239
+      BasiliskAllSpriteSheet_8: 865970287860158415
+      BasiliskAllSpriteSheet_9: 6241871143433623945
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
