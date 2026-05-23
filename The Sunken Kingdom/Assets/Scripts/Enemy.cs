@@ -45,6 +45,12 @@ public class Enemy : MonoBehaviour, IDamageable
     private Animator anim;
     private Vector2 lastMove; // will keep the last direction moved for the attack/idle 
 
+    public AudioClip hitSound;
+    private AudioSource audioSource;
+
+    public AudioClip deathSound;
+    private bool isDead = false;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -59,6 +65,11 @@ public class Enemy : MonoBehaviour, IDamageable
     // Update is called once per frame
     void Update()
     {
+        if (isDead)
+        {
+            return;
+        }
+
         if (isKnockedBack == true)
         {
             knockbackTimer = knockbackTimer - Time.deltaTime;
@@ -106,7 +117,9 @@ public class Enemy : MonoBehaviour, IDamageable
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
 
-        anim = GetComponent<Animator>(); 
+        anim = GetComponent<Animator>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void chasePlayer()
@@ -122,6 +135,8 @@ public class Enemy : MonoBehaviour, IDamageable
 
     public void damageTaken(int damage, Vector2 knockback, float force)
     {
+        if (isDead) return;
+
         health = health - damage;
         Debug.Log("Enemy Health: " + health);
 
@@ -132,15 +147,20 @@ public class Enemy : MonoBehaviour, IDamageable
 
         anim.SetTrigger("Hit"); //will play the damage taking animation
 
+        if (hitSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(hitSound); 
+        }
+
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
 
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
-            enemy.SetActive(false);
+            Die();
         }
     }
 
@@ -190,5 +210,27 @@ public class Enemy : MonoBehaviour, IDamageable
     public void TakeDamage(int damage, Vector2 knockback, float force)
     {
         throw new System.NotImplementedException();
+    }
+
+    private void Die()
+    {
+        isDead = true;
+
+        myBody.linearVelocity = Vector2.zero;
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null)
+        {
+            col.enabled = false;
+        }
+
+        anim.SetTrigger("Die");
+
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+
+        Destroy(gameObject, 1.5f);
     }
 }
