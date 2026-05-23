@@ -19,13 +19,13 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    public void AddItem(string itemName, int quantity, Sprite itemSprite)
+    public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemTag)
     {
         for(int i = 0; i < itemSlot.Length; i++)
         {
             if (itemSlot[i].isFull == false)
             {
-                itemSlot[i].AddItem(itemName, quantity, itemSprite);
+                itemSlot[i].AddItem(itemName, quantity, itemSprite, itemTag);
                 return;
             }
         }
@@ -50,15 +50,24 @@ public class InventoryManager : MonoBehaviour
         {
             player.health = Mathf.Min(player.health + 30, 100);  // heal, capped at 100
             Debug.Log("Used Health Potion. HP: " + player.health);
+            slot.itemTag = "Consumable";
+            slot.gameObject.tag = "Consumable";
         }
         else if(slot.itemName == "Weapon")
         {
             Debug.Log("Weapon is now equipped");
+            slot.itemTag = "Weapon";
+            slot.gameObject.tag = "Weapon";
         }
-            // Add more items here with else if, e.g.:
-            // else if (slot.itemName == "SpeedBoost")
-
+        else if(slot.itemName == "List")
+        {
+            slot.itemTag = "List";
+            slot.gameObject.tag = "List";
+        }
+        if (slot.itemTag != "Weapon" && slot.itemTag != "List")
+        {
             slot.ClearSlot();   // remove the item after use
+        }
     }
 
 

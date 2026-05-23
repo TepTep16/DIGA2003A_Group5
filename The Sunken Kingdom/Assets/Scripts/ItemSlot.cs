@@ -10,16 +10,18 @@ public class ItemSlot : MonoBehaviour
     public int quantity;
     public Sprite itemSprite;
     public bool isFull;
+    public string itemTag;  // This stores the tag of the picked-up item
 
     //Item Slot - displays the slot image
     [SerializeField]
     private Image itemImage;
 
-    public void AddItem(string itemName, int quantity, Sprite itemSprite)   //Adds an object to a slot in the inventory bar.
+    public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemTag)   //Adds an object to a slot in the inventory bar.
     {
         this.itemName = itemName;
         this.quantity = quantity;
         this.itemSprite = itemSprite;
+        this.itemTag = itemTag;
         isFull = true;                  //Item is in the slot
 
         itemImage.sprite = itemSprite;
@@ -31,6 +33,7 @@ public class ItemSlot : MonoBehaviour
         itemName = "";
         quantity = 0;
         itemSprite = null;
+        itemTag = "";
         isFull = false;
 
         itemImage.sprite = null;         // removes the icon from the UI.
