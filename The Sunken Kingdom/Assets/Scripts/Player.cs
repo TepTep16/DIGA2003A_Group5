@@ -84,6 +84,11 @@ public class Player : MonoBehaviour
 
     void playerCombat()
     {
+        if (enemy == null)
+        {
+            return;
+        }
+
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
         if (Input.GetMouseButtonDown(0) && distToEnemy < 6)
         {
