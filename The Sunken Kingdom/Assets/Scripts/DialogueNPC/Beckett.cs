@@ -14,6 +14,6 @@ public class Beckett : NPC, ITalkable
     public void Talk(DialogueText dialogueText)
     {
         //start conversation
-        dialogueController.DisplayNextParagraph(dialogueText);
+        dialogueController.DisplayNextLine(dialogueText);
     }
 }

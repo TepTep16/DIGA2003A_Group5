@@ -12,11 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5429bc165bef07d449530c7a07048dbd, type: 3}
   m_Name: Beckett Conversation
   m_EditorClassIdentifier: Assembly-CSharp::DialogueText
-  speakerName: Beckett
-  speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
-  paragraphs:
-  - Hey Cyrus. Looks like your big brother got himself into some trouble..heh...
-  - I'm going to need your help.
-  - I've given you a list, its got all the things you need to help me get better.
-  - I know I can count on you Cyrus.
-  - Goodluck lil' brother.
+  conversationLines:
+  - speakerName: Beckett
+    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    paragraphs:
+    - Hey Cyrus, looks like your brother got himself into some trouble..heh...
+  - speakerName: Cyrus
+    speakerPortrait: {fileID: 2450429325863574256, guid: 4811918352dab79459d2ab44a237fc5b, type: 3}
+    paragraphs:
+    - Beckett?! What happened to you man?
+  - speakerName: Beckett
+    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    paragraphs:
+    - Some crazy looking chicken monster attacked me..
+    - Look man, I'm gonna need your help here.
+    - It's time for you to step up Cyrus.
+  - speakerName: Cyrus
+    speakerPortrait: {fileID: 2450429325863574256, guid: 4811918352dab79459d2ab44a237fc5b, type: 3}
+    paragraphs:
+    - ...
+  - speakerName: Cyrus
+    speakerPortrait: {fileID: -8761751338571315927, guid: 5f85f6032d5ebad4991e122d505358c6, type: 3}
+    paragraphs:
+    - Ok Ok..what do I need to do?
+  - speakerName: Beckett
+    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    paragraphs:
+    - Here's a list of all the things you need to help me.
+    - I've got a good feeling you'll be able to find all of it in this place..
+  - speakerName: Beckett
+    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    paragraphs:
+    - Don't be afraid lil' bro...I know you can do this.
