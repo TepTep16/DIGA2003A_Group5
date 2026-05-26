@@ -27,20 +27,19 @@ public class DialogueController : MonoBehaviour
 
     private Coroutine typeDialogueCoroutine;
 
-    // FIXED: Must be an 8-character hex code ending in 00 alpha for transparency
     private const string HTML_ALPHA = "<color=#00000000>";
     private const float MAX_TYPE_TIME = 0.1f;
 
     public void DisplayNextLine(DialogueText dialogueText)
     {
-        // 1. First initialization block
+        // First initialization block
         if (lines.Count == 0 && currentParagraphsQueue.Count == 0 && !conversationEnded)
         {
             StartConversation(dialogueText);
             AdvanceDialogue(); // Immediately fetch first speaker and text
             return;
         }
-        // 2. Wrap up ending sequence 
+        // Wrap up the ending sequence 
         else if (lines.Count == 0 && currentParagraphsQueue.Count == 0 && conversationEnded)
         {
             if (!isTyping)
@@ -86,7 +85,7 @@ public class DialogueController : MonoBehaviour
 
         NPCNameText.text = currentLine.speakerName;
 
-        // Handle portrait swap
+        // Allows the portraits to swap
         if (currentLine.speakerPortrait != null)
         {
             speakerPortraitImage.gameObject.SetActive(true);
@@ -113,11 +112,11 @@ public class DialogueController : MonoBehaviour
             SetupNextSpeakerTurn();
         }
 
-        // Pull the text string safely from the active speaker's paragraphs
+        // Pull the text string from the active speaker's paragraphs
         currentParagraphText = currentParagraphsQueue.Dequeue();
         typeDialogueCoroutine = StartCoroutine(TypeDialogueText(currentParagraphText));
 
-        // If no more text paragraphs AND no more speakers are in line, mark conversation end
+        // If no more text paragraphs AND no more speakers are in line, conversation end
         if (lines.Count == 0 && currentParagraphsQueue.Count == 0)
         {
             conversationEnded = true;
@@ -163,7 +162,7 @@ public class DialogueController : MonoBehaviour
             StopCoroutine(typeDialogueCoroutine);
         }
 
-        // FIXED: Displays the full active text sequence safely
+        // Displays the full active text sequence
         NPCDialogueText.text = currentParagraphText;
         isTyping = false;
     }
