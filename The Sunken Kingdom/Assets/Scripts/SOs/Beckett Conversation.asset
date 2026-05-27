@@ -22,9 +22,12 @@ MonoBehaviour:
     paragraphs:
     - Beckett?! What happened to you man?
   - speakerName: Beckett
-    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    speakerPortrait: {fileID: 6692197899992509404, guid: 26209c960df73ab4fbdae023c4c7be25, type: 3}
     paragraphs:
     - Some crazy looking chicken monster attacked me..
+  - speakerName: Beckett
+    speakerPortrait: {fileID: 8433284689301344164, guid: ad059c488a881bd46b69ea0d81cb5555, type: 3}
+    paragraphs:
     - Look man, I'm gonna need your help here.
     - It's time for you to step up Cyrus.
   - speakerName: Cyrus
@@ -41,6 +44,6 @@ MonoBehaviour:
     - Here's a list of all the things you need to help me.
     - I've got a good feeling you'll be able to find all of it in this place..
   - speakerName: Beckett
-    speakerPortrait: {fileID: -5493218387571366925, guid: 04c0bff743f439b47bd865975c41d7cb, type: 3}
+    speakerPortrait: {fileID: 5409268381829265992, guid: fc64bebc685a83e4494b518b7ee9b934, type: 3}
     paragraphs:
     - Don't be afraid lil' bro...I know you can do this.
