@@ -13,16 +13,13 @@ public class InterationDetector : MonoBehaviour
         }
     }
 
+    //changes start here, replacement - check notes for old code
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
         {
             interactableInRange = interactable;
-
-            if (interactable is Chest chest)
-            {
-                chest.ShowSymbol(true);
-            }
+            interactable.ShowSymbol(true);
         }
     }
 
@@ -30,14 +27,9 @@ public class InterationDetector : MonoBehaviour
     {
         if (collision.TryGetComponent(out IInteractable interactable) && interactable == interactableInRange)
         {
-            if (interactable is Chest chest)
-            {
-                chest.CloseChest();
-                chest.ShowSymbol(false);
-            }
+            interactable.ShowSymbol(false);
 
             interactableInRange = null;
-
         }
 
     }

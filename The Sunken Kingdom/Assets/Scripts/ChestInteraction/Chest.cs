@@ -38,8 +38,8 @@ public class Chest : MonoBehaviour, IInteractable
         // will add dropping item later on
         if (itemPrefab)
         {
-            GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.down, Quaternion.identity);
-            //space to possibly add bounce effect on dropped item 
+            GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
+            droppedItem.GetComponent<BounceEffect>().StartBounce();
         }
 
         interactionSymbol.SetActive(false);

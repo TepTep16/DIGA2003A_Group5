@@ -7,4 +7,6 @@ public interface IInteractable
     public void Interact();
 
     bool CanInteract();
+
+    void ShowSymbol(bool show);
 }

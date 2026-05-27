@@ -54,4 +54,9 @@ public abstract class NPC : MonoBehaviour, IInteractable
     {
         throw new System.NotImplementedException();
     }
+
+    public void ShowSymbol(bool show)
+    {
+        throw new System.NotImplementedException();
+    }
 }
