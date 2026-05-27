@@ -42,9 +42,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.06235785
-  m_TransitionOffset: 0.010757062
-  m_ExitTime: 0.0000000027995555
+  m_TransitionDuration: 0
+  m_TransitionOffset: 0.009215359
+  m_ExitTime: 0.0055668424
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0

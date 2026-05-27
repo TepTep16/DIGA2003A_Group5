@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class Chest : MonoBehaviour, IInteractable
 {
+    private AudioSource audioSource;
+    public AudioClip openSound;
+    public AudioClip closeSound;
+
     public bool IsOpened { get; private set; } 
     public string ChestID { get; private set; }
     public GameObject itemPrefab; //for item that chest will drop 
@@ -15,6 +19,7 @@ public class Chest : MonoBehaviour, IInteractable
     {
         ChestID ??= GlobalHelper.GenerateUniqueID(gameObject);
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
 
         interactionSymbol.SetActive(false);
     }
@@ -35,6 +40,12 @@ public class Chest : MonoBehaviour, IInteractable
     {
         IsOpened = true;
         animator.SetTrigger("Open");
+
+        if (openSound != null)
+        {
+            audioSource.PlayOneShot(openSound);
+        }
+
         // will add dropping item later on
         if (itemPrefab)
         {
@@ -53,6 +64,11 @@ public class Chest : MonoBehaviour, IInteractable
 
         IsOpened = false;
         animator.SetTrigger("Close");
+
+        if (closeSound != null)
+        {
+            audioSource.PlayOneShot(closeSound);
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

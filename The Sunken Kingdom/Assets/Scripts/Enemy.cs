@@ -145,6 +145,12 @@ public class Enemy : MonoBehaviour, IDamageable
             healthSlider.value = health;
         }
 
+        if (health <= 0 && !isDead)
+        {
+            Die();
+            return;
+        }
+
         anim.SetTrigger("Hit"); //will play the damage taking animation
 
         if (hitSound != null && audioSource != null)
@@ -158,10 +164,6 @@ public class Enemy : MonoBehaviour, IDamageable
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
 
-        if (health <= 0 && !isDead)
-        {
-            Die();
-        }
     }
 
     void AttackPlayer()
@@ -190,6 +192,7 @@ public class Enemy : MonoBehaviour, IDamageable
 
     void UpdateAnimation()
     {
+        if (isDead) return;
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -207,11 +210,6 @@ public class Enemy : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int damage, Vector2 knockback, float force)
-    {
-        throw new System.NotImplementedException();
-    }
-
     private void Die()
     {
         isDead = true;
@@ -223,6 +221,11 @@ public class Enemy : MonoBehaviour, IDamageable
         {
             col.enabled = false;
         }
+
+        anim.ResetTrigger("Hit");
+        anim.ResetTrigger("Attack");
+
+        anim.SetBool("IsMoving", false);
 
         anim.SetTrigger("Die");
 
