@@ -9,14 +9,17 @@ public class InterationDetector : MonoBehaviour
     {
         if (context.performed)
         {
-            interactableInRange?.Interact();
+            if (interactableInRange != null && interactableInRange.CanInteract())
+            {
+                interactableInRange.Interact();
+            }
         }
     }
 
     //changes start here, replacement - check notes for old code
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.TryGetComponent(out IInteractable interactable) && interactable.CanInteract())
+        if (collision.TryGetComponent(out IInteractable interactable))
         {
             interactableInRange = interactable;
             interactable.ShowSymbol(true);

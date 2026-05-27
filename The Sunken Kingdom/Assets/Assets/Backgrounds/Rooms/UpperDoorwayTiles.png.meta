@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: dcdd1970050c9504381b560cb14f193d
+guid: 41567e7538de41244af54d725405d8d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2140741327390688310
-    second: Cyrus Attack Animation-Sheet_0
-  - first:
-      213: 9078442833608105067
-    second: Cyrus Attack Animation-Sheet_1
+      213: -388378747636416139
+    second: TreasureRoom1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -54,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 900
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cyrus Attack Animation-Sheet_0
+      name: TreasureRoom1_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 9
-        width: 332
-        height: 712
+        x: 4632
+        y: 3521
+        width: 1299
+        height: 639
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,30 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 634ce1725e075bd10800000000000000
-      internalID: 2140741327390688310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cyrus Attack Animation-Sheet_1
-      rect:
-        serializedVersion: 2
-        x: 609
-        y: 19
-        width: 452
-        height: 652
-      alignment: 9
-      pivot: {x: 0.38363487, y: 0.52823466}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b6cd6e258ab1dfd70800000000000000
-      internalID: 9078442833608105067
+      spriteID: 57102d436933c9af0800000000000000
+      internalID: -388378747636416139
       vertices: []
       indices: 
       edges: []
@@ -150,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 954dc173e44732846a3fe208ad9f0638
+    spriteID: ae1211bad606af6449b67127c90a2cc8
     internalID: 0
     vertices: []
     indices: 
@@ -160,8 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cyrus Attack Animation-Sheet_0: 2140741327390688310
-      Cyrus Attack Animation-Sheet_1: 9078442833608105067
+      TreasureRoom1_0: -388378747636416139
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

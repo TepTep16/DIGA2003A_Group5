@@ -92,6 +92,7 @@ public class Player : MonoBehaviour
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
         if (Input.GetMouseButtonDown(0) && distToEnemy < 6)
         {
+            anim.SetTrigger("Attack");
             
             IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
 

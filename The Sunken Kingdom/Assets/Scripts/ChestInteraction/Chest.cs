@@ -47,17 +47,28 @@ public class Chest : MonoBehaviour, IInteractable
 
     public void CloseChest()
     {
+        Debug.Log("Closing Chest");
+
         if (!IsOpened) return;
 
         IsOpened = false;
         animator.SetTrigger("Close");
     }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            CloseChest();
+            ShowSymbol(false);
+        }
+    }
     public void ShowSymbol(bool show)
     {
         if (IsOpened) return;
 
         interactionSymbol.SetActive(show);
     }
+
 
 }
