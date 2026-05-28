@@ -68,7 +68,7 @@ public class Player : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
-        //inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
     void playerMovement()
@@ -125,6 +125,7 @@ public class Player : MonoBehaviour
 
     void UpdateAnimation()
     {
+        /*
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -140,6 +141,7 @@ public class Player : MonoBehaviour
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
         }
+        */
     }
 
     void inventorySelection()
