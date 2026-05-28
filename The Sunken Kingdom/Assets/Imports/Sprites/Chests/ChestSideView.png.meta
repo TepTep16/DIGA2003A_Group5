@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: a6353bf45766f5f4da071adc2869e6aa
+guid: bf62df8e1412b6c4d920a018cb72c69a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4937804128268291815
-    second: MimicSideViewOpen&Close_0
+      213: -200936818709013949
+    second: ChestSideView_0
   - first:
-      213: -4067021943015526369
-    second: MimicSideViewOpen&Close_1
+      213: 162016299338775303
+    second: ChestSideView_1
   - first:
-      213: -1527686594312725747
-    second: MimicSideViewOpen&Close_2
+      213: 8117097180037870032
+    second: ChestSideView_2
   - first:
-      213: -1996512380754858872
-    second: MimicSideViewOpen&Close_3
+      213: 5809687350765934383
+    second: ChestSideView_3
   - first:
-      213: 6863485409036907240
-    second: MimicSideViewOpen&Close_4
+      213: -2644653507517576330
+    second: ChestSideView_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,111 +112,111 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MimicSideViewOpen&Close_0
+      name: ChestSideView_0
       rect:
         serializedVersion: 2
         x: 209
-        y: 169
+        y: 171
         width: 422
-        height: 472
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 470
+      alignment: 9
+      pivot: {x: 0.521269, y: 0.49550736}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9117c149e45697bb0800000000000000
-      internalID: -4937804128268291815
+      spriteID: 34a5d8a2701263df0800000000000000
+      internalID: -200936818709013949
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MimicSideViewOpen&Close_1
+      name: ChestSideView_1
       rect:
         serializedVersion: 2
         x: 1029
         y: 169
-        width: 432
+        width: 412
         height: 572
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.522994, y: 0.413215}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f1037d047190f87c0800000000000000
-      internalID: -4067021943015526369
+      spriteID: 70b39e147f89f3200800000000000000
+      internalID: 162016299338775303
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MimicSideViewOpen&Close_2
+      name: ChestSideView_2
       rect:
         serializedVersion: 2
         x: 1809
         y: 169
-        width: 482
+        width: 422
         height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6073374, y: 0.365792}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d0b1dd1f2219ccae0800000000000000
-      internalID: -1527686594312725747
+      spriteID: 0d17b7701e8b5a070800000000000000
+      internalID: 8117097180037870032
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MimicSideViewOpen&Close_3
+      name: ChestSideView_3
       rect:
         serializedVersion: 2
         x: 2559
         y: 169
-        width: 592
+        width: 492
         height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.66223246, y: 0.36765078}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 88cef635196fa44e0800000000000000
-      internalID: -1996512380754858872
+      spriteID: f27db7e4dd720a050800000000000000
+      internalID: 5809687350765934383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MimicSideViewOpen&Close_4
+      name: ChestSideView_4
       rect:
         serializedVersion: 2
         x: 3379
         y: 169
-        width: 592
+        width: 492
         height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.6621724, y: 0.36600924}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e2b8be7d9fff3f50800000000000000
-      internalID: 6863485409036907240
+      spriteID: 67b8c6a95ad4c4bd0800000000000000
+      internalID: -2644653507517576330
       vertices: []
       indices: 
       edges: []
@@ -225,7 +225,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 410b536b724be2248b37513e70665be7
     internalID: 0
     vertices: []
     indices: 
@@ -235,11 +235,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MimicSideViewOpen&Close_0: -4937804128268291815
-      MimicSideViewOpen&Close_1: -4067021943015526369
-      MimicSideViewOpen&Close_2: -1527686594312725747
-      MimicSideViewOpen&Close_3: -1996512380754858872
-      MimicSideViewOpen&Close_4: 6863485409036907240
+      ChestSideView_0: -200936818709013949
+      ChestSideView_1: 162016299338775303
+      ChestSideView_2: 8117097180037870032
+      ChestSideView_3: 5809687350765934383
+      ChestSideView_4: -2644653507517576330
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

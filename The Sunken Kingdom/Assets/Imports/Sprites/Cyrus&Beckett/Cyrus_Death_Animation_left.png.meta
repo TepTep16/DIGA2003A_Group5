@@ -1,22 +1,16 @@
 fileFormatVersion: 2
-guid: bf62df8e1412b6c4d920a018cb72c69a
+guid: 288541b685690ab458c4456fc2709470
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -200936818709013949
-    second: ChestSideView_0
+      213: 2236578875250809180
+    second: Cyrus_Death_Animation_left_0
   - first:
-      213: 162016299338775303
-    second: ChestSideView_1
+      213: 4536825475079291446
+    second: Cyrus_Death_Animation_left_1
   - first:
-      213: 8117097180037870032
-    second: ChestSideView_2
-  - first:
-      213: 5809687350765934383
-    second: ChestSideView_3
-  - first:
-      213: -2644653507517576330
-    second: ChestSideView_4
+      213: -6778378212031760019
+    second: Cyrus_Death_Animation_left_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -112,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ChestSideView_0
+      name: Cyrus_Death_Animation_left_0
       rect:
         serializedVersion: 2
-        x: 209
-        y: 169
-        width: 422
-        height: 472
+        x: 69
+        y: 19
+        width: 272
+        height: 532
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34a5d8a2701263df0800000000000000
-      internalID: -200936818709013949
+      spriteID: c59977b13ace90f10800000000000000
+      internalID: 2236578875250809180
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestSideView_1
+      name: Cyrus_Death_Animation_left_1
       rect:
         serializedVersion: 2
-        x: 1029
-        y: 169
-        width: 412
-        height: 572
+        x: 419
+        y: 19
+        width: 322
+        height: 562
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 70b39e147f89f3200800000000000000
-      internalID: 162016299338775303
+      spriteID: 6324b028bba06fe30800000000000000
+      internalID: 4536825475079291446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ChestSideView_2
+      name: Cyrus_Death_Animation_left_2
       rect:
         serializedVersion: 2
-        x: 1809
-        y: 169
-        width: 422
-        height: 642
+        x: 839
+        y: 9
+        width: 302
+        height: 632
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,52 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0d17b7701e8b5a070800000000000000
-      internalID: 8117097180037870032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChestSideView_3
-      rect:
-        serializedVersion: 2
-        x: 2559
-        y: 169
-        width: 492
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f27db7e4dd720a050800000000000000
-      internalID: 5809687350765934383
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ChestSideView_4
-      rect:
-        serializedVersion: 2
-        x: 3379
-        y: 169
-        width: 492
-        height: 642
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 67b8c6a95ad4c4bd0800000000000000
-      internalID: -2644653507517576330
+      spriteID: d697996fdec5ee1a0800000000000000
+      internalID: -6778378212031760019
       vertices: []
       indices: 
       edges: []
@@ -235,11 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ChestSideView_0: -200936818709013949
-      ChestSideView_1: 162016299338775303
-      ChestSideView_2: 8117097180037870032
-      ChestSideView_3: 5809687350765934383
-      ChestSideView_4: -2644653507517576330
+      Cyrus_Death_Animation_left_0: 2236578875250809180
+      Cyrus_Death_Animation_left_1: 4536825475079291446
+      Cyrus_Death_Animation_left_2: -6778378212031760019
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

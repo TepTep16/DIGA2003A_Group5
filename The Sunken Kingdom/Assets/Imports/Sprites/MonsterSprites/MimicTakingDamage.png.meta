@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: 5358165979d95254896b6fb9e3242781
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1488098266060356354
+    second: MimicTakingDamage_0
+  - first:
+      213: 6349056139555216728
+    second: MimicTakingDamage_1
+  - first:
+      213: 4120992784494746248
+    second: MimicTakingDamage_2
+  - first:
+      213: -3037367267447863263
+    second: MimicTakingDamage_3
+  - first:
+      213: -2941287376716762376
+    second: MimicTakingDamage_4
+  - first:
+      213: -4393730694631408156
+    second: MimicTakingDamage_5
+  - first:
+      213: 2002866253758323484
+    second: MimicTakingDamage_6
+  - first:
+      213: -8428939384247467373
+    second: MimicTakingDamage_7
+  - first:
+      213: 9002201481193675757
+    second: MimicTakingDamage_8
+  - first:
+      213: 6287870821296782023
+    second: MimicTakingDamage_9
+  - first:
+      213: 6592520582128630048
+    second: MimicTakingDamage_10
+  - first:
+      213: -8451295075342186576
+    second: MimicTakingDamage_11
+  - first:
+      213: 7318728026472926953
+    second: MimicTakingDamage_12
+  - first:
+      213: -7587715787336275697
+    second: MimicTakingDamage_13
+  - first:
+      213: -6863034712511846022
+    second: MimicTakingDamage_14
+  - first:
+      213: -5150589437131591279
+    second: MimicTakingDamage_15
+  - first:
+      213: -3209697468193536976
+    second: MimicTakingDamage_16
+  - first:
+      213: -3279641616162570989
+    second: MimicTakingDamage_17
+  - first:
+      213: 3672272205952565392
+    second: MimicTakingDamage_18
+  - first:
+      213: 6215709168954381464
+    second: MimicTakingDamage_19
+  - first:
+      213: -2696479017587378181
+    second: MimicTakingDamage_20
+  - first:
+      213: -4910254897609806582
+    second: MimicTakingDamage_21
+  - first:
+      213: -4742402069933524162
+    second: MimicTakingDamage_22
+  - first:
+      213: 4731046399500472169
+    second: MimicTakingDamage_23
+  - first:
+      213: -316770680802036754
+    second: MimicTakingDamage_24
+  - first:
+      213: 1828097429579372020
+    second: MimicTakingDamage_25
+  - first:
+      213: 5485288941673314153
+    second: MimicTakingDamage_26
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MimicTakingDamage_0
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 158
+        width: 525
+        height: 602
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef40994e286395be0800000000000000
+      internalID: -1488098266060356354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MimicTakingDamage_2
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 159
+        width: 644
+        height: 636
+      alignment: 9
+      pivot: {x: 0.52105033, y: 0.46392792}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ad1c18a15b03930800000000000000
+      internalID: 4120992784494746248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MimicTakingDamage_3
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 169
+        width: 422
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1280f5b109a19d5d0800000000000000
+      internalID: -3037367267447863263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MimicTakingDamage_5
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 159
+        width: 633
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4edb3c356355603c0800000000000000
+      internalID: -4393730694631408156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MimicTakingDamage_8
+      rect:
+        serializedVersion: 2
+        x: 2669
+        y: 169
+        width: 422
+        height: 582
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb5b0b2d8e3eec70800000000000000
+      internalID: 9002201481193675757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 32a40c7e22c0e1948a8f894f1aff853f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MimicTakingDamage_0: -1488098266060356354
+      MimicTakingDamage_1: 6349056139555216728
+      MimicTakingDamage_10: 6592520582128630048
+      MimicTakingDamage_11: -8451295075342186576
+      MimicTakingDamage_12: 7318728026472926953
+      MimicTakingDamage_13: -7587715787336275697
+      MimicTakingDamage_14: -6863034712511846022
+      MimicTakingDamage_15: -5150589437131591279
+      MimicTakingDamage_16: -3209697468193536976
+      MimicTakingDamage_17: -3279641616162570989
+      MimicTakingDamage_18: 3672272205952565392
+      MimicTakingDamage_19: 6215709168954381464
+      MimicTakingDamage_2: 4120992784494746248
+      MimicTakingDamage_20: -2696479017587378181
+      MimicTakingDamage_21: -4910254897609806582
+      MimicTakingDamage_22: -4742402069933524162
+      MimicTakingDamage_23: 4731046399500472169
+      MimicTakingDamage_24: -316770680802036754
+      MimicTakingDamage_25: 1828097429579372020
+      MimicTakingDamage_26: 5485288941673314153
+      MimicTakingDamage_3: -3037367267447863263
+      MimicTakingDamage_4: -2941287376716762376
+      MimicTakingDamage_5: -4393730694631408156
+      MimicTakingDamage_6: 2002866253758323484
+      MimicTakingDamage_7: -8428939384247467373
+      MimicTakingDamage_8: 9002201481193675757
+      MimicTakingDamage_9: 6287870821296782023
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
