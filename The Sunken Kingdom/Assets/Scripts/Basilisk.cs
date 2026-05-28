@@ -170,6 +170,7 @@ public class Basilisk : MonoBehaviour, IDamageable
 
     void UpdateAnimation()
     {
+        /*
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -185,6 +186,7 @@ public class Basilisk : MonoBehaviour, IDamageable
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
         }
+        */
     }
 
     public void TakeDamage(int damage, Vector2 knockback, float force)

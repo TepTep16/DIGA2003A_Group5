@@ -48,8 +48,8 @@ public class InventoryManager : MonoBehaviour
         // --- Define what each item does ---
         if (slot.itemName == "Potion")        //NB: This sting must match the 'itemName' you set in the inspector Panel.
         {
-            player.health = Mathf.Min(player.health + 30, 100);  // heal, capped at 100
-            Debug.Log("Used Health Potion. HP: " + player.health);
+            player.maxHealth = Mathf.Min(player.maxHealth + 30, 100);  // heal, capped at 100
+            Debug.Log("Used Health Potion. HP: " + player.maxHealth);
             slot.itemTag = "Consumable";
             slot.gameObject.tag = "Consumable";
         }
