@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
     private Animator anim;
+    private InventoryManager inventoryManager;
 
     public int maxHealth = 100;
     public int currentHealth;
@@ -58,6 +59,7 @@ public class Player : MonoBehaviour
         playerMovement();
         playerCombat();
         UpdateAnimation();
+        inventorySelection();
     }
 
     private void Awake()
@@ -66,6 +68,7 @@ public class Player : MonoBehaviour
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
     void playerMovement()
@@ -128,6 +131,7 @@ public class Player : MonoBehaviour
 
     void UpdateAnimation()
     {
+        /*
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -142,6 +146,35 @@ public class Player : MonoBehaviour
         {
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
+        }
+        */
+    }
+
+    void inventorySelection()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            inventoryManager.UseItem(0);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            inventoryManager.UseItem(1);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
+            inventoryManager.UseItem(2);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            inventoryManager.UseItem(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            inventoryManager.UseItem(4);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            inventoryManager.UseItem(5);
         }
     }
 }
