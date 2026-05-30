@@ -28,9 +28,6 @@ public class Player : MonoBehaviour
     private string attack_right = "Attack";
     private string attack_left = "AttackAnimLeft";
 
-    Enemy crab = new Enemy();
-
-    private Animator animator;
     private Vector2 lastMove; 
 
     //Used to check where the enemy is relative to the player
