@@ -101,7 +101,11 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
 
     public void TakeDamage(int damage)
     {
+        if (isDead) return;
+
         health -= damage;
+
+        anim.SetTrigger("Hit");
 
         if (healthSlider != null)
             healthSlider.value = health;
@@ -138,7 +142,11 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
 
     private void Die()
     {
+        if (isDead) return;
+
         isDead = true;
+
+        anim.ResetTrigger("Hit");
         anim.SetTrigger("Death");
 
         if (mimicHealth != null)

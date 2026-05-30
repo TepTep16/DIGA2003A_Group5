@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
 using UnityEngine.SceneManagement;
@@ -9,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
+
+    public string currentMusic;
 
     public void Awake()
     {
@@ -53,17 +56,19 @@ public class AudioManager : MonoBehaviour
 
     public void PlayMusic(string name)
     {
+        if (currentMusic == name)
+            return;
+
         Sound s = Array.Find(musicSounds, x => x.name == name);
 
         if (s == null)
         {
             Debug.Log("Sound Not Found");
         }
-        else
-        {
-            musicSource.clip = s.clip;
-            musicSource.Play();
-        }
+
+        currentMusic = name;
+        musicSource.clip = s.clip;
+        musicSource.Play();
 
     }
 
@@ -75,6 +80,27 @@ public class AudioManager : MonoBehaviour
     public void MusicVolume(float volume)
     {
         musicSource.volume = volume;
+    }
+
+    public IEnumerator FadeToMusic(string name, float fadeTime)
+    {
+        float originalVolume = musicSource.volume;
+
+        while (musicSource.volume > 0)
+        {
+            musicSource.volume -= Time.deltaTime / fadeTime;
+            yield return null;
+        }
+
+        PlayMusic(name);
+
+        while (musicSource.volume < 1)
+        {
+            musicSource.volume += Time.deltaTime / fadeTime;
+            yield return null;
+        }
+
+        musicSource.volume = originalVolume;
     }
 
 }
