@@ -1,0 +1,319 @@
+fileFormatVersion: 2
+guid: 0008c5577c46ef0468fdce45a9563514
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2622765386158578527
+    second: TopViewMimicTakingDamage_0
+  - first:
+      213: 4121436874033914229
+    second: TopViewMimicTakingDamage_1
+  - first:
+      213: 6810305824622252857
+    second: TopViewMimicTakingDamage_2
+  - first:
+      213: 895872733321333289
+    second: TopViewMimicTakingDamage_3
+  - first:
+      213: -1526648025954244154
+    second: TopViewMimicTakingDamage_4
+  - first:
+      213: 8891389162543700131
+    second: TopViewMimicTakingDamage_5
+  - first:
+      213: 1163806899712218991
+    second: TopViewMimicTakingDamage_6
+  - first:
+      213: 8732989294842566724
+    second: TopViewMimicTakingDamage_7
+  - first:
+      213: 4065505627491063897
+    second: TopViewMimicTakingDamage_8
+  - first:
+      213: 8583195404009344621
+    second: TopViewMimicTakingDamage_9
+  - first:
+      213: 9043975876533312207
+    second: TopViewMimicTakingDamage_10
+  - first:
+      213: 5749637603311421293
+    second: TopViewMimicTakingDamage_11
+  - first:
+      213: 4617354898501768148
+    second: TopViewMimicTakingDamage_12
+  - first:
+      213: -6409431799613584834
+    second: TopViewMimicTakingDamage_13
+  - first:
+      213: 6697610001189488313
+    second: TopViewMimicTakingDamage_14
+  - first:
+      213: -4092052650985829341
+    second: TopViewMimicTakingDamage_15
+  - first:
+      213: -7176057508572878720
+    second: TopViewMimicTakingDamage_16
+  - first:
+      213: 253229061010889126
+    second: TopViewMimicTakingDamage_17
+  - first:
+      213: 3093182599750340816
+    second: TopViewMimicTakingDamage_18
+  - first:
+      213: 6895854295037360312
+    second: TopViewMimicTakingDamage_19
+  - first:
+      213: 7886101829594777522
+    second: TopViewMimicTakingDamage_20
+  - first:
+      213: -117841265048055344
+    second: TopViewMimicTakingDamage_21
+  - first:
+      213: -3843914168432590778
+    second: TopViewMimicTakingDamage_22
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TopViewMimicTakingDamage_0
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 159
+        width: 492
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5b1c23093fe56420800000000000000
+      internalID: 2622765386158578527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopViewMimicTakingDamage_2
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 169
+        width: 760
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9331260a011138e50800000000000000
+      internalID: 6810305824622252857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopViewMimicTakingDamage_5
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 169
+        width: 818
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a8dc21b55f846b70800000000000000
+      internalID: 8891389162543700131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopViewMimicTakingDamage_7
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 169
+        width: 826
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 448516a8e7fc13970800000000000000
+      internalID: 8732989294842566724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TopViewMimicTakingDamage_9
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 159
+        width: 492
+        height: 592
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6e0eb58eb2ad1770800000000000000
+      internalID: 8583195404009344621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 87c6b9dccfcf9e74193f4bd1a3a758ae
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      TopViewMimicTakingDamage_0: 2622765386158578527
+      TopViewMimicTakingDamage_1: 4121436874033914229
+      TopViewMimicTakingDamage_10: 9043975876533312207
+      TopViewMimicTakingDamage_11: 5749637603311421293
+      TopViewMimicTakingDamage_12: 4617354898501768148
+      TopViewMimicTakingDamage_13: -6409431799613584834
+      TopViewMimicTakingDamage_14: 6697610001189488313
+      TopViewMimicTakingDamage_15: -4092052650985829341
+      TopViewMimicTakingDamage_16: -7176057508572878720
+      TopViewMimicTakingDamage_17: 253229061010889126
+      TopViewMimicTakingDamage_18: 3093182599750340816
+      TopViewMimicTakingDamage_19: 6895854295037360312
+      TopViewMimicTakingDamage_2: 6810305824622252857
+      TopViewMimicTakingDamage_20: 7886101829594777522
+      TopViewMimicTakingDamage_21: -117841265048055344
+      TopViewMimicTakingDamage_22: -3843914168432590778
+      TopViewMimicTakingDamage_3: 895872733321333289
+      TopViewMimicTakingDamage_4: -1526648025954244154
+      TopViewMimicTakingDamage_5: 8891389162543700131
+      TopViewMimicTakingDamage_6: 1163806899712218991
+      TopViewMimicTakingDamage_7: 8732989294842566724
+      TopViewMimicTakingDamage_8: 4065505627491063897
+      TopViewMimicTakingDamage_9: 8583195404009344621
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -5,6 +5,8 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
     private Animator anim;
     private AudioSource audioSource;
     public AudioClip openSound;
+    public AudioClip mimicGrowl;
+    public AudioClip closeSound;
 
     public GameObject interactionSymbol;
 
@@ -68,6 +70,9 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
 
         if (openSound != null)
             audioSource.PlayOneShot(openSound);
+
+        if (mimicGrowl != null)
+            audioSource.PlayOneShot(mimicGrowl);
 
         interactionSymbol.SetActive(false);
 
@@ -135,6 +140,9 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
         if (!isOpen) return;
 
         isOpen = false;
+
+        if (closeSound != null)
+            audioSource.PlayOneShot(closeSound);
 
         anim.ResetTrigger("Open");
         anim.SetTrigger("Close");

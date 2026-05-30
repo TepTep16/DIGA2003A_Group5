@@ -1,0 +1,263 @@
+fileFormatVersion: 2
+guid: 392610458592e3444997d4be4e1415e4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1791032847562146029
+    second: SideViewMimicTakingDamage_0
+  - first:
+      213: 6128773982068164742
+    second: SideViewMimicTakingDamage_1
+  - first:
+      213: -8645285167995514839
+    second: SideViewMimicTakingDamage_2
+  - first:
+      213: 4756096087121993717
+    second: SideViewMimicTakingDamage_3
+  - first:
+      213: 3538805131449009187
+    second: SideViewMimicTakingDamage_4
+  - first:
+      213: 8329593607120460905
+    second: SideViewMimicTakingDamage_5
+  - first:
+      213: -6712118559084296773
+    second: SideViewMimicTakingDamage_6
+  - first:
+      213: 780734904164336556
+    second: SideViewMimicTakingDamage_7
+  - first:
+      213: 5967652737191093473
+    second: SideViewMimicTakingDamage_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SideViewMimicTakingDamage_0
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 121
+        width: 592
+        height: 642
+      alignment: 9
+      pivot: {x: 0.50987697, y: 0.049169}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de08ff3b2e60bd810800000000000000
+      internalID: 1791032847562146029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideViewMimicTakingDamage_1
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 112
+        width: 612
+        height: 642
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68844dd0777cd0550800000000000000
+      internalID: 6128773982068164742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideViewMimicTakingDamage_2
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 99
+        width: 622
+        height: 672
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9209ca3c1f6c50880800000000000000
+      internalID: -8645285167995514839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideViewMimicTakingDamage_3
+      rect:
+        serializedVersion: 2
+        x: 2531
+        y: 129
+        width: 677
+        height: 642
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ff188e313c010240800000000000000
+      internalID: 4756096087121993717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SideViewMimicTakingDamage_5
+      rect:
+        serializedVersion: 2
+        x: 3389
+        y: 119
+        width: 592
+        height: 642
+      alignment: 9
+      pivot: {x: 0.509658, y: 0.055414192}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c97cbe049a89370800000000000000
+      internalID: 8329593607120460905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 85d130e6c8e35f94aa0a64064d6fab39
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SideViewMimicTakingDamage_0: 1791032847562146029
+      SideViewMimicTakingDamage_1: 6128773982068164742
+      SideViewMimicTakingDamage_2: -8645285167995514839
+      SideViewMimicTakingDamage_3: 4756096087121993717
+      SideViewMimicTakingDamage_4: 3538805131449009187
+      SideViewMimicTakingDamage_5: 8329593607120460905
+      SideViewMimicTakingDamage_6: -6712118559084296773
+      SideViewMimicTakingDamage_7: 780734904164336556
+      SideViewMimicTakingDamage_8: 5967652737191093473
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
