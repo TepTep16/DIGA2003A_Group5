@@ -1,6 +1,7 @@
 using System;
 using UnityEngine;
 using UnityEngine.Assertions.Must;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class AudioManager : MonoBehaviour
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
+
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -24,7 +27,29 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic("BackgroundMusic");
+        PlaySceneMusic(SceneManager.GetActiveScene().name);
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        PlaySceneMusic(scene.name);
+    }
+
+    private void PlaySceneMusic(string sceneName)
+    {
+        if (sceneName == "MainMenu")
+        {
+            PlayMusic("TitleScreenMusic");
+        }
+        else if (sceneName == "MainGame")
+        {
+            PlayMusic("BackgroundMusic");
+        }
+        else
+        {
+            musicSource.Stop();
+        }
+        
     }
 
     public void PlayMusic(string name)
@@ -35,7 +60,6 @@ public class AudioManager : MonoBehaviour
         {
             Debug.Log("Sound Not Found");
         }
-
         else
         {
             musicSource.clip = s.clip;
@@ -43,6 +67,7 @@ public class AudioManager : MonoBehaviour
         }
 
     }
+
 
     public void ToggleMusic()
     {
