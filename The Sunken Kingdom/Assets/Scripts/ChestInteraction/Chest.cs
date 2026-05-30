@@ -6,7 +6,9 @@ public class Chest : MonoBehaviour, IInteractable
     public AudioClip openSound;
     public AudioClip closeSound;
 
-    public bool IsOpened { get; private set; } 
+    public bool IsOpened { get; private set; }
+    private bool hasDroppedLoot = false;
+
     public string ChestID { get; private set; }
     public GameObject itemPrefab; //for item that chest will drop 
     public Sprite openedSprite;
@@ -26,19 +28,26 @@ public class Chest : MonoBehaviour, IInteractable
 
     public bool CanInteract()
     {
-        return !IsOpened;
+        return true;
     }
 
     public void Interact()
     {
-        if (!CanInteract()) return;
-
-        OpenChest();
+        if (IsOpened)
+        {
+            CloseChest();
+        }
+        else
+        {
+            OpenChest();
+        }
     }
 
     private void OpenChest()
     {
         IsOpened = true;
+
+        animator.ResetTrigger("Close");
         animator.SetTrigger("Open");
 
         if (openSound != null)
@@ -46,11 +55,18 @@ public class Chest : MonoBehaviour, IInteractable
             audioSource.PlayOneShot(openSound);
         }
 
-        // will add dropping item later on
-        if (itemPrefab)
+        // item dropping
+        if (!hasDroppedLoot && itemPrefab != null)
         {
+            hasDroppedLoot = true;
+
             GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
-            droppedItem.GetComponent<BounceEffect>().StartBounce();
+
+            BounceEffect bounce = droppedItem.GetComponent<BounceEffect>();
+            if (bounce != null)
+            {
+                bounce.StartBounce();
+            }
         }
 
         interactionSymbol.SetActive(false);
@@ -63,6 +79,8 @@ public class Chest : MonoBehaviour, IInteractable
         if (!IsOpened) return;
 
         IsOpened = false;
+
+        animator.ResetTrigger("Open");
         animator.SetTrigger("Close");
 
         if (closeSound != null)
