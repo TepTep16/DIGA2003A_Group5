@@ -25,7 +25,8 @@ public class Player : MonoBehaviour
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.2f;
 
-    private string attack_animation = "attack";
+    private string attack_right = "Attack";
+    private string attack_left = "AttackAnimLeft";
 
     Enemy crab = new Enemy();
 
@@ -87,21 +88,35 @@ public class Player : MonoBehaviour
 
     void playerCombat()
     {
-        if (enemy == null)
+        if (enemy == null || enemy.gameObject == null)
         {
             return;
         }
 
         float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if (Input.GetMouseButtonDown(0) && distToEnemy < 6)
+        if ((Input.GetMouseButtonDown(0) && distToEnemy < 6))
         {
-            anim.SetTrigger("Attack");
-            
-            IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
+            if (!inventoryManager.IsWeaponEquipped())
+            {
+                Debug.Log("No weapon equipped!");
+                return;
+            }
+
+            bool enemyIsToTheRight = enemy.position.x > transform.position.x;
+
+            if (enemyIsToTheRight)
+            {
+                anim.SetTrigger(attack_right);
+            }
+            else
+            {
+                anim.SetTrigger(attack_left);
+            }
+                IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
 
             if (enemyScript != null)
             {
-                // Direction from player → enemy
+                // Direction from player to enemy
                 Vector2 direction = (enemy.position - transform.position).normalized;
 
                 enemyScript.damageTaken(10, direction, 20f);
@@ -131,7 +146,7 @@ public class Player : MonoBehaviour
 
     void UpdateAnimation()
     {
-        /*
+        
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -141,13 +156,20 @@ public class Player : MonoBehaviour
         {
             anim.SetFloat("MoveX", velocity.x);
             anim.SetFloat("MoveY", velocity.y);
+
         }
         else
         {
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
+            
         }
-        */
+        if (enemy != null && enemy.gameObject != null)
+        {
+            float distToEnemy = Vector2.Distance(transform.position, enemy.position);
+        }
+
+
     }
 
     void inventorySelection()
