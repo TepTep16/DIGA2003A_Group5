@@ -1,9 +1,8 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class WalkingMushroom : MonoBehaviour, IDamageable
 {
+
     private Rigidbody2D rb;
     private Animator anim;
     private AudioSource audioSource;
@@ -29,6 +28,10 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
 
     [SerializeField] private float wallCheckDistance = 1.5f;
 
+    [Header("Supply Drop")]
+    // Assign your Supply item prefab in the Inspector.
+    public GameObject supplyDropPrefab;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -39,9 +42,7 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
     void Update()
     {
         if (directionChangeTimer > 0)
-        {
             directionChangeTimer -= Time.deltaTime;
-        }
 
         if (avoidTimer > 0)
         {
@@ -55,7 +56,6 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
         if (isDead) return;
 
         RunFromPlayer();
-
         UpdateAnimation();
     }
 
@@ -63,10 +63,9 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
     {
         if (player == null) return;
 
-        float distance =
-            Vector2.Distance(transform.position, player.position);
+        float distance = Vector2.Distance(transform.position, player.position);
 
-        if (distance < detectionRange) //this makes it run away when it senses player
+        if (distance < detectionRange)
         {
             if (directionChangeTimer <= 0)
             {
@@ -76,11 +75,8 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
                 }
             }
 
-            Vector2 rayStart = 
-                (Vector2)transform.position + moveDirection * 0.5f;
-
-            RaycastHit2D hit =
-                Physics2D.Raycast(rayStart, moveDirection, wallCheckDistance);
+            Vector2 rayStart = (Vector2)transform.position + moveDirection * 0.5f;
+            RaycastHit2D hit = Physics2D.Raycast(rayStart, moveDirection, wallCheckDistance);
 
             if (hit.collider != null)
             {
@@ -90,13 +86,10 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
             rb.linearVelocity = moveDirection * moveSpeed;
 
             if (moveDirection != Vector2.zero)
-            {
                 lastMove = moveDirection;
-            }
 
             Debug.DrawRay(rayStart, moveDirection * wallCheckDistance, Color.red);
         }
-
         else
         {
             rb.linearVelocity = Vector2.zero;
@@ -105,15 +98,12 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
 
     void ChangeDirection()
     {
-        Vector2[] directions =
-            { Vector2.up, Vector2.down, Vector2.left, Vector2.right};
+        Vector2[] directions = { Vector2.up, Vector2.down, Vector2.left, Vector2.right };
 
         for (int i = 0; i < 10; i++)
         {
             Vector2 randomDir = directions[Random.Range(0, directions.Length)];
-
-            RaycastHit2D hit =
-                Physics2D.Raycast(transform.position, randomDir, wallCheckDistance);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, randomDir, wallCheckDistance);
 
             if (hit.collider == null)
             {
@@ -135,14 +125,13 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
         anim.SetTrigger("Hit");
 
         if (hitSound != null)
-        {
             audioSource.PlayOneShot(hitSound);
-        }
 
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(knockback * force, ForceMode2D.Impulse);
 
-        if (health <= 0) { Die(); }
+        if (health <= 0)
+            Die();
     }
 
     void Die()
@@ -152,19 +141,24 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
         rb.linearVelocity = Vector2.zero;
 
         Collider2D col = GetComponent<Collider2D>();
-        if (col != null)
-        {
-            col.enabled = false;
-        }
+        if (col != null) col.enabled = false;
 
         anim.SetTrigger("Die");
 
         if (deathSound != null)
-        {
             audioSource.PlayOneShot(deathSound);
-        }
+
+        DropSupply();
 
         Destroy(gameObject, 1.5f);
+    }
+
+    private void DropSupply()
+    {
+        if (supplyDropPrefab == null) return;
+
+        Vector3 spawnPos = transform.position + Vector3.up * 0.5f;
+        Instantiate(supplyDropPrefab, spawnPos, Quaternion.identity);
     }
 
     void UpdateAnimation()
@@ -189,9 +183,7 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
         if (collision.collider.CompareTag("Obstacle"))
         {
             Debug.Log("Hit wall");
-
             ChangeDirection();
         }
     }
-
 }

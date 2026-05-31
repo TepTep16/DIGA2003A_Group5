@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Weapon
   - Consumable
+  - Supply
   layers:
   - Default
   - TransparentFX

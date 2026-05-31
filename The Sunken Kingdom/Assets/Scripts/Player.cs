@@ -15,32 +15,33 @@ public class Player : MonoBehaviour
 
     [SerializeField] private ScreenDamageController damageEffect;
 
-    //These variables are used to control the player's movement on the x-axis and y-axis
+    // Movement
     private float movementX;
     private float moveForceX = 8f;
     private float movementY;
     private float moveForceY = 8f;
 
+    // Knockback
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.2f;
 
+    // Attack animation trigger names
     private string attack_right = "Attack";
     private string attack_left = "AttackAnimLeft";
 
-    private Vector2 lastMove; 
+    // The radius around the player that counts as melee range.
+    // Adjust this value in the Inspector to match your character's reach.
+    [SerializeField] private float attackRadius = 6f;
 
-    //Used to check where the enemy is relative to the player
-    [SerializeField]
-    private Transform enemy;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private Vector2 lastMove;
+
     void Start()
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (isKnockedBack)
@@ -54,22 +55,22 @@ public class Player : MonoBehaviour
 
             return;
         }
-        playerMovement();
-        playerCombat();
+
+        PlayerMovement();
+        PlayerCombat();
         UpdateAnimation();
-        inventorySelection();
+        InventorySelection();
     }
 
     private void Awake()
     {
-        //Used to call the components of the object
         myBody = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
     }
 
-    void playerMovement()
+    void PlayerMovement()
     {
         movementX = Input.GetAxisRaw("Horizontal");
         movementY = Input.GetAxisRaw("Vertical");
@@ -83,41 +84,35 @@ public class Player : MonoBehaviour
         }
     }
 
-    void playerCombat()
+    void PlayerCombat()
     {
-        if (enemy == null || enemy.gameObject == null)
+        if (!Input.GetMouseButtonDown(0)) return;
+
+        Debug.Log("=== CLICK DETECTED ===");
+        Debug.Log("IsWeaponEquipped: " + inventoryManager.IsWeaponEquipped());
+
+        if (!inventoryManager.IsWeaponEquipped())
         {
+            Debug.Log("BLOCKED: No weapon equipped");
             return;
         }
 
-        float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        if ((Input.GetMouseButtonDown(0) && distToEnemy < 6))
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, attackRadius);
+        Debug.Log("Colliders in range: " + hits.Length);
+
+        foreach (Collider2D hit in hits)
         {
-            if (!inventoryManager.IsWeaponEquipped())
-            {
-                Debug.Log("No weapon equipped!");
-                return;
-            }
+            if (hit.gameObject == gameObject) continue;
+            Debug.Log("Found: " + hit.gameObject.name + " | IDamageable: " + (hit.GetComponent<IDamageable>() != null));
 
-            bool enemyIsToTheRight = enemy.position.x > transform.position.x;
+            IDamageable target = hit.GetComponent<IDamageable>();
+            if (target == null) continue;
 
-            if (enemyIsToTheRight)
-            {
-                anim.SetTrigger(attack_right);
-            }
-            else
-            {
-                anim.SetTrigger(attack_left);
-            }
-                IDamageable enemyScript = enemy.GetComponent<IDamageable>(); 
-
-            if (enemyScript != null)
-            {
-                // Direction from player to enemy
-                Vector2 direction = (enemy.position - transform.position).normalized;
-
-                enemyScript.damageTaken(10, direction, 20f);
-            }
+            bool targetIsToTheRight = hit.transform.position.x > transform.position.x;
+            anim.SetTrigger(targetIsToTheRight ? attack_right : attack_left);
+            Vector2 direction = (hit.transform.position - transform.position).normalized;
+            target.damageTaken(10, direction, 20f);
+            break;
         }
     }
 
@@ -127,13 +122,14 @@ public class Player : MonoBehaviour
         healthBar.SetHealth(currentHealth);
 
         Debug.Log("Player Health: " + currentHealth);
+
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
 
-        anim.SetTrigger("Hit"); 
+        anim.SetTrigger("Hit");
 
         if (damageEffect != null)
         {
@@ -143,7 +139,6 @@ public class Player : MonoBehaviour
 
     void UpdateAnimation()
     {
-        
         Vector2 velocity = myBody.linearVelocity;
 
         bool isMoving = velocity.magnitude > 0.1f;
@@ -153,47 +148,21 @@ public class Player : MonoBehaviour
         {
             anim.SetFloat("MoveX", velocity.x);
             anim.SetFloat("MoveY", velocity.y);
-
         }
         else
         {
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
-            
         }
-        if (enemy != null && enemy.gameObject != null)
-        {
-            float distToEnemy = Vector2.Distance(transform.position, enemy.position);
-        }
-
-
     }
 
-    void inventorySelection()
+    void InventorySelection()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            inventoryManager.UseItem(0);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            inventoryManager.UseItem(1);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            inventoryManager.UseItem(2);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            inventoryManager.UseItem(3);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            inventoryManager.UseItem(4);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            inventoryManager.UseItem(5);
-        }
+        if (Input.GetKeyDown(KeyCode.Alpha1)) inventoryManager.UseItem(0);
+        if (Input.GetKeyDown(KeyCode.Alpha2)) inventoryManager.UseItem(1);
+        if (Input.GetKeyDown(KeyCode.Alpha3)) inventoryManager.UseItem(2);
+        if (Input.GetKeyDown(KeyCode.Alpha4)) inventoryManager.UseItem(3);
+        if (Input.GetKeyDown(KeyCode.Alpha5)) inventoryManager.UseItem(4);
+        if (Input.GetKeyDown(KeyCode.Alpha6)) inventoryManager.UseItem(5);
     }
 }

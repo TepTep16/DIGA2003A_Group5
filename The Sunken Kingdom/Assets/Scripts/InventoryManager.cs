@@ -4,16 +4,15 @@ using System.Collections.Generic;
 
 public class InventoryManager : MonoBehaviour
 {
+    private int equippedArmourIndex = -1;
     public GameObject InventoryMenu;
     public ItemSlot[] itemSlot;
-    private int equippedSlotIndex = -1; // -1 means nothing equipped
+    private int equippedSlotIndex = -1; // -1 means nothing is equipped
 
     public Player player;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // Find the player object in the scene automatically
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -22,7 +21,7 @@ public class InventoryManager : MonoBehaviour
 
     public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemTag)
     {
-        for(int i = 0; i < itemSlot.Length; i++)
+        for (int i = 0; i < itemSlot.Length; i++)
         {
             if (itemSlot[i].isFull == false)
             {
@@ -34,61 +33,71 @@ public class InventoryManager : MonoBehaviour
 
     public void UseItem(int slotIndex)
     {
-        if (slotIndex < 0 || slotIndex >= itemSlot.Length)
-        {
-            return;
-        }
+        if (slotIndex < 0 || slotIndex >= itemSlot.Length) return;
 
         ItemSlot slot = itemSlot[slotIndex];
 
-        if (!slot.isFull)
-        {
-            return;   // do nothing if slot is empty
-        }
+        if (!slot.isFull) return;
 
-        // --- Define what each item does ---
-        if (slot.itemName == "Potion")        //NB: This sting must match the 'itemName' you set in the inspector Panel.
+        if (slot.itemName == "Potion")
         {
             player.currentHealth = Mathf.Min(player.currentHealth + 30, player.maxHealth);
             player.healthBar.SetHealth(player.currentHealth);
             Debug.Log("Used Health Potion. HP: " + player.currentHealth);
-            Debug.Log("Used Health Potion. HP: " + player.maxHealth);
-            slot.itemTag = "Consumable";
             slot.ClearSlot();
         }
-        else if(slot.itemName == "Weapon")
+        else if (slot.itemName == "Weapon")
         {
             if (equippedSlotIndex == slotIndex)
             {
                 equippedSlotIndex = -1;
-                Debug.Log("Weapon is unequipped");
+                Debug.Log("Weapon unequipped.");
             }
             else
             {
                 equippedSlotIndex = slotIndex;
-                Debug.Log("Weapon is now equipped");
+                slot.itemTag = "Weapon";
+                Debug.Log("Weapon equipped.");
             }
-            slot.itemTag = "Weapon";
+            return; // never consumed
         }
-        else if(slot.itemName == "List")
+        else if (slot.itemName == "Armour")
         {
-            slot.itemTag = "List";
+            if (equippedArmourIndex == slotIndex)
+            {
+                equippedArmourIndex = -1;
+                Debug.Log("Armour unequipped.");
+            }
+            else
+            {
+                equippedArmourIndex = slotIndex;
+                slot.itemTag = "Armour";
+                Debug.Log("Armour equipped.");
+            }
+            return; // never consumed
         }
-        if (slot.itemTag != "Weapon" && slot.itemTag != "List")
+        else if (slot.itemName == "List")
         {
-            slot.ClearSlot();   // remove the item after use
+            return; // never consumed
+        }
+        else
+        {
+            slot.ClearSlot();
         }
     }
 
     public bool IsWeaponEquipped()
     {
-        if (equippedSlotIndex == -1)
-        {
-            return false;
-        }
+        if (equippedSlotIndex == -1) return false;
         ItemSlot slot = itemSlot[equippedSlotIndex];
-        return slot.isFull && slot.itemTag == "Weapon";
+        return slot.isFull && slot.itemName == "Weapon";
     }
 
+    public bool IsArmourEquipped()
+    {
+        if (equippedArmourIndex == -1) return false;
+        ItemSlot slot = itemSlot[equippedArmourIndex];
+        return slot.isFull && slot.itemName == "Armour";
+    }
 
 }

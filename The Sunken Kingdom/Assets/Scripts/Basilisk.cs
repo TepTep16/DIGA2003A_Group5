@@ -1,51 +1,48 @@
-﻿using Unity.VisualScripting;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class Basilisk : MonoBehaviour, IDamageable
 {
+
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
+
     public int health = 200;
 
-    [SerializeField]
-    private Slider healthSlider;
-    private int maxHealth; 
+    [SerializeField] private Slider healthSlider;
+    private int maxHealth;
 
+    // Knockback state
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.2f;
 
-    private float attackFreezeTimer = 0f;     // 1 second freeze
-    private float attackCooldownTimer = 0f;   // 3 second cooldown
-
+    // Attack timing
+    private float attackFreezeTimer = 0f;
+    private float attackCooldownTimer = 0f;
     private float attackFreezeDuration = 1f;
     private float attackCooldownDuration = 1f;
 
-    //This will be used to enable/disable the game object
-    public GameObject enemy;
+    [SerializeField] private Transform player;
 
-    [SerializeField]
-    //Used to track where the player is relative to the enemy
-    private Transform player;
-
-    private float movementX;
-    [SerializeField]
-    private float moveForce;
-    [SerializeField]
-    private float agroRange;
-
-    [SerializeField]
-    private float attackRange = 2f;
-    [SerializeField]
-    private float attackCooldown = 1f;
-
-    private float attackTimer = 0f;
+    [SerializeField] private float moveForce;
+    [SerializeField] private float agroRange;
+    [SerializeField] private float attackRange = 2f;
 
     private Animator anim;
-    private Vector2 lastMove; // will keep the last direction moved for the attack/idle 
+    private Vector2 lastMove;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private bool isDead = false;
+
+    [Header("Audio")]
+    public AudioClip hitSound;
+    public AudioClip deathSound;
+    private AudioSource audioSource;
+
+    [Header("Supply Drop")]
+    // Assign your Supply item prefab in the Inspector.
+    public GameObject supplyDropPrefab;
+
     void Start()
     {
         maxHealth = health;
@@ -56,26 +53,33 @@ public class Basilisk : MonoBehaviour, IDamageable
         }
     }
 
-    // Update is called once per frame
+    private void Awake()
+    {
+        myBody = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+    }
+
     void Update()
     {
-        if (isKnockedBack == true)
-        {
-            knockbackTimer = knockbackTimer - Time.deltaTime;
+        if (isDead) return;
 
+        if (isKnockedBack)
+        {
+            knockbackTimer -= Time.deltaTime;
             if (knockbackTimer <= 0f)
             {
                 isKnockedBack = false;
             }
-
-            UpdateAnimation(); 
-            return; // stop chasing while knocked back
+            UpdateAnimation();
+            return;
         }
 
         if (attackFreezeTimer > 0f)
         {
             attackFreezeTimer -= Time.deltaTime;
-            myBody.linearVelocity = Vector2.zero; // FORCE STOP
+            myBody.linearVelocity = Vector2.zero;
             return;
         }
 
@@ -85,13 +89,14 @@ public class Basilisk : MonoBehaviour, IDamageable
         }
 
         float distToPlayer = Vector2.Distance(transform.position, player.position);
+
         if (distToPlayer <= attackRange && attackCooldownTimer <= 0f)
         {
             AttackPlayer();
         }
         else if (distToPlayer < agroRange)
         {
-            chasePlayer();
+            ChasePlayer();
         }
         else
         {
@@ -101,15 +106,7 @@ public class Basilisk : MonoBehaviour, IDamageable
         UpdateAnimation();
     }
 
-    private void Awake()
-    {
-        myBody = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
-
-        anim = GetComponent<Animator>(); 
-    }
-
-    private void chasePlayer()
+    private void ChasePlayer()
     {
         Vector2 direction = (player.position - transform.position).normalized;
         myBody.linearVelocity = direction * moveForce;
@@ -122,57 +119,57 @@ public class Basilisk : MonoBehaviour, IDamageable
 
     public void damageTaken(int damage, Vector2 knockback, float force)
     {
-        health = health - damage;
-        Debug.Log("Enemy Health: " + health);
+        if (isDead) return;
+
+        health -= damage;
+        Debug.Log("Basilisk Health: " + health);
 
         if (healthSlider != null)
         {
             healthSlider.value = health;
         }
 
-        anim.SetTrigger("Hit"); //will play the damage taking animation
+        if (health <= 0)
+        {
+            Die();
+            return;
+        }
+
+        anim.SetTrigger("Hit");
+
+        if (hitSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
 
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
         myBody.linearVelocity = Vector2.zero;
         myBody.AddForce(knockback * force, ForceMode2D.Impulse);
-
-        if (health <= 0)
-        {
-            enemy.SetActive(false);
-        }
     }
 
-    void AttackPlayer()
+    private void AttackPlayer()
     {
         anim.SetTrigger("Attack");
 
-        // Stop moving while attacking
         myBody.linearVelocity = Vector2.zero;
+        attackFreezeTimer = attackFreezeDuration;
+        attackCooldownTimer = attackCooldownDuration;
 
-        attackFreezeTimer = attackFreezeDuration;     //Used so the enemy stops for one second after attacking the player
-        attackCooldownTimer = attackCooldownDuration;   //This makes sure there is a 3 second delay before the enemy attacks the player again
-
-        // Get player script
         Player playerScript = player.GetComponent<Player>();
-
         if (playerScript != null)
         {
-            // Direction from enemy → player
-            if (playerScript != null)
-            {
-                Vector2 direction = (player.position - transform.position).normalized;
-                playerScript.TakeDamage(10, direction, 10f);
-            }
+            Vector2 direction = (player.position - transform.position).normalized;
+            playerScript.TakeDamage(10, direction, 10f);
         }
     }
 
-    void UpdateAnimation()
+    private void UpdateAnimation()
     {
-        /*
-        Vector2 velocity = myBody.linearVelocity;
+        if (isDead) return;
 
+        Vector2 velocity = myBody.linearVelocity;
         bool isMoving = velocity.magnitude > 0.1f;
         anim.SetBool("IsMoving", isMoving);
 
@@ -186,11 +183,37 @@ public class Basilisk : MonoBehaviour, IDamageable
             anim.SetFloat("MoveX", lastMove.x);
             anim.SetFloat("MoveY", lastMove.y);
         }
-        */
     }
 
-    public void TakeDamage(int damage, Vector2 knockback, float force)
+    private void Die()
     {
-        throw new System.NotImplementedException();
+        isDead = true;
+
+        myBody.linearVelocity = Vector2.zero;
+
+        Collider2D col = GetComponent<Collider2D>();
+        if (col != null) col.enabled = false;
+
+        anim.ResetTrigger("Hit");
+        anim.ResetTrigger("Attack");
+        anim.SetBool("IsMoving", false);
+        anim.SetTrigger("Die");
+
+        if (deathSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(deathSound);
+        }
+
+        DropSupply();
+
+        Destroy(gameObject, 1.5f);
+    }
+
+    private void DropSupply()
+    {
+        if (supplyDropPrefab == null) return;
+
+        Vector3 spawnPos = transform.position + Vector3.up * 0.5f;
+        Instantiate(supplyDropPrefab, spawnPos, Quaternion.identity);
     }
 }

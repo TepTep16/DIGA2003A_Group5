@@ -6,14 +6,24 @@ public class Beckett : NPC, ITalkable
 {
     [SerializeField] private DialogueText dialogueText;
     [SerializeField] private DialogueController dialogueController;
+
     public override void Interact()
     {
+        // Check win condition before displaying normal dialogue.
+        if (SupplyCounter.Instance != null && SupplyCounter.Instance.HasWon())
+        {
+            Debug.Log("You Win!");
+            // Still start the regular dialogue so the NPC responds normally.
+            Talk(dialogueText);
+            return;
+        }
+
         Talk(dialogueText);
     }
 
     public void Talk(DialogueText dialogueText)
     {
-        //start conversation
+        // Start conversation.
         dialogueController.DisplayNextLine(dialogueText);
     }
 }
