@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8326330498418468112}
   m_Layer: 0
   m_Name: Sword
-  m_TagString: Untagged
+  m_TagString: Weapon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,9 +80,9 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -1008626499
+  m_SortingLayer: 2
+  m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8220192973459554485, guid: c9051829c2d8da64bb34222eb254f3c1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -180,5 +180,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Item
   itemName: Weapon
-  quantity: 0
+  quantity: 1
   sprite: {fileID: 8220192973459554485, guid: c9051829c2d8da64bb34222eb254f3c1, type: 3}
