@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -35,6 +36,13 @@ public class Player : MonoBehaviour
     [SerializeField] private float attackRadius = 6f;
 
     private Vector2 lastMove;
+
+    [Header("Ending Screens UI Panels")]
+    public GameObject gameOverPanel;
+    public GameObject victoryPanel;
+
+    [Header("Win Condition Parameters")]
+    private bool isInStartingRoom = false;
 
     void Start()
     {
@@ -123,6 +131,12 @@ public class Player : MonoBehaviour
 
         Debug.Log("Player Health: " + currentHealth);
 
+        if (currentHealth <= 0)
+        {
+            TriggerGameOver();
+            return; //no knockback if dead
+        }
+
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
 
@@ -164,5 +178,67 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4)) inventoryManager.UseItem(3);
         if (Input.GetKeyDown(KeyCode.Alpha5)) inventoryManager.UseItem(4);
         if (Input.GetKeyDown(KeyCode.Alpha6)) inventoryManager.UseItem(5);
+    }
+
+    private void TriggerGameOver()
+    {
+        gameOverPanel.SetActive(true);
+        Time.timeScale = 0f; // freeze game physics and updating
+    }
+
+    public void CheckVictoryCondition()
+    {
+        // Scan the inventory for each required item and quantity
+        bool hasMushroomLegs = inventoryManager.GetItemQuantity("Walking Mushroom legs") >= 1;
+        bool hasBarometzFruit = inventoryManager.GetItemQuantity("Barometz Fruit") >= 1;
+        bool hasBasiliskEgg = inventoryManager.GetItemQuantity("Basilisk Egg") >= 1;
+        bool hasMimicTongue = inventoryManager.GetItemQuantity("Mimic's Tongue") >= 1;
+        bool hasPurpleFlowers = inventoryManager.GetItemQuantity("Purple Dungeon Flower") >= 5;
+
+        // Combine them all into one master item check
+        bool collectedEverything = hasMushroomLegs && hasBarometzFruit && hasBasiliskEgg && hasMimicTongue && hasPurpleFlowers;
+
+        // Trigger victory if they have everything AND are in the starting room
+        if (collectedEverything && isInStartingRoom)
+        {
+            victoryPanel.SetActive(true);
+            Time.timeScale = 0f; // freeze game actions
+            Debug.Log("You saved Beckett!");
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("StartingRoom"))
+        {
+            isInStartingRoom = true;
+            CheckVictoryCondition();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("StartingRoom"))
+        {
+            isInStartingRoom = false;
+        }
+    }
+
+    public void RestartGame()
+    {
+        Time.timeScale = 1f; // unfreeze time
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1f; // unfreeze time
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void QuitGame()
+    {
+        Debug.Log("Qutting game...");
+        Application.Quit();
     }
 }

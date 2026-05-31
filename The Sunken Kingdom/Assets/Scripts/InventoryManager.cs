@@ -26,9 +26,24 @@ public class InventoryManager : MonoBehaviour
             if (itemSlot[i].isFull == false)
             {
                 itemSlot[i].AddItem(itemName, quantity, itemSprite, itemTag);
+
+                player.CheckVictoryCondition();
                 return;
             }
         }
+    }
+
+    public int GetItemQuantity(string targetItemName)
+    {
+        int count = 0;
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            if (itemSlot[i].isFull && itemSlot[i].itemName == targetItemName)
+            {
+                count += itemSlot[i].quantity;
+            }
+        }
+        return count;
     }
 
     public void UseItem(int slotIndex)

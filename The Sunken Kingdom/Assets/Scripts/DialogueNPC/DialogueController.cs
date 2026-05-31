@@ -64,8 +64,6 @@ public class DialogueController : MonoBehaviour
         AdvanceDialogue();
     }
 
-    // ── Private helpers ──────────────────────────────────────────────────────
-
     private void StartConversation(DialogueText dialogueText)
     {
         gameObject.SetActive(true);
@@ -113,7 +111,7 @@ public class DialogueController : MonoBehaviour
             SetupNextSpeakerTurn();
         }
 
-        // Nothing left — flag as ended, wait for one more press to close
+        // Nothing left, flag as ended, wait for one more press to close
         if (currentParagraphsQueue.Count == 0)
         {
             conversationEnded = true;
@@ -156,7 +154,7 @@ public class DialogueController : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    // Typewriter effect — reveals one character at a time using a transparent
+    // Typewriter effect: reveals one character at a time using a transparent
     // colour tag instead of rebuilding the string from scratch each frame,
     // so TMP rich-text tags in the source string are preserved.
     private IEnumerator TypeDialogueText(string textToType)

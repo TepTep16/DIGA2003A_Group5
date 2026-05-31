@@ -44,6 +44,11 @@ MonoBehaviour:
     - Here's a list of all the things you need to help me.
     - I've got a good feeling you'll be able to find all of it in this place..
   - speakerName: Beckett
+    speakerPortrait: {fileID: 8433284689301344164, guid: ad059c488a881bd46b69ea0d81cb5555, type: 3}
+    paragraphs:
+    - Once you've found all the items, find your way back to me.
+    - We'll figure out the rest after that.
+  - speakerName: Beckett
     speakerPortrait: {fileID: 5409268381829265992, guid: fc64bebc685a83e4494b518b7ee9b934, type: 3}
     paragraphs:
-    - Don't be afraid lil' bro...I know you can do this.
+    - Don't be afraid Cyrus...I know you can do this.
