@@ -9,6 +9,8 @@ public class InventoryManager : MonoBehaviour
     public ItemSlot[] itemSlot;
     private int equippedSlotIndex = -1; // -1 means nothing is equipped
 
+    public HealScreenEffects healEffect;
+
     public Player player;
 
     void Start()
@@ -58,6 +60,7 @@ public class InventoryManager : MonoBehaviour
         {
             player.currentHealth = Mathf.Min(player.currentHealth + 30, player.maxHealth);
             player.healthBar.SetHealth(player.currentHealth);
+            healEffect.TriggerHealEffect();
             Debug.Log("Used Health Potion. HP: " + player.currentHealth);
             slot.ClearSlot();
         }

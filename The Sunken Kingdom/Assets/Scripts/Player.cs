@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class Player : MonoBehaviour
 {
@@ -44,6 +45,8 @@ public class Player : MonoBehaviour
     [Header("Win Condition Parameters")]
     private bool isInStartingRoom = false;
 
+    private bool isDead = false; //for player death animation
+
     void Start()
     {
         currentHealth = maxHealth;
@@ -52,6 +55,9 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (isDead)
+            return;
+
         if (isKnockedBack)
         {
             knockbackTimer -= Time.deltaTime;
@@ -133,8 +139,8 @@ public class Player : MonoBehaviour
 
         if (currentHealth <= 0)
         {
-            TriggerGameOver();
-            return; //no knockback if dead
+            Die();
+            return;
         }
 
         isKnockedBack = true;
@@ -149,6 +155,25 @@ public class Player : MonoBehaviour
         {
             damageEffect.TriggerDamageEffect();
         }
+    }
+
+    private void Die()
+    {
+        if (isDead) return;
+        isDead = true;
+
+        myBody.linearVelocity = Vector2.zero;
+
+        anim.SetTrigger("Death");
+
+        StartCoroutine(DeathSequence());
+    }
+
+    private IEnumerator DeathSequence()
+    {
+        yield return new WaitForSeconds(1.2f); //the time for death animation
+
+        TriggerGameOver();
     }
 
     void UpdateAnimation()
