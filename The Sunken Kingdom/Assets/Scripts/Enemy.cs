@@ -4,6 +4,9 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour, IDamageable
 {
+    [Header("Supply Drop")]
+    public GameObject supplyDropPrefab;
+
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
     public int health = 100;
@@ -209,6 +212,12 @@ public class Enemy : MonoBehaviour, IDamageable
             anim.SetFloat("MoveY", lastMove.y);
         }
     }
+    private void DropSupply()
+    {
+        if (supplyDropPrefab == null) return;
+        Vector3 spawnPos = transform.position + Vector3.up * 0.5f;
+        Instantiate(supplyDropPrefab, spawnPos, Quaternion.identity);
+    }
 
     private void Die()
     {
@@ -233,7 +242,7 @@ public class Enemy : MonoBehaviour, IDamageable
         {
             audioSource.PlayOneShot(deathSound);
         }
-
+        DropSupply();
         Destroy(gameObject, 1.5f);
     }
 }

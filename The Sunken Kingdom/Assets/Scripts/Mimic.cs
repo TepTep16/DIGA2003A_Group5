@@ -1,47 +1,55 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.UI;
 
-public class Basilisk : MonoBehaviour, IDamageable
+// Attach this script to your Mimic enemy GameObject.
+// The Mimic chases the player, attacks at close range, takes knockback,
+// and drops a Supply item when killed.
+public class Mimic : MonoBehaviour, IDamageable
 {
-
+    
     private Rigidbody2D myBody;
     private SpriteRenderer sr;
+    private Animator anim;
+    private AudioSource audioSource;
 
-    public int health = 200;
-
-    [SerializeField] private Slider healthSlider;
+    [Header("Stats")]
+    public int health = 150;
     private int maxHealth;
 
-    // Knockback state
+    [SerializeField] private Slider healthSlider;
+
+    [Header("Movement")]
+    [SerializeField] private float moveForce = 3f;
+    [SerializeField] private float agroRange = 6f;
+
+    [Header("Attack")]
+    [SerializeField] private float attackRange = 1.5f;
+    private float attackFreezeTimer = 0f;
+    private float attackCooldownTimer = 0f;
+    private float attackFreezeDuration = 1f;
+    private float attackCooldownDuration = 2f;
+    public int attackDamage = 15;
+    public float attackKnockbackForce = 8f;
+
+    [Header("Knockback")]
     private bool isKnockedBack = false;
     private float knockbackTimer = 0f;
     private float knockbackDuration = 0.2f;
 
-    // Attack timing
-    private float attackFreezeTimer = 0f;
-    private float attackCooldownTimer = 0f;
-    private float attackFreezeDuration = 1f;
-    private float attackCooldownDuration = 1f;
-
+    [Header("References")]
+    // Drag the Player transform into this field in the Inspector.
     [SerializeField] private Transform player;
-
-    [SerializeField] private float moveForce;
-    [SerializeField] private float agroRange;
-    [SerializeField] private float attackRange = 2f;
-
-    private Animator anim;
-    private Vector2 lastMove;
-
-    private bool isDead = false;
 
     [Header("Audio")]
     public AudioClip hitSound;
     public AudioClip deathSound;
-    private AudioSource audioSource;
 
     [Header("Supply Drop")]
     // Assign your Supply item prefab in the Inspector.
     public GameObject supplyDropPrefab;
+
+    private bool isDead = false;
+    private Vector2 lastMove;
 
     void Start()
     {
@@ -69,9 +77,8 @@ public class Basilisk : MonoBehaviour, IDamageable
         {
             knockbackTimer -= Time.deltaTime;
             if (knockbackTimer <= 0f)
-            {
                 isKnockedBack = false;
-            }
+
             UpdateAnimation();
             return;
         }
@@ -112,9 +119,7 @@ public class Basilisk : MonoBehaviour, IDamageable
         myBody.linearVelocity = direction * moveForce;
 
         if (direction != Vector2.zero)
-        {
             lastMove = direction;
-        }
     }
 
     public void damageTaken(int damage, Vector2 knockback, float force)
@@ -122,12 +127,10 @@ public class Basilisk : MonoBehaviour, IDamageable
         if (isDead) return;
 
         health -= damage;
-        Debug.Log("Basilisk Health: " + health);
+        Debug.Log("Mimic Health: " + health);
 
         if (healthSlider != null)
-        {
             healthSlider.value = health;
-        }
 
         if (health <= 0)
         {
@@ -138,9 +141,7 @@ public class Basilisk : MonoBehaviour, IDamageable
         anim.SetTrigger("Hit");
 
         if (hitSound != null && audioSource != null)
-        {
             audioSource.PlayOneShot(hitSound);
-        }
 
         isKnockedBack = true;
         knockbackTimer = knockbackDuration;
@@ -161,7 +162,7 @@ public class Basilisk : MonoBehaviour, IDamageable
         if (playerScript != null)
         {
             Vector2 direction = (player.position - transform.position).normalized;
-            playerScript.TakeDamage(10, direction, 10f);
+            playerScript.TakeDamage(attackDamage, direction, attackKnockbackForce);
         }
     }
 
@@ -200,9 +201,7 @@ public class Basilisk : MonoBehaviour, IDamageable
         anim.SetTrigger("Die");
 
         if (deathSound != null && audioSource != null)
-        {
             audioSource.PlayOneShot(deathSound);
-        }
 
         DropSupply();
 

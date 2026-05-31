@@ -6,21 +6,23 @@ public class Chest : MonoBehaviour, IInteractable
     public AudioClip openSound;
     public AudioClip closeSound;
 
-    public bool IsOpened { get; private set; } 
+    public bool IsOpened { get; private set; }
     public string ChestID { get; private set; }
-    public GameObject itemPrefab; //for item that chest will drop 
-    public Sprite openedSprite;
+
+    [Header("Item Drops - assign all three prefabs in the Inspector")]
+    public GameObject potionPrefab;
+    public GameObject weaponPrefab;
+    public GameObject armourPrefab;
 
     public GameObject interactionSymbol;
 
     private Animator animator;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+
     void Start()
     {
         ChestID ??= GlobalHelper.GenerateUniqueID(gameObject);
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-
         interactionSymbol.SetActive(false);
     }
 
@@ -32,7 +34,6 @@ public class Chest : MonoBehaviour, IInteractable
     public void Interact()
     {
         if (!CanInteract()) return;
-
         OpenChest();
     }
 
@@ -42,33 +43,48 @@ public class Chest : MonoBehaviour, IInteractable
         animator.SetTrigger("Open");
 
         if (openSound != null)
-        {
             audioSource.PlayOneShot(openSound);
-        }
 
-        // will add dropping item later on
-        if (itemPrefab)
-        {
-            GameObject droppedItem = Instantiate(itemPrefab, transform.position + Vector3.up * 1f, Quaternion.identity);
-            droppedItem.GetComponent<BounceEffect>().StartBounce();
-        }
-
+        SpawnRandomItem();
         interactionSymbol.SetActive(false);
+    }
+
+    private void SpawnRandomItem()
+    {
+        // Build list of only assigned prefabs so missing ones are skipped
+        System.Collections.Generic.List<GameObject> available =
+            new System.Collections.Generic.List<GameObject>();
+
+        if (potionPrefab != null) available.Add(potionPrefab);
+        if (weaponPrefab != null) available.Add(weaponPrefab);
+        if (armourPrefab != null) available.Add(armourPrefab);
+
+        if (available.Count == 0)
+        {
+            Debug.LogWarning("Chest: No item prefabs assigned in the Inspector!");
+            return;
+        }
+
+        int index = Random.Range(0, available.Count);
+        GameObject chosenPrefab = available[index];
+
+        Vector3 spawnPos = transform.position + Vector3.up * 1f;
+        GameObject droppedItem = Instantiate(chosenPrefab, spawnPos, Quaternion.identity);
+
+        BounceEffect bounce = droppedItem.GetComponent<BounceEffect>();
+        if (bounce != null)
+            bounce.StartBounce();
     }
 
     public void CloseChest()
     {
-        Debug.Log("Closing Chest");
-
         if (!IsOpened) return;
 
         IsOpened = false;
         animator.SetTrigger("Close");
 
         if (closeSound != null)
-        {
             audioSource.PlayOneShot(closeSound);
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -79,12 +95,13 @@ public class Chest : MonoBehaviour, IInteractable
             ShowSymbol(false);
         }
     }
+
     public void ShowSymbol(bool show)
     {
-        if (IsOpened) return;
-
+        if (IsOpened)
+        {
+            return;
+        }
         interactionSymbol.SetActive(show);
     }
-
-
 }

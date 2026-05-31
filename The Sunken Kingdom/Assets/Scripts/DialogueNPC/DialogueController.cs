@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
@@ -16,14 +16,15 @@ public class DialogueController : MonoBehaviour
     [Header("Portrait Reference")]
     [SerializeField] private Image speakerPortraitImage;
 
-    // Queues to process the layered structure
     private Queue<DialogueLine> lines = new Queue<DialogueLine>();
     private Queue<string> currentParagraphsQueue = new Queue<string>();
 
     private DialogueLine currentLine;
-    private string currentParagraphText; // Tracks the actual active text string
+    private string currentParagraphText;
     private bool conversationEnded;
     private bool isTyping;
+    private bool conversationActive = false; // true while a conversation is open
+    private float lastCloseTime = 0f;
 
     private Coroutine typeDialogueCoroutine;
 
@@ -32,41 +33,43 @@ public class DialogueController : MonoBehaviour
 
     public void DisplayNextLine(DialogueText dialogueText)
     {
-        // First initialization block
-        if (lines.Count == 0 && currentParagraphsQueue.Count == 0 && !conversationEnded)
+        // Prevent immediate reopening if the player mashes the interact key to close
+        if (!conversationActive && Time.time - lastCloseTime < 0.2f)
         {
-            StartConversation(dialogueText);
-            AdvanceDialogue(); // Immediately fetch first speaker and text
             return;
         }
-        // Wrap up the ending sequence 
-        else if (lines.Count == 0 && currentParagraphsQueue.Count == 0 && conversationEnded)
+
+        // No active conversation — start one fresh
+        if (!conversationActive)
         {
-            if (!isTyping)
-            {
-                EndConversation();
-                return;
-            }
-            else
-            {
-                FinishParagraphEarly();
-                return;
-            }
+            StartConversation(dialogueText);
+            return;
         }
 
-        if (!isTyping)
-        {
-            AdvanceDialogue();
-        }
-        else
+        // Currently typing — snap to full text first
+        if (isTyping)
         {
             FinishParagraphEarly();
+            return;
         }
+
+        // Last line just finished — close the dialogue
+        if (conversationEnded && currentParagraphsQueue.Count == 0 && lines.Count == 0)
+        {
+            EndConversation();
+            return;
+        }
+
+        // Advance to next paragraph or speaker
+        AdvanceDialogue();
     }
+
+    // ── Private helpers ──────────────────────────────────────────────────────
 
     private void StartConversation(DialogueText dialogueText)
     {
         gameObject.SetActive(true);
+        conversationActive = true;
         conversationEnded = false;
         lines.Clear();
         currentParagraphsQueue.Clear();
@@ -77,15 +80,14 @@ public class DialogueController : MonoBehaviour
         }
 
         SetupNextSpeakerTurn();
+        AdvanceDialogue(); // show the very first line immediately
     }
 
     private void SetupNextSpeakerTurn()
     {
         currentLine = lines.Dequeue();
-
         NPCNameText.text = currentLine.speakerName;
 
-        // Allows the portraits to swap
         if (currentLine.speakerPortrait != null)
         {
             speakerPortraitImage.gameObject.SetActive(true);
@@ -96,7 +98,6 @@ public class DialogueController : MonoBehaviour
             speakerPortraitImage.gameObject.SetActive(false);
         }
 
-        // Fill up the paragraphs queue for this specific character's turn
         currentParagraphsQueue.Clear();
         foreach (string paragraph in currentLine.paragraphs)
         {
@@ -106,17 +107,29 @@ public class DialogueController : MonoBehaviour
 
     private void AdvanceDialogue()
     {
-        // If current speaker is out of paragraphs, but more speakers are waiting
+        // Move to next speaker if current one is exhausted
         if (currentParagraphsQueue.Count == 0 && lines.Count > 0)
         {
             SetupNextSpeakerTurn();
         }
 
-        // Pull the text string from the active speaker's paragraphs
+        // Nothing left — flag as ended, wait for one more press to close
+        if (currentParagraphsQueue.Count == 0)
+        {
+            conversationEnded = true;
+            return;
+        }
+
+        // Stop any running coroutine before starting a new one
+        if (typeDialogueCoroutine != null)
+        {
+            StopCoroutine(typeDialogueCoroutine);
+            typeDialogueCoroutine = null;
+        }
+
         currentParagraphText = currentParagraphsQueue.Dequeue();
         typeDialogueCoroutine = StartCoroutine(TypeDialogueText(currentParagraphText));
 
-        // If no more text paragraphs AND no more speakers are in line, conversation end
         if (lines.Count == 0 && currentParagraphsQueue.Count == 0)
         {
             conversationEnded = true;
@@ -125,31 +138,41 @@ public class DialogueController : MonoBehaviour
 
     private void EndConversation()
     {
+        if (typeDialogueCoroutine != null)
+        {
+            StopCoroutine(typeDialogueCoroutine);
+            typeDialogueCoroutine = null;
+        }
+
         lines.Clear();
         currentParagraphsQueue.Clear();
         conversationEnded = false;
+        conversationActive = false;
+        isTyping = false;
+
+        // Record the exact time the conversation closed
+        lastCloseTime = Time.time;
+
         gameObject.SetActive(false);
     }
 
+    // Typewriter effect — reveals one character at a time using a transparent
+    // colour tag instead of rebuilding the string from scratch each frame,
+    // so TMP rich-text tags in the source string are preserved.
     private IEnumerator TypeDialogueText(string textToType)
     {
         isTyping = true;
-        NPCDialogueText.text = "";
+        NPCDialogueText.text = textToType;
+        NPCDialogueText.maxVisibleCharacters = 0;
 
-        string originalText = textToType;
-        string displayedText = "";
-        int alphaIndex = 0;
+        // Force TMP to update its mesh so we get an accurate character count, excluding rich text tags
+        NPCDialogueText.ForceMeshUpdate();
+        int totalCharacters = NPCDialogueText.textInfo.characterCount;
 
-        foreach (char c in textToType.ToCharArray())
+        for (int i = 0; i <= totalCharacters; i++)
         {
-            alphaIndex++;
-            NPCDialogueText.text = originalText;
-
-            // Inserts the absolute transparency tag shifting forward character by character
-            displayedText = NPCDialogueText.text.Insert(alphaIndex, HTML_ALPHA);
-            NPCDialogueText.text = displayedText;
-
-            yield return new WaitForSeconds(MAX_TYPE_TIME / typeSpeed);
+            NPCDialogueText.maxVisibleCharacters = i;
+            yield return new WaitForSeconds(1f / typeSpeed);
         }
 
         isTyping = false;
@@ -160,10 +183,11 @@ public class DialogueController : MonoBehaviour
         if (typeDialogueCoroutine != null)
         {
             StopCoroutine(typeDialogueCoroutine);
+            typeDialogueCoroutine = null;
         }
 
-        // Displays the full active text sequence
-        NPCDialogueText.text = currentParagraphText;
+        // Reveal all characters instantly
+        NPCDialogueText.maxVisibleCharacters = 99999;
         isTyping = false;
     }
 }

@@ -19,7 +19,7 @@ public class ToolBarController : MonoBehaviour
         toolBarKeys = new Key[slotCount];
         for (int i = 0; i < slotCount; i++)
         {
-            toolBarKeys[i] = i < 5 ? (Key)((int)Key.Digit1 + i) : Key.Digit5; 
+            toolBarKeys[i] = i < 5 ? (Key)((int)Key.Digit1 + i) : Key.Digit5;
         }
     }
 
@@ -44,5 +44,5 @@ public class ToolBarController : MonoBehaviour
             item.UseItem();
         }
     }
-
+      
 }
