@@ -84,9 +84,6 @@ public class Barometz : MonoBehaviour, IDamageable
         // Disable the collider so the player can't keep hitting it
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
-
-        // Destroy after giving the Drop animation time to finish
-        Destroy(gameObject, 2f);
     }
 
     private void DropSupply()

@@ -7,6 +7,8 @@ public class UIManager : MonoBehaviour
     public AudioClip openListSound;
     public AudioClip closeListSound;
 
+    public AudioClip buttonClick;
+
     private AudioSource audioSource;
 
     private void Start()
@@ -31,6 +33,14 @@ public class UIManager : MonoBehaviour
         if (closeListSound != null)
         {
             audioSource.PlayOneShot(closeListSound);
+        }
+    }
+
+    public void PlayButtonClick()
+    {
+        if (buttonClick != null)
+        {
+            audioSource.PlayOneShot(buttonClick);
         }
     }
 

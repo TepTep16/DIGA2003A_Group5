@@ -38,7 +38,10 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
             mimicHealth.SetActive(false);
 
         if (healthSlider != null)
+        {
             healthSlider.maxValue = maxHealth;
+            healthSlider.value = health;
+        }
 
         health = maxHealth;
     }
@@ -180,6 +183,20 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
 
     public void damageTaken(int damage, Vector2 knockback, float force)
     {
-        throw new System.NotImplementedException();
+        if (isDead || !isOpen) return;
+
+        health -= damage;
+
+        Debug.Log("Mimic health" + health);
+
+        anim.SetTrigger("Hit");
+
+        if (healthSlider != null)
+            healthSlider.value = health;
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 }
