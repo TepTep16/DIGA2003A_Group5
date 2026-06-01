@@ -16,6 +16,18 @@ public class ItemSlot : MonoBehaviour
     [SerializeField]
     private Image itemImage;
 
+    [SerializeField] private GameObject selectedPanel;
+
+    private void Start()
+    {
+        selectedPanel.SetActive(false);
+    }
+
+    public void SetSelected(bool selected)
+    {
+        selectedPanel.SetActive(selected);
+    }
+
     public void AddItem(string itemName, int quantity, Sprite itemSprite, string itemTag)   //Adds an object to a slot in the inventory bar.
     {
         this.itemName = itemName;
@@ -38,5 +50,8 @@ public class ItemSlot : MonoBehaviour
 
         itemImage.sprite = null;         // removes the icon from the UI.
         itemImage.color = new Color(1f, 1f, 1f, 0f);  // hides the image entirely.
+
+        SetSelected(false);
     }
+
 }

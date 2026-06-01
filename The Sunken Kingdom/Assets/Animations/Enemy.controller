@@ -42,14 +42,14 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.069704995
+  m_TransitionDuration: 0.07986717
   m_TransitionOffset: 0.0068659857
-  m_ExitTime: 0.005566852
+  m_ExitTime: 1
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
-  m_CanTransitionToSelf: 1
+  m_CanTransitionToSelf: 0
 --- !u!206 &-8044416836013817855
 BlendTree:
   m_ObjectHideFlags: 1
@@ -129,7 +129,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MonsterDeathAnimation
+  m_Name: Die
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []

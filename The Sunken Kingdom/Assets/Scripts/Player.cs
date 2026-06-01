@@ -10,6 +10,8 @@ public class Player : MonoBehaviour
     private Animator anim;
     private InventoryManager inventoryManager;
 
+    private bool inputLocked = true;
+
     public int maxHealth = 100;
     public int currentHealth;
 
@@ -36,6 +38,13 @@ public class Player : MonoBehaviour
     // Adjust this value in the Inspector to match your character's reach.
     [SerializeField] private float attackRadius = 6f;
 
+    private AudioSource walkingSource;
+    private AudioSource soundEffectSource;
+
+    public AudioClip weaponAttackSound;
+    public AudioClip walkingSound;
+    public AudioClip pickupSound;
+
     private Vector2 lastMove;
 
     [Header("Ending Screens UI Panels")]
@@ -51,6 +60,7 @@ public class Player : MonoBehaviour
     {
         currentHealth = maxHealth;
         healthBar.SetMaxHealth(maxHealth);
+
     }
 
     void Update()
@@ -74,6 +84,39 @@ public class Player : MonoBehaviour
         PlayerCombat();
         UpdateAnimation();
         InventorySelection();
+        HandleWalkSound();
+    }
+
+    public void PlayPickupSound()
+    {
+        if (pickupSound != null && soundEffectSource != null)
+        {
+            soundEffectSource.PlayOneShot(pickupSound);
+        }
+    }
+
+    void HandleWalkSound()
+    {
+
+        bool isMoving = myBody.linearVelocity.magnitude > 0.05f;
+
+        if (isMoving && !isDead)
+        {
+            if (!walkingSource.isPlaying)
+            {
+                walkingSource.clip = walkingSound;
+                walkingSource.loop = true;
+                walkingSource.Play();
+            }
+        }
+        else
+        {
+            if (walkingSource.isPlaying)
+            {
+                walkingSource.Stop();
+            }
+        }
+
     }
 
     private void Awake()
@@ -82,6 +125,11 @@ public class Player : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
+
+        AudioSource[] sources = GetComponents<AudioSource>();
+
+        walkingSource = sources[0];
+        soundEffectSource = sources[1];
     }
 
     void PlayerMovement()
@@ -124,6 +172,12 @@ public class Player : MonoBehaviour
 
             bool targetIsToTheRight = hit.transform.position.x > transform.position.x;
             anim.SetTrigger(targetIsToTheRight ? attack_right : attack_left);
+
+            if (weaponAttackSound != null && soundEffectSource != null)
+            {
+                soundEffectSource.PlayOneShot(weaponAttackSound);
+            }
+
             Vector2 direction = (hit.transform.position - transform.position).normalized;
             target.damageTaken(10, direction, 20f);
             break;

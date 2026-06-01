@@ -7,6 +7,7 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
     public AudioClip openSound;
     public AudioClip mimicGrowl;
     public AudioClip closeSound;
+    public AudioClip tongueDrop;
 
     public GameObject interactionSymbol;
 
@@ -170,6 +171,11 @@ public class Mimic : MonoBehaviour, IInteractable, IDamageable
             BounceEffect bounce = droppedItem.GetComponent<BounceEffect>();
             if (bounce != null)
                 bounce.StartBounce();
+
+            if (tongueDrop != null)
+            {
+                audioSource.PlayOneShot(tongueDrop);
+            }
         }
         Destroy(gameObject, 1f);
     }

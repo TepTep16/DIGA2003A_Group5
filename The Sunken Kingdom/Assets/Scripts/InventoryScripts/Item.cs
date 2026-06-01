@@ -14,6 +14,9 @@ public class Item : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
+    [SerializeField]
+    private AudioClip pickupSound;
+
     private InventoryManager inventoryManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,9 +26,17 @@ public class Item : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        Player player = collision.gameObject.GetComponent<Player>();
+
+        if (player != null)
         {
             inventoryManager.AddItem(itemName, quantity, sprite, gameObject.tag);
+
+            if (pickupSound != null)
+            {
+                player.PlayPickupSound();
+            }
+
             Destroy(gameObject);
         }
     }

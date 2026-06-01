@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Audio;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -10,11 +11,15 @@ public class InventoryManager : MonoBehaviour
     private int equippedSlotIndex = -1; // -1 means nothing is equipped
 
     public HealScreenEffects healEffect;
+    public AudioClip healSound;
+    private AudioSource audioSource;
 
     public Player player;
 
     void Start()
     {
+        audioSource = GetComponent<AudioSource>();
+
         if (player == null)
         {
             player = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>();
@@ -48,6 +53,17 @@ public class InventoryManager : MonoBehaviour
         return count;
     }
 
+    private void RefreshSelectedPanels()
+    {
+        for (int i = 0; i < itemSlot.Length; i++)
+        {
+            bool isSelected =
+                i == equippedSlotIndex || i == equippedArmourIndex;
+
+            itemSlot[i].SetSelected(isSelected);
+        }
+    }
+
     public void UseItem(int slotIndex)
     {
         if (slotIndex < 0 || slotIndex >= itemSlot.Length) return;
@@ -61,6 +77,12 @@ public class InventoryManager : MonoBehaviour
             player.currentHealth = Mathf.Min(player.currentHealth + 30, player.maxHealth);
             player.healthBar.SetHealth(player.currentHealth);
             healEffect.TriggerHealEffect();
+
+            if (healSound != null & audioSource != null)
+            {
+                audioSource.PlayOneShot(healSound);
+            }
+
             Debug.Log("Used Health Potion. HP: " + player.currentHealth);
             slot.ClearSlot();
         }
@@ -77,6 +99,7 @@ public class InventoryManager : MonoBehaviour
                 slot.itemTag = "Weapon";
                 Debug.Log("Weapon equipped.");
             }
+            RefreshSelectedPanels();
             return; // never consumed
         }
         else if (slot.itemName == "Armour")
@@ -92,6 +115,7 @@ public class InventoryManager : MonoBehaviour
                 slot.itemTag = "Armour";
                 Debug.Log("Armour equipped.");
             }
+            RefreshSelectedPanels();
             return; // never consumed
         }
         else if (slot.itemName == "List")

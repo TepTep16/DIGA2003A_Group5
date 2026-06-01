@@ -1,11 +1,16 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class WalkingMushroom : MonoBehaviour, IDamageable
 {
 
     private Rigidbody2D rb;
     private Animator anim;
-    private AudioSource audioSource;
+
+    [SerializeField]
+    private Slider healthSlider;
+
+    private int maxHealth;
 
     public float moveSpeed = 4f;
     public float detectionRange = 8f;
@@ -18,8 +23,13 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
 
     public int health = 50;
 
+    public AudioSource walkingSource;
+    public AudioSource sfxSource;
+
     public AudioClip hitSound;
     public AudioClip deathSound;
+
+    public AudioClip walkSound;
 
     private bool isDead = false;
 
@@ -32,11 +42,23 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
     // Assign your Supply item prefab in the Inspector.
     public GameObject supplyDropPrefab;
 
+    void Start()
+    {
+        maxHealth = health;
+
+        if (healthSlider != null)
+        {
+            healthSlider.maxValue = maxHealth;
+            healthSlider.value = health;
+        }
+    }
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>();
+        walkingSource = GetComponent<AudioSource>();
+        sfxSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -57,6 +79,29 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
 
         RunFromPlayer();
         UpdateAnimation();
+        HandleWalkSound();
+    }
+
+    void HandleWalkSound()
+    {
+        bool isMoving = rb.linearVelocity.magnitude > 0.1f;
+
+        if (isMoving && !isDead)
+        {
+            if (!walkingSource.isPlaying)
+            {
+                walkingSource.clip = walkSound;
+                walkingSource.loop = true;
+                walkingSource.Play();
+            }
+        }
+        else
+        {
+            if (walkingSource.isPlaying)
+            {
+                walkingSource.Stop();
+            }
+        }
     }
 
     void RunFromPlayer()
@@ -122,10 +167,15 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
 
         health -= damage;
 
+        if (healthSlider != null)
+        {
+            healthSlider.value = health;
+        }
+
         anim.SetTrigger("Hit");
 
         if (hitSound != null)
-            audioSource.PlayOneShot(hitSound);
+            sfxSource.PlayOneShot(hitSound);
 
         rb.linearVelocity = Vector2.zero;
         rb.AddForce(knockback * force, ForceMode2D.Impulse);
@@ -143,10 +193,15 @@ public class WalkingMushroom : MonoBehaviour, IDamageable
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
 
+        if (healthSlider != null)
+        {
+            healthSlider.gameObject.SetActive(false);
+        }
+
         anim.SetTrigger("Die");
 
         if (deathSound != null)
-            audioSource.PlayOneShot(deathSound);
+            sfxSource.PlayOneShot(deathSound);
 
         DropSupply();
 
