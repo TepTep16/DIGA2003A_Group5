@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class SupplyPickup : MonoBehaviour
 {
-    public string pickupMessage;
+    public SupplyTypes supplyTypes;
+    public int amount = 1;
+    
     private SupplyPopup supplyPopup;
 
     private void Start()
@@ -16,19 +18,13 @@ public class SupplyPickup : MonoBehaviour
 
         if (!collision.CompareTag("Player")) return;
 
-        if (SupplyCounter.Instance != null)
-        {
-            SupplyCounter.Instance.AddSupply();
-        }
-        else
-        {
-            Debug.LogWarning("SupplyPickup: No SupplyCounter found in scene!");
-        }
+        SupplyCounter.Instance.AddSupply(supplyTypes, amount);
+        Debug.LogWarning("SupplyPickup: No SupplyCounter found in scene!");
+        
 
         if (supplyPopup != null)
-        {
-            supplyPopup.ShowPopup(pickupMessage);
-        }
+            supplyPopup.ShowPopup("You've collected a " + supplyTypes);
+        
 
         Destroy(gameObject);
     }

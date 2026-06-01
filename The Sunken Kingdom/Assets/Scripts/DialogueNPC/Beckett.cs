@@ -9,11 +9,11 @@ public class Beckett : NPC, ITalkable
 
     public override void Interact()
     {
-        // Check win condition before displaying normal dialogue.
-        if (SupplyCounter.Instance != null && SupplyCounter.Instance.HasWon())
+         // Check win condition before displaying normal dialogue.
+        if (SupplyCounter.Instance.IsAllSuppliesCollected())
         {
             Debug.Log("You Win!");
-            // Still start the regular dialogue so the NPC responds normally.
+             //Still start the regular dialogue so the NPC responds normally.
             Talk(dialogueText);
             return;
         }

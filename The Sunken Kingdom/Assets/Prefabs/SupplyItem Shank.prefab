@@ -9,6 +9,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -6063848841169098091, guid: 8036f5e3fd74d304cb91630be81ec1b6, type: 3}
+      propertyPath: supplyTypes
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -6063848841169098091, guid: 8036f5e3fd74d304cb91630be81ec1b6, type: 3}
       propertyPath: pickupMessage
       value: You've collected a Barometz Fruit!
       objectReference: {fileID: 0}
