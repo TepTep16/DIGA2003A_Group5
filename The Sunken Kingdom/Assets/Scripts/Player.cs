@@ -282,22 +282,15 @@ public class Player : MonoBehaviour
 
     public void CheckVictoryCondition()
     {
-        // Scan the inventory for each required item and quantity
-        bool hasMushroomLegs = inventoryManager.GetItemQuantity("Walking Mushroom legs") >= 1;
-        bool hasBarometzFruit = inventoryManager.GetItemQuantity("Barometz Fruit") >= 1;
-        bool hasBasiliskEgg = inventoryManager.GetItemQuantity("Basilisk Egg") >= 1;
-        bool hasMimicTongue = inventoryManager.GetItemQuantity("Mimic's Tongue") >= 1;
-        bool hasPurpleFlowers = inventoryManager.GetItemQuantity("Purple Dungeon Flower") >= 5;
+        if (SupplyCounter.Instance == null)
+            return;
 
-        // Combine them all into one master item check
-        bool collectedEverything = hasMushroomLegs && hasBarometzFruit && hasBasiliskEgg && hasMimicTongue && hasPurpleFlowers;
-
-        // Trigger victory if they have everything AND are in the starting room
-        if (collectedEverything && isInStartingRoom)
+        if (SupplyCounter.Instance.IsAllSuppliesCollected() && isInStartingRoom)
         {
             victoryPanel.SetActive(true);
-            Time.timeScale = 0f; // freeze game actions
-            Debug.Log("You saved Beckett!");
+            Time.timeScale = 0f;
+
+            Debug.Log("you saved beckett!");
         }
     }
 

@@ -77,6 +77,12 @@ public class InventoryManager : MonoBehaviour
             player.currentHealth = Mathf.Min(player.currentHealth + 30, player.maxHealth);
             player.healthBar.SetHealth(player.currentHealth);
             healEffect.TriggerHealEffect();
+
+            if (audioSource != null && healSound != null)
+            {
+                audioSource.PlayOneShot(healSound);
+            }
+
             Debug.Log("Used Health Potion. HP: " + player.currentHealth);
             slot.ClearSlot();
         }

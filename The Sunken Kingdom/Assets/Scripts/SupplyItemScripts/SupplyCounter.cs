@@ -50,8 +50,13 @@ public class SupplyCounter : MonoBehaviour
         {
             Debug.Log("SupplyUI is NULL");
         }
-        
-        
+
+        Player player = FindFirstObjectByType<Player>();
+
+        if (player != null)
+        {
+            player.CheckVictoryCondition();
+        }
     }
 
     public bool IsCompleted(SupplyTypes type)
