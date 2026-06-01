@@ -8,6 +8,9 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager Instance;
 
+    [Header("UI Sound")]
+    public AudioClip supplyPickup;
+
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
@@ -103,4 +106,15 @@ public class AudioManager : MonoBehaviour
         musicSource.volume = originalVolume;
     }
 
+    public void PlayeSFX(string name)
+    {
+        Sound s = Array.Find(sfxSounds, x => x.name == name);
+
+        if (s == null)
+        {
+            return;
+        }
+
+        sfxSource.PlayOneShot(s.clip);
+    }
 }

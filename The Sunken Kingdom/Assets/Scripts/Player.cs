@@ -38,8 +38,8 @@ public class Player : MonoBehaviour
     // Adjust this value in the Inspector to match your character's reach.
     [SerializeField] private float attackRadius = 6f;
 
-    private AudioSource walkingSource;
-    private AudioSource soundEffectSource;
+    [SerializeField] private AudioSource walkingSource;
+    [SerializeField] private AudioSource soundEffectSource;
 
     public AudioClip weaponAttackSound;
     public AudioClip walkingSound;
@@ -55,6 +55,15 @@ public class Player : MonoBehaviour
     private bool isInStartingRoom = false;
 
     private bool isDead = false; //for player death animation
+
+    public enum WeaponType
+    {
+        None,
+        Sword,
+        Axe
+    }
+
+    public WeaponType currentWeapon = WeaponType.None;
 
     void Start()
     {
@@ -89,6 +98,14 @@ public class Player : MonoBehaviour
 
     public void PlayPickupSound()
     {
+        Debug.Log("Pickup sound");
+
+        if (pickupSound == null)
+            Debug.LogWarning("pickupsound is null on player");
+
+        if (soundEffectSource == null)
+            Debug.LogWarning("soundeffectsource is null");
+
         if (pickupSound != null && soundEffectSource != null)
         {
             soundEffectSource.PlayOneShot(pickupSound);
@@ -126,10 +143,6 @@ public class Player : MonoBehaviour
         anim = GetComponent<Animator>();
         inventoryManager = GameObject.Find("InventoryCanvas").GetComponent<InventoryManager>();
 
-        AudioSource[] sources = GetComponents<AudioSource>();
-
-        walkingSource = sources[0];
-        soundEffectSource = sources[1];
     }
 
     void PlayerMovement()
@@ -171,6 +184,8 @@ public class Player : MonoBehaviour
             if (target == null) continue;
 
             bool targetIsToTheRight = hit.transform.position.x > transform.position.x;
+
+            string attackTrigger;
             anim.SetTrigger(targetIsToTheRight ? attack_right : attack_left);
 
             if (weaponAttackSound != null && soundEffectSource != null)

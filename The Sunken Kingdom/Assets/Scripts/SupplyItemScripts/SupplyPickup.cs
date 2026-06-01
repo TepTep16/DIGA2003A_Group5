@@ -20,7 +20,8 @@ public class SupplyPickup : MonoBehaviour
 
         SupplyCounter.Instance.AddSupply(supplyTypes, amount);
         Debug.LogWarning("SupplyPickup: No SupplyCounter found in scene!");
-        
+
+        AudioManager.Instance?.PlayeSFX("SupplyPickup");
 
         if (supplyPopup != null)
             supplyPopup.ShowPopup("You've collected a " + supplyTypes);

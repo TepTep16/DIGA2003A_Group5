@@ -14,8 +14,6 @@ public class Item : MonoBehaviour
     [SerializeField]
     private Sprite sprite;
 
-    [SerializeField]
-    private AudioClip pickupSound;
 
     private InventoryManager inventoryManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,12 +28,9 @@ public class Item : MonoBehaviour
 
         if (player != null)
         {
-            inventoryManager.AddItem(itemName, quantity, sprite, gameObject.tag);
+            player.PlayPickupSound();
 
-            if (pickupSound != null)
-            {
-                player.PlayPickupSound();
-            }
+            inventoryManager.AddItem(itemName, quantity, sprite, gameObject.tag);
 
             Destroy(gameObject);
         }
